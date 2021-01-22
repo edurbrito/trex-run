@@ -1,0 +1,89 @@
+\hypertarget{i8254_8h}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/i8254.h File Reference}
+\label{i8254_8h}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/i8254.h@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/i8254.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for i8254.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{i8254_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{i8254_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__i8254_gacf926951944b6cf370b7229ebd50dd8b}{T\+I\+M\+E\+R\+\_\+\+F\+R\+EQ}}~1193182
+\begin{DoxyCompactList}\small\item\em clock frequency for timer in PC and AT \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga30bf84c312af248cb81bb224e09f9ba8}{T\+I\+M\+E\+R0\+\_\+\+I\+RQ}}~0
+\begin{DoxyCompactList}\small\item\em Timer 0 I\+RQ line. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gacc9ff9df4a9674a1ce9ba08fc4a4679e}{T\+I\+M\+E\+R\+\_\+0}}~0x40
+\begin{DoxyCompactList}\small\item\em Timer 0 count register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gac62c99c2a9289891c1b83052242cca49}{T\+I\+M\+E\+R\+\_\+1}}~0x41
+\begin{DoxyCompactList}\small\item\em Timer 1 count register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga1f34f18ad0ab8cace46b615773b48735}{T\+I\+M\+E\+R\+\_\+2}}~0x42
+\begin{DoxyCompactList}\small\item\em Timer 2 count register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga282832448fb0281ef53d243c1cd48491}{T\+I\+M\+E\+R\+\_\+\+C\+T\+RL}}~0x43
+\begin{DoxyCompactList}\small\item\em Control register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga51b3a5e3d4811ca063fe25e35560ab40}{S\+P\+E\+A\+K\+E\+R\+\_\+\+C\+T\+RL}}~0x61
+\begin{DoxyCompactList}\small\item\em Register for speaker control ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga6a4822642d40c248435692324a818010}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L0}}~0x00
+\begin{DoxyCompactList}\small\item\em Control Word for Timer 0. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga8349623fd8d99f9cc5d8ae29d78594fc}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L1}}~B\+IT(6)
+\begin{DoxyCompactList}\small\item\em Control Word for Timer 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga142a255de0dbc48aeabd45fc10c33672}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L2}}~B\+IT(7)
+\begin{DoxyCompactList}\small\item\em Control Word for Timer 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga4c2eecbfb96744a9c2af71dba75ecb18}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+MD}}~(B\+IT(7) $\vert$ B\+IT(6))
+\begin{DoxyCompactList}\small\item\em Read Back Command. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{T\+I\+M\+E\+R\+\_\+\+L\+SB}}~B\+IT(4)
+\begin{DoxyCompactList}\small\item\em Initialize Counter L\+SB only. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{T\+I\+M\+E\+R\+\_\+\+M\+SB}}~B\+IT(5)
+\begin{DoxyCompactList}\small\item\em Initialize Counter M\+SB only. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga8c0f1933323274c765e23837e4fbc8c7}{T\+I\+M\+E\+R\+\_\+\+L\+S\+B\+\_\+\+M\+SB}}~(\mbox{\hyperlink{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{T\+I\+M\+E\+R\+\_\+\+L\+SB}} $\vert$ \mbox{\hyperlink{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{T\+I\+M\+E\+R\+\_\+\+M\+SB}})
+\begin{DoxyCompactList}\small\item\em Initialize L\+SB first and M\+SB afterwards. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga4745cbf21da3d3fea5dbb080b2b73bac}{T\+I\+M\+E\+R\+\_\+\+S\+Q\+R\+\_\+\+W\+A\+VE}}~(B\+IT(2) $\vert$ B\+IT(1))
+\begin{DoxyCompactList}\small\item\em Mode 3\+: square wave generator. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga5d4449e0fa1cf4a4d107a48a04a1265f}{T\+I\+M\+E\+R\+\_\+\+R\+A\+T\+E\+\_\+\+G\+EN}}~B\+IT(2)
+\begin{DoxyCompactList}\small\item\em Mode 2\+: rate generator. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga325b992a371d5d981c4eceff42fa5956}{T\+I\+M\+E\+R\+\_\+\+B\+CD}}~0x01
+\begin{DoxyCompactList}\small\item\em Count in B\+CD. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gad2913dcf2f91453317bd035589ac0a7d}{T\+I\+M\+E\+R\+\_\+\+B\+IN}}~0x00
+\begin{DoxyCompactList}\small\item\em Count in binary. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga6c248216df24b5e9d907d126d80bd195}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+O\+U\+N\+T\+\_\+}}~B\+IT(5)
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga08b4952bb7058684a3f8f66be04dd45e}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+}}~B\+IT(4)
+\item 
+\#define \mbox{\hyperlink{group__i8254_gaf598b17740e07842a0545af512714711}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+EL}}(n)~B\+IT((n) + 1)
+\item 
+\#define \mbox{\hyperlink{group__i8254_gae2332e4f11de1236d2fc0154ed9951c9}{N\+O\+T\+\_\+\+OK}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga0dd0def9d0d1f83eab3aa811bedbc3e4}{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+I\+ME}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gab9d72f5b28591de763472d07f5598bbe}{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+I\+M\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gad8ca0fbb0dff4747b03935a19aa82c25}{I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+R\+EQ}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga3603a3f0758fec64c59a875c815f9cc8}{I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+I\+E\+LD}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga8af3cea4f83bcfe8c0e46afce75b7ce4}{O\+U\+T\+B\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga6f9f26e824ea9ca7fe070e05094256b3}{S\+E\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga0477f0da394da504039da21b4610d6d8}{D\+I\+S\+A\+B\+L\+E\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga4e44c039077afd82e39fbc19b9f7c9af}{R\+M\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga2e3147fb586e4242a302deb4d34432d0}{G\+E\+T\+\_\+\+C\+O\+N\+F\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gab6346466b716eb0af06b90e77ccd5f04}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+F\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga7a9969d1de847aef9a04bb7975ef0036}{S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gad23eff0553691535ebbe34da8c582b71}{U\+N\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+F\+A\+IL}}~1
+\end{DoxyCompactItemize}

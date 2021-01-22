@@ -1,0 +1,63 @@
+\hypertarget{vdh_8h}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/vdh.h File Reference}
+\label{vdh_8h}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/vdh.h@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/vdh.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for vdh.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{vdh_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vdh_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___vdh_gac28d52edfa71400c06a4ed014eed978d}{B\+I\+O\+S\+\_\+\+V\+I\+D\+EO}}~0x10
+\item 
+\#define \mbox{\hyperlink{group___vdh_ga581dbb505412e843d246d64c17e33c29}{C\+A\+L\+L\+\_\+\+V\+BE}}~0x4\+F00
+\item 
+\#define \mbox{\hyperlink{group___vdh_ga0b0db35bd346513c3750e3901d668052}{D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+L1}}~6
+\item 
+\#define \mbox{\hyperlink{group___vdh_ga11216e0dd70fe5d5873d9d05338cbe1e}{D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+L2}}~7
+\item 
+\#define \mbox{\hyperlink{group___vdh_ga05adf2154c245b06f3d851890ec1faaf}{G\+E\+T\+\_\+\+C\+O\+N\+T\+R\+\_\+\+I\+N\+FO}}~0x00
+\item 
+\#define \mbox{\hyperlink{group___vdh_ga0240cce19268c3ac2de090e8f718b89a}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}}~0x01
+\item 
+\#define \mbox{\hyperlink{group___vdh_ga02477c4996ff058aee590b54f2146eb5}{V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE}}~0x02
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___vdh_ga0871aeb2df729976dbffacf9c738b11b}{vbe\+\_\+get\+\_\+info}} (uint16\+\_\+t mode)
+\item 
+int \mbox{\hyperlink{group___vdh_ga16d73f78d19c944e160e8b3e7024f0cd}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t mode)
+\item 
+int() \mbox{\hyperlink{group___vdh_gaaad6f9e5e5c976c41adacd068b4eb6ba}{vg\+\_\+draw\+\_\+hline2}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color, void $\ast$buff)
+\item 
+int() \mbox{\hyperlink{group___vdh_gadfeb1e403e26a57c2e1dc3452f8bc8ba}{vg\+\_\+draw\+\_\+rectangle2}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color, void $\ast$buff)
+\item 
+int() \mbox{\hyperlink{group___vdh_ga31d38fd65e779ced838c1fd2a215667d}{change\+Pixel\+Color2}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, void $\ast$buff)
+\item 
+int() \mbox{\hyperlink{group___vdh_gaf7be676c7f6db3e91ab5165ad52b7416}{vg\+\_\+draw\+\_\+pattern}} (uint8\+\_\+t no\+\_\+rectangles, uint32\+\_\+t first, uint8\+\_\+t step)
+\item 
+unsigned \mbox{\hyperlink{group___vdh_ga5c30cdd3eab0edd2734ab3871f7000c7}{get\+Bits\+Per\+Pixel}} ()
+\item 
+int \mbox{\hyperlink{group___vdh_ga9e1e245889a96a471a23b0e79ddb2333}{get\+Hres}} ()
+\item 
+int \mbox{\hyperlink{group___vdh_gabf1983214d2197b9e42c20430f12de0a}{get\+Vres}} ()
+\item 
+void $\ast$ \mbox{\hyperlink{group___vdh_ga0c08a2af1d6d4064003add793f30b74a}{get\+\_\+vid\+\_\+mem}} ()
+\begin{DoxyCompactList}\small\item\em Returns video memory. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group___vdh_ga55c5883685bf347fccf094f10aa399e8}{get\+\_\+double\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns double buffer. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \mbox{\hyperlink{group___vdh_gac72f9cdd3785847a4ac65e7752c3e894}{get\+\_\+rd\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns a third buffer that is used to detect collisions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___vdh_ga497f4cb2694b612f486ec901dcdb8431}{change\+\_\+buffers}} ()
+\begin{DoxyCompactList}\small\item\em Copies memory from double buffer to video\+\_\+mem. \end{DoxyCompactList}\end{DoxyCompactItemize}

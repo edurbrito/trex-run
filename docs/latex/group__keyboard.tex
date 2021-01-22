@@ -1,0 +1,504 @@
+\hypertarget{group__keyboard}{}\doxysection{keyboard}
+\label{group__keyboard}\index{keyboard@{keyboard}}
+
+
+Functions for using the keyboard (K\+BD)  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga5c1072213ce8d8cd43628c4319ae0391}{K\+B\+D\+\_\+\+I\+RQ}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gacfb42dde389e8ca36ab267002fbf5c6a}{O\+U\+T\+\_\+\+B\+UF}}~0x60
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga783be5698cf07b1daaf126ef89c19063}{I\+N\+\_\+\+B\+UF}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga89c4d098b53809674457b1660b1af780}{S\+T\+A\+T\+\_\+\+R\+EG}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga6d57c7927a10f638c83046b52c8caac9}{K\+B\+C\+\_\+\+C\+M\+D\+\_\+\+R\+EG}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga21623e2a5501c821da54dd76ffc1d077}{R\+E\+A\+D\+\_\+\+C\+MD}}~0x20
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gaf792feb13ae0c1eab8f95f64c8baa96d}{W\+R\+I\+T\+E\+\_\+\+C\+MD}}~0x60
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga592dfdf397b21913348b4dd6b7759b2d}{E\+S\+C\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}}~0x81
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gaec37aea52a2989fbb1da1f848206997e}{S\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}}~0x9F
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gab869ba21919ab74a217e7b0c728154c0}{P\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}}~0x99
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gac6b0a2e174369ebe463e296303c6cb5b}{M\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}}~0x\+B2
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga184779318a6aa08ec4f53c1a6925c4c9}{S\+P\+A\+C\+E\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}}~0x39
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gae72835828a494b584e91479be424f7d5}{D\+O\+W\+N\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}}~0x50
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga02b2e9bdafafb37c34426152d7e1c42f}{T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+C\+O\+DE}}~0xe0
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga62249e384b997229a3e2ae74ade334e2}{D\+E\+L\+AY}}~20000
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga174d4c3c71f1852cb78f09af9e6f9aab}{\+\_\+\+O\+BF}}~0
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga70327eadacd6f53ee7b22da121c40ca8}{\+\_\+\+I\+BF}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga182635dda19227e8ed323acfb7ff802c}{\+\_\+\+S\+YS}}~2
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga4f87bed5620c7d722df4735773ad46df}{\+\_\+\+A2}}~3
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gaaf0e32e533ebef766f29fa32853dbeda}{\+\_\+\+I\+NH}}~4
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga71306ef50525ce7079ff3cd210f6a3cb}{\+\_\+\+A\+UX}}~5
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga0f1e095d11f0575b95707b089e34ba5a}{\+\_\+\+T\+O\+UT}}~6
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga82fdfbc0099d53b1c384f08c8489c7ab}{\+\_\+\+P\+AR}}~7
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga258bb72419ef143530a2f8f55e7d57af}{N\+O\+\_\+\+E\+R\+R\+OR}}~0
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga81d2ca6759f3f3bf04556b7558aea6bc}{P\+A\+R\+I\+T\+Y\+\_\+\+E\+R\+R\+OR}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gaefc48d416c882f06edaf6d01779d4d74}{T\+I\+M\+E\+O\+U\+T\+\_\+\+E\+R\+R\+OR}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga7ff89c9681d16cf59d123933dcfcef75}{B\+I\+T\+\_\+\+C\+H\+E\+C\+K\+ED}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gaa0de8fbcb7d7fd28bbafcacedfad32b6}{B\+I\+T\+\_\+\+N\+O\+T\+\_\+\+C\+H\+E\+C\+K\+ED}}~0
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga05b386d4bad60f6f9236de6d3be866e0}{I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gaae204b42b96e521e0da02cdf2c63f710}{R\+E\+S\+E\+T\+\_\+\+S\+YS}}~0
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga58e401192427bac48730394069f3bfda}{C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_gab159599b4bba94574d316694c26fa01b}{D\+A\+T\+A\+\_\+\+B\+Y\+TE}}~0
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga91d21b9f37f3bee7d2bcb8ca90e0a4e0}{I\+N\+H\+I\+B\+I\+T\+ED}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga23f30a10aa0f1748c1a747f1fcba1fd6}{M\+O\+U\+S\+E\+\_\+\+D\+A\+TA}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga3284be5380ba1651543185bbed5233b2}{N\+O\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+A\+TA}}~0
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga2c09f3972a5a94f0dccb7966ee540984}{F\+U\+L\+L\+\_\+\+N\+O\+T\+\_\+\+W\+R\+I\+TE}}~1
+\item 
+\#define \mbox{\hyperlink{group__keyboard_ga7203cf45b5cfab92ff0c7359049c6076}{C\+A\+N\+\_\+\+W\+R\+I\+TE}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__keyboard_ga4ac9231a99a664d6a9f0b69767e0d707}{kbd\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables K\+BD interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_gaee0a7b54ee426fade9c780418d110fe0}{kbd\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes K\+BD interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga5f078e557e15c1f8568516a0e51d7873}{kbd\+\_\+reading\+\_\+status}} (uint8\+\_\+t status, uint8\+\_\+t bit\+\_\+check)
+\begin{DoxyCompactList}\small\item\em verifies status by the second param \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__keyboard_gaea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em K\+BD interrupt handler. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga8052bb17ab1bf69c4cba30502df43889}{kbd\+\_\+write\+\_\+commands}} (int reg, uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em write commands to K\+BD registers \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_gacdb241e492b63b394c4b960aca920051}{kbd\+\_\+reenable}} ()
+\begin{DoxyCompactList}\small\item\em reenables K\+BD interrupts \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__keyboard_gaabc97cf45c53e0ed7a0cfd9b1d8b5ce2}{kbd\+\_\+make\+\_\+code}} (uint8\+\_\+t scancode)
+\begin{DoxyCompactList}\small\item\em tests if input is makecode or breakcode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the keyboard (K\+BD) 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__keyboard_ga4f87bed5620c7d722df4735773ad46df}\label{group__keyboard_ga4f87bed5620c7d722df4735773ad46df}} 
+\index{keyboard@{keyboard}!\_A2@{\_A2}}
+\index{\_A2@{\_A2}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_A2}{\_A2}}
+{\footnotesize\ttfamily \#define \+\_\+\+A2~3}
+
+\mbox{\Hypertarget{group__keyboard_ga71306ef50525ce7079ff3cd210f6a3cb}\label{group__keyboard_ga71306ef50525ce7079ff3cd210f6a3cb}} 
+\index{keyboard@{keyboard}!\_AUX@{\_AUX}}
+\index{\_AUX@{\_AUX}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_AUX}{\_AUX}}
+{\footnotesize\ttfamily \#define \+\_\+\+A\+UX~5}
+
+\mbox{\Hypertarget{group__keyboard_ga70327eadacd6f53ee7b22da121c40ca8}\label{group__keyboard_ga70327eadacd6f53ee7b22da121c40ca8}} 
+\index{keyboard@{keyboard}!\_IBF@{\_IBF}}
+\index{\_IBF@{\_IBF}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_IBF}{\_IBF}}
+{\footnotesize\ttfamily \#define \+\_\+\+I\+BF~1}
+
+\mbox{\Hypertarget{group__keyboard_gaaf0e32e533ebef766f29fa32853dbeda}\label{group__keyboard_gaaf0e32e533ebef766f29fa32853dbeda}} 
+\index{keyboard@{keyboard}!\_INH@{\_INH}}
+\index{\_INH@{\_INH}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_INH}{\_INH}}
+{\footnotesize\ttfamily \#define \+\_\+\+I\+NH~4}
+
+\mbox{\Hypertarget{group__keyboard_ga174d4c3c71f1852cb78f09af9e6f9aab}\label{group__keyboard_ga174d4c3c71f1852cb78f09af9e6f9aab}} 
+\index{keyboard@{keyboard}!\_OBF@{\_OBF}}
+\index{\_OBF@{\_OBF}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_OBF}{\_OBF}}
+{\footnotesize\ttfamily \#define \+\_\+\+O\+BF~0}
+
+\mbox{\Hypertarget{group__keyboard_ga82fdfbc0099d53b1c384f08c8489c7ab}\label{group__keyboard_ga82fdfbc0099d53b1c384f08c8489c7ab}} 
+\index{keyboard@{keyboard}!\_PAR@{\_PAR}}
+\index{\_PAR@{\_PAR}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_PAR}{\_PAR}}
+{\footnotesize\ttfamily \#define \+\_\+\+P\+AR~7}
+
+\mbox{\Hypertarget{group__keyboard_ga182635dda19227e8ed323acfb7ff802c}\label{group__keyboard_ga182635dda19227e8ed323acfb7ff802c}} 
+\index{keyboard@{keyboard}!\_SYS@{\_SYS}}
+\index{\_SYS@{\_SYS}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_SYS}{\_SYS}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+YS~2}
+
+\mbox{\Hypertarget{group__keyboard_ga0f1e095d11f0575b95707b089e34ba5a}\label{group__keyboard_ga0f1e095d11f0575b95707b089e34ba5a}} 
+\index{keyboard@{keyboard}!\_TOUT@{\_TOUT}}
+\index{\_TOUT@{\_TOUT}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{\_TOUT}{\_TOUT}}
+{\footnotesize\ttfamily \#define \+\_\+\+T\+O\+UT~6}
+
+\mbox{\Hypertarget{group__keyboard_ga7ff89c9681d16cf59d123933dcfcef75}\label{group__keyboard_ga7ff89c9681d16cf59d123933dcfcef75}} 
+\index{keyboard@{keyboard}!BIT\_CHECKED@{BIT\_CHECKED}}
+\index{BIT\_CHECKED@{BIT\_CHECKED}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{BIT\_CHECKED}{BIT\_CHECKED}}
+{\footnotesize\ttfamily \#define B\+I\+T\+\_\+\+C\+H\+E\+C\+K\+ED~1}
+
+\mbox{\Hypertarget{group__keyboard_gaa0de8fbcb7d7fd28bbafcacedfad32b6}\label{group__keyboard_gaa0de8fbcb7d7fd28bbafcacedfad32b6}} 
+\index{keyboard@{keyboard}!BIT\_NOT\_CHECKED@{BIT\_NOT\_CHECKED}}
+\index{BIT\_NOT\_CHECKED@{BIT\_NOT\_CHECKED}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{BIT\_NOT\_CHECKED}{BIT\_NOT\_CHECKED}}
+{\footnotesize\ttfamily \#define B\+I\+T\+\_\+\+N\+O\+T\+\_\+\+C\+H\+E\+C\+K\+ED~0}
+
+\mbox{\Hypertarget{group__keyboard_ga7203cf45b5cfab92ff0c7359049c6076}\label{group__keyboard_ga7203cf45b5cfab92ff0c7359049c6076}} 
+\index{keyboard@{keyboard}!CAN\_WRITE@{CAN\_WRITE}}
+\index{CAN\_WRITE@{CAN\_WRITE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{CAN\_WRITE}{CAN\_WRITE}}
+{\footnotesize\ttfamily \#define C\+A\+N\+\_\+\+W\+R\+I\+TE~0}
+
+\mbox{\Hypertarget{group__keyboard_ga58e401192427bac48730394069f3bfda}\label{group__keyboard_ga58e401192427bac48730394069f3bfda}} 
+\index{keyboard@{keyboard}!COMMAND\_BYTE@{COMMAND\_BYTE}}
+\index{COMMAND\_BYTE@{COMMAND\_BYTE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{COMMAND\_BYTE}{COMMAND\_BYTE}}
+{\footnotesize\ttfamily \#define C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE~1}
+
+\mbox{\Hypertarget{group__keyboard_gab159599b4bba94574d316694c26fa01b}\label{group__keyboard_gab159599b4bba94574d316694c26fa01b}} 
+\index{keyboard@{keyboard}!DATA\_BYTE@{DATA\_BYTE}}
+\index{DATA\_BYTE@{DATA\_BYTE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{DATA\_BYTE}{DATA\_BYTE}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+B\+Y\+TE~0}
+
+\mbox{\Hypertarget{group__keyboard_ga62249e384b997229a3e2ae74ade334e2}\label{group__keyboard_ga62249e384b997229a3e2ae74ade334e2}} 
+\index{keyboard@{keyboard}!DELAY@{DELAY}}
+\index{DELAY@{DELAY}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{DELAY}{DELAY}}
+{\footnotesize\ttfamily \#define D\+E\+L\+AY~20000}
+
+\mbox{\Hypertarget{group__keyboard_gae72835828a494b584e91479be424f7d5}\label{group__keyboard_gae72835828a494b584e91479be424f7d5}} 
+\index{keyboard@{keyboard}!DOWN\_BREAK\_CODE@{DOWN\_BREAK\_CODE}}
+\index{DOWN\_BREAK\_CODE@{DOWN\_BREAK\_CODE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{DOWN\_BREAK\_CODE}{DOWN\_BREAK\_CODE}}
+{\footnotesize\ttfamily \#define D\+O\+W\+N\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE~0x50}
+
+\mbox{\Hypertarget{group__keyboard_ga592dfdf397b21913348b4dd6b7759b2d}\label{group__keyboard_ga592dfdf397b21913348b4dd6b7759b2d}} 
+\index{keyboard@{keyboard}!ESC\_BREAK\_CODE@{ESC\_BREAK\_CODE}}
+\index{ESC\_BREAK\_CODE@{ESC\_BREAK\_CODE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{ESC\_BREAK\_CODE}{ESC\_BREAK\_CODE}}
+{\footnotesize\ttfamily \#define E\+S\+C\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE~0x81}
+
+\mbox{\Hypertarget{group__keyboard_ga2c09f3972a5a94f0dccb7966ee540984}\label{group__keyboard_ga2c09f3972a5a94f0dccb7966ee540984}} 
+\index{keyboard@{keyboard}!FULL\_NOT\_WRITE@{FULL\_NOT\_WRITE}}
+\index{FULL\_NOT\_WRITE@{FULL\_NOT\_WRITE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{FULL\_NOT\_WRITE}{FULL\_NOT\_WRITE}}
+{\footnotesize\ttfamily \#define F\+U\+L\+L\+\_\+\+N\+O\+T\+\_\+\+W\+R\+I\+TE~1}
+
+\mbox{\Hypertarget{group__keyboard_ga783be5698cf07b1daaf126ef89c19063}\label{group__keyboard_ga783be5698cf07b1daaf126ef89c19063}} 
+\index{keyboard@{keyboard}!IN\_BUF@{IN\_BUF}}
+\index{IN\_BUF@{IN\_BUF}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{IN\_BUF}{IN\_BUF}}
+{\footnotesize\ttfamily \#define I\+N\+\_\+\+B\+UF~0x64}
+
+\mbox{\Hypertarget{group__keyboard_ga91d21b9f37f3bee7d2bcb8ca90e0a4e0}\label{group__keyboard_ga91d21b9f37f3bee7d2bcb8ca90e0a4e0}} 
+\index{keyboard@{keyboard}!INHIBITED@{INHIBITED}}
+\index{INHIBITED@{INHIBITED}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{INHIBITED}{INHIBITED}}
+{\footnotesize\ttfamily \#define I\+N\+H\+I\+B\+I\+T\+ED~1}
+
+\mbox{\Hypertarget{group__keyboard_ga05b386d4bad60f6f9236de6d3be866e0}\label{group__keyboard_ga05b386d4bad60f6f9236de6d3be866e0}} 
+\index{keyboard@{keyboard}!INITIALIZED@{INITIALIZED}}
+\index{INITIALIZED@{INITIALIZED}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{INITIALIZED}{INITIALIZED}}
+{\footnotesize\ttfamily \#define I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED~1}
+
+\mbox{\Hypertarget{group__keyboard_ga6d57c7927a10f638c83046b52c8caac9}\label{group__keyboard_ga6d57c7927a10f638c83046b52c8caac9}} 
+\index{keyboard@{keyboard}!KBC\_CMD\_REG@{KBC\_CMD\_REG}}
+\index{KBC\_CMD\_REG@{KBC\_CMD\_REG}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{KBC\_CMD\_REG}{KBC\_CMD\_REG}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+M\+D\+\_\+\+R\+EG~0x64}
+
+\mbox{\Hypertarget{group__keyboard_ga5c1072213ce8d8cd43628c4319ae0391}\label{group__keyboard_ga5c1072213ce8d8cd43628c4319ae0391}} 
+\index{keyboard@{keyboard}!KBD\_IRQ@{KBD\_IRQ}}
+\index{KBD\_IRQ@{KBD\_IRQ}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{KBD\_IRQ}{KBD\_IRQ}}
+{\footnotesize\ttfamily \#define K\+B\+D\+\_\+\+I\+RQ~1}
+
+\mbox{\Hypertarget{group__keyboard_gac6b0a2e174369ebe463e296303c6cb5b}\label{group__keyboard_gac6b0a2e174369ebe463e296303c6cb5b}} 
+\index{keyboard@{keyboard}!M\_BREAK\_CODE@{M\_BREAK\_CODE}}
+\index{M\_BREAK\_CODE@{M\_BREAK\_CODE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{M\_BREAK\_CODE}{M\_BREAK\_CODE}}
+{\footnotesize\ttfamily \#define M\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE~0x\+B2}
+
+\mbox{\Hypertarget{group__keyboard_ga23f30a10aa0f1748c1a747f1fcba1fd6}\label{group__keyboard_ga23f30a10aa0f1748c1a747f1fcba1fd6}} 
+\index{keyboard@{keyboard}!MOUSE\_DATA@{MOUSE\_DATA}}
+\index{MOUSE\_DATA@{MOUSE\_DATA}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_DATA}{MOUSE\_DATA}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+D\+A\+TA~1}
+
+\mbox{\Hypertarget{group__keyboard_ga258bb72419ef143530a2f8f55e7d57af}\label{group__keyboard_ga258bb72419ef143530a2f8f55e7d57af}} 
+\index{keyboard@{keyboard}!NO\_ERROR@{NO\_ERROR}}
+\index{NO\_ERROR@{NO\_ERROR}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{NO\_ERROR}{NO\_ERROR}}
+{\footnotesize\ttfamily \#define N\+O\+\_\+\+E\+R\+R\+OR~0}
+
+\mbox{\Hypertarget{group__keyboard_ga3284be5380ba1651543185bbed5233b2}\label{group__keyboard_ga3284be5380ba1651543185bbed5233b2}} 
+\index{keyboard@{keyboard}!NO\_MOUSE\_DATA@{NO\_MOUSE\_DATA}}
+\index{NO\_MOUSE\_DATA@{NO\_MOUSE\_DATA}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{NO\_MOUSE\_DATA}{NO\_MOUSE\_DATA}}
+{\footnotesize\ttfamily \#define N\+O\+\_\+\+M\+O\+U\+S\+E\+\_\+\+D\+A\+TA~0}
+
+\mbox{\Hypertarget{group__keyboard_gacfb42dde389e8ca36ab267002fbf5c6a}\label{group__keyboard_gacfb42dde389e8ca36ab267002fbf5c6a}} 
+\index{keyboard@{keyboard}!OUT\_BUF@{OUT\_BUF}}
+\index{OUT\_BUF@{OUT\_BUF}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{OUT\_BUF}{OUT\_BUF}}
+{\footnotesize\ttfamily \#define O\+U\+T\+\_\+\+B\+UF~0x60}
+
+\mbox{\Hypertarget{group__keyboard_gab869ba21919ab74a217e7b0c728154c0}\label{group__keyboard_gab869ba21919ab74a217e7b0c728154c0}} 
+\index{keyboard@{keyboard}!P\_BREAK\_CODE@{P\_BREAK\_CODE}}
+\index{P\_BREAK\_CODE@{P\_BREAK\_CODE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{P\_BREAK\_CODE}{P\_BREAK\_CODE}}
+{\footnotesize\ttfamily \#define P\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE~0x99}
+
+\mbox{\Hypertarget{group__keyboard_ga81d2ca6759f3f3bf04556b7558aea6bc}\label{group__keyboard_ga81d2ca6759f3f3bf04556b7558aea6bc}} 
+\index{keyboard@{keyboard}!PARITY\_ERROR@{PARITY\_ERROR}}
+\index{PARITY\_ERROR@{PARITY\_ERROR}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{PARITY\_ERROR}{PARITY\_ERROR}}
+{\footnotesize\ttfamily \#define P\+A\+R\+I\+T\+Y\+\_\+\+E\+R\+R\+OR~1}
+
+\mbox{\Hypertarget{group__keyboard_ga21623e2a5501c821da54dd76ffc1d077}\label{group__keyboard_ga21623e2a5501c821da54dd76ffc1d077}} 
+\index{keyboard@{keyboard}!READ\_CMD@{READ\_CMD}}
+\index{READ\_CMD@{READ\_CMD}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{READ\_CMD}{READ\_CMD}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+\_\+\+C\+MD~0x20}
+
+\mbox{\Hypertarget{group__keyboard_gaae204b42b96e521e0da02cdf2c63f710}\label{group__keyboard_gaae204b42b96e521e0da02cdf2c63f710}} 
+\index{keyboard@{keyboard}!RESET\_SYS@{RESET\_SYS}}
+\index{RESET\_SYS@{RESET\_SYS}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{RESET\_SYS}{RESET\_SYS}}
+{\footnotesize\ttfamily \#define R\+E\+S\+E\+T\+\_\+\+S\+YS~0}
+
+\mbox{\Hypertarget{group__keyboard_gaec37aea52a2989fbb1da1f848206997e}\label{group__keyboard_gaec37aea52a2989fbb1da1f848206997e}} 
+\index{keyboard@{keyboard}!S\_BREAK\_CODE@{S\_BREAK\_CODE}}
+\index{S\_BREAK\_CODE@{S\_BREAK\_CODE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{S\_BREAK\_CODE}{S\_BREAK\_CODE}}
+{\footnotesize\ttfamily \#define S\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE~0x9F}
+
+\mbox{\Hypertarget{group__keyboard_ga184779318a6aa08ec4f53c1a6925c4c9}\label{group__keyboard_ga184779318a6aa08ec4f53c1a6925c4c9}} 
+\index{keyboard@{keyboard}!SPACE\_BREAK\_CODE@{SPACE\_BREAK\_CODE}}
+\index{SPACE\_BREAK\_CODE@{SPACE\_BREAK\_CODE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{SPACE\_BREAK\_CODE}{SPACE\_BREAK\_CODE}}
+{\footnotesize\ttfamily \#define S\+P\+A\+C\+E\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE~0x39}
+
+\mbox{\Hypertarget{group__keyboard_ga89c4d098b53809674457b1660b1af780}\label{group__keyboard_ga89c4d098b53809674457b1660b1af780}} 
+\index{keyboard@{keyboard}!STAT\_REG@{STAT\_REG}}
+\index{STAT\_REG@{STAT\_REG}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{STAT\_REG}{STAT\_REG}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+\_\+\+R\+EG~0x64}
+
+\mbox{\Hypertarget{group__keyboard_gaefc48d416c882f06edaf6d01779d4d74}\label{group__keyboard_gaefc48d416c882f06edaf6d01779d4d74}} 
+\index{keyboard@{keyboard}!TIMEOUT\_ERROR@{TIMEOUT\_ERROR}}
+\index{TIMEOUT\_ERROR@{TIMEOUT\_ERROR}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{TIMEOUT\_ERROR}{TIMEOUT\_ERROR}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+O\+U\+T\+\_\+\+E\+R\+R\+OR~1}
+
+\mbox{\Hypertarget{group__keyboard_ga02b2e9bdafafb37c34426152d7e1c42f}\label{group__keyboard_ga02b2e9bdafafb37c34426152d7e1c42f}} 
+\index{keyboard@{keyboard}!TWO\_BYTES\_CODE@{TWO\_BYTES\_CODE}}
+\index{TWO\_BYTES\_CODE@{TWO\_BYTES\_CODE}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{TWO\_BYTES\_CODE}{TWO\_BYTES\_CODE}}
+{\footnotesize\ttfamily \#define T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+C\+O\+DE~0xe0}
+
+\mbox{\Hypertarget{group__keyboard_gaf792feb13ae0c1eab8f95f64c8baa96d}\label{group__keyboard_gaf792feb13ae0c1eab8f95f64c8baa96d}} 
+\index{keyboard@{keyboard}!WRITE\_CMD@{WRITE\_CMD}}
+\index{WRITE\_CMD@{WRITE\_CMD}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{WRITE\_CMD}{WRITE\_CMD}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+C\+MD~0x60}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__keyboard_gaea970a154161a35f6894898a092ed70a}\label{group__keyboard_gaea970a154161a35f6894898a092ed70a}} 
+\index{keyboard@{keyboard}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+K\+BD interrupt handler. 
+
+\begin{DoxyVerb}   Grab the scancodes from output buffer
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{group__keyboard_gaea970a154161a35f6894898a092ed70a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{group__keyboard_gaea970a154161a35f6894898a092ed70a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gaabc97cf45c53e0ed7a0cfd9b1d8b5ce2}\label{group__keyboard_gaabc97cf45c53e0ed7a0cfd9b1d8b5ce2}} 
+\index{keyboard@{keyboard}!kbd\_make\_code@{kbd\_make\_code}}
+\index{kbd\_make\_code@{kbd\_make\_code}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbd\_make\_code()}{kbd\_make\_code()}}
+{\footnotesize\ttfamily bool() kbd\+\_\+make\+\_\+code (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode }\end{DoxyParamCaption})}
+
+
+
+tests if input is makecode or breakcode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & to be tested\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if makecode, F\+A\+L\+SE if breakcode 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_ga5f078e557e15c1f8568516a0e51d7873}\label{group__keyboard_ga5f078e557e15c1f8568516a0e51d7873}} 
+\index{keyboard@{keyboard}!kbd\_reading\_status@{kbd\_reading\_status}}
+\index{kbd\_reading\_status@{kbd\_reading\_status}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbd\_reading\_status()}{kbd\_reading\_status()}}
+{\footnotesize\ttfamily int() kbd\+\_\+reading\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{status,  }\item[{uint8\+\_\+t}]{bit\+\_\+check }\end{DoxyParamCaption})}
+
+
+
+verifies status by the second param 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & Keyboard status to get verified \\
+\hline
+{\em bit\+\_\+check} & bit of the status to be verified\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 or 1 depending on input -\/ check constants below for more info 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_ga5f078e557e15c1f8568516a0e51d7873_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gacdb241e492b63b394c4b960aca920051}\label{group__keyboard_gacdb241e492b63b394c4b960aca920051}} 
+\index{keyboard@{keyboard}!kbd\_reenable@{kbd\_reenable}}
+\index{kbd\_reenable@{kbd\_reenable}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbd\_reenable()}{kbd\_reenable()}}
+{\footnotesize\ttfamily int() kbd\+\_\+reenable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reenables K\+BD interrupts 
+
+\begin{DoxyReturn}{Returns}
+0 if OK, 1 if N\+O\+T\+\_\+\+OK 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_gacdb241e492b63b394c4b960aca920051_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga4ac9231a99a664d6a9f0b69767e0d707}\label{group__keyboard_ga4ac9231a99a664d6a9f0b69767e0d707}} 
+\index{keyboard@{keyboard}!kbd\_subscribe\_int@{kbd\_subscribe\_int}}
+\index{kbd\_subscribe\_int@{kbd\_subscribe\_int}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbd\_subscribe\_int()}{kbd\_subscribe\_int()}}
+{\footnotesize\ttfamily int() kbd\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables K\+BD interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if OK, 1 if N\+O\+T\+\_\+\+OK 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{group__keyboard_ga4ac9231a99a664d6a9f0b69767e0d707_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gaee0a7b54ee426fade9c780418d110fe0}\label{group__keyboard_gaee0a7b54ee426fade9c780418d110fe0}} 
+\index{keyboard@{keyboard}!kbd\_unsubscribe\_int@{kbd\_unsubscribe\_int}}
+\index{kbd\_unsubscribe\_int@{kbd\_unsubscribe\_int}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbd\_unsubscribe\_int()}{kbd\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() kbd\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes K\+BD interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if OK, 1 if N\+O\+T\+\_\+\+OK 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{group__keyboard_gaee0a7b54ee426fade9c780418d110fe0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga8052bb17ab1bf69c4cba30502df43889}\label{group__keyboard_ga8052bb17ab1bf69c4cba30502df43889}} 
+\index{keyboard@{keyboard}!kbd\_write\_commands@{kbd\_write\_commands}}
+\index{kbd\_write\_commands@{kbd\_write\_commands}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbd\_write\_commands()}{kbd\_write\_commands()}}
+{\footnotesize\ttfamily int() kbd\+\_\+write\+\_\+commands (\begin{DoxyParamCaption}\item[{int}]{reg,  }\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+write commands to K\+BD registers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & register to write commands on \\
+\hline
+{\em cmd} & command to be written on register\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if OK, 1 if N\+O\+T\+\_\+\+OK 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{group__keyboard_ga8052bb17ab1bf69c4cba30502df43889_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_ga8052bb17ab1bf69c4cba30502df43889_icgraph}
+\end{center}
+\end{figure}

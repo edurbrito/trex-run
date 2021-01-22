@@ -1,0 +1,1173 @@
+\hypertarget{group___main___menu}{}\doxysection{Main\+\_\+\+Menu}
+\label{group___main___menu}\index{Main\_Menu@{Main\_Menu}}
+
+
+Functions from the Main Menu.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_main_menu_st_m}{Main\+Menu\+StM}}
+\item 
+struct \mbox{\hyperlink{struct_interface}{Interface}}
+\item 
+struct \mbox{\hyperlink{struct_trex}{Trex}}
+\item 
+struct \mbox{\hyperlink{struct_score}{Score}}
+\item 
+struct \mbox{\hyperlink{struct_hi_scores}{Hi\+Scores}}
+\item 
+struct \mbox{\hyperlink{struct_splash_screen}{Splash\+Screen}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___main___menu_ga5d74787dedbc4e11c1ab15bf487e61f8}{State}} \{ \newline
+\mbox{\hyperlink{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a4c40e60bc71a32b924ce1f08d57f9721}{M\+E\+NU}} = 0, 
+\mbox{\hyperlink{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8aeac647bad5869fccbbc34726077409f3}{S\+I\+N\+G\+L\+EP}}, 
+\mbox{\hyperlink{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a818d3529ba1745ba3b559bf28d30ba09}{M\+U\+L\+T\+IP}}, 
+\mbox{\hyperlink{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a90001ad69ab9874fbdfbbae899a92b1a}{S\+C\+O\+R\+ES}}, 
+\newline
+\mbox{\hyperlink{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a7a10b5d68d31711288e1fe0fa17dbf4f}{E\+X\+IT}}, 
+\mbox{\hyperlink{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a15a229e606cd3ab26f3498baaef24bcc}{S\+P\+L\+A\+S\+H\+S\+C\+R\+E\+EN}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___main___menu_ga5667b805d857c6d28f83f6038a0272d3}{Event}} \{ \newline
+\mbox{\hyperlink{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3abc36d67b9f00abd1f9e8e1adb2734c4a}{N\+O\+TH}} = 0, 
+\mbox{\hyperlink{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3a1e2111da2040dea9c8962afd4654510a}{S\+P\+B\+TN}}, 
+\mbox{\hyperlink{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3ac9868e77b55c51d3e96d9257ab98bf0f}{M\+P\+B\+TN}}, 
+\mbox{\hyperlink{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3adc4eef9cc78e5c1a1e0084c4127bc163}{S\+C\+B\+TN}}, 
+\newline
+\mbox{\hyperlink{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3a209e2d35e5b22bb13ee6dd2d5ead31d7}{E\+X\+B\+TN}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga1908c209edf5e521f31aa6981d2ad897}{st\+M\+E\+NU}} ()
+\item 
+int \mbox{\hyperlink{group___main___menu_ga97a08bed732e9bfb11e47b342b4aecea}{st\+S\+I\+N\+G\+L\+EP}} ()
+\item 
+int \mbox{\hyperlink{group___main___menu_gaffec8ed06e17190243fee0c522811de7}{st\+M\+U\+L\+T\+IP}} ()
+\item 
+int \mbox{\hyperlink{group___main___menu_ga8015124af1c35b13fec728f2a6aca19d}{st\+S\+C\+O\+R\+ES}} ()
+\item 
+int \mbox{\hyperlink{group___main___menu_ga4f13814c0a58711cbac3670a2b3a6364}{st\+E\+X\+IT}} ()
+\item 
+int \mbox{\hyperlink{group___main___menu_ga56a4c88966159c3f2eedead5470a0edf}{main\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Game Main Loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___main___menu_gabe99afd17cbe516141e74b1be353746c}{Load\+Bitmaps}} ()
+\begin{DoxyCompactList}\small\item\em Loads all the necessary images and initial data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___main___menu_ga13b05805722ba2719b244dffbf9a92a4}{Menu\+Mouse\+Event\+Handler}} (struct packet p)
+\begin{DoxyCompactList}\small\item\em Event Handler for Mouse on Main Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___main___menu_ga9d4a5885d6e1f1cf853857ef3b89d4cb}{Menu\+Kbd\+Event\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Event Handler for Keyboard on Main Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___main___menu_ga05f4b8ca8a335f11e500572ae9628fc0}{Menu\+Draw\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Main Menu Graphic \mbox{\hyperlink{struct_interface}{Interface}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___main___menu_ga0f17d97fd65719851e31f7427cd366b4}{H}} (int n, int d)
+\begin{DoxyCompactList}\small\item\em get\+Hres Shortener \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___main___menu_ga8ccfb3b47fdee7d5755c504153677562}{V}} (int n, int d)
+\begin{DoxyCompactList}\small\item\em get\+Vres Shortener \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___main___menu_ga5d74787dedbc4e11c1ab15bf487e61f8}{State}} \mbox{\hyperlink{group___main___menu_ga876b486d3a5241a126bd5751c5f70f79}{state}}
+\item 
+\mbox{\hyperlink{group___main___menu_ga5667b805d857c6d28f83f6038a0272d3}{Event}} \mbox{\hyperlink{group___main___menu_gacf61400dc69c74e927a476661f47141d}{event}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gaf55497c668909df153bd9818cf765594}{xi}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga525987ab72296fdd74c5bad7185fc0a4}{yi}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga3c44e12d021ee83fe192c72582559ae5}{mouse}}
+\item 
+int($\ast$ \mbox{\hyperlink{group___main___menu_gaa08bd50cde7836f7b5d6d6f5f6c74c21}{actions}} \mbox{[}5\mbox{]})()
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga2154859873dff0f98545402cea9e2689}{title}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga06aae219580fa64328573956fbbf75eb}{track1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaf23a90aa314bffce24c035ea68a5a24c}{track2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga561c34079686d9aeafe37100dc71363f}{play\+Btn}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga1dd7f99cadfae95fd335a7d1ad67b10c}{play\+Btn\+\_\+\+Hoover}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga3bcdc5197e99ffd0bc9784efd310f6c5}{multi\+Btn}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaeffd2f459ea3e05826c0037e5e73fcb1}{multi\+Btn\+\_\+\+Hoover}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga7a2dd2d37369dc65fadd852eecc3d20c}{scores\+Btn}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaea73086dbd25a3ab29df2a7106432cb8}{scores\+Btn\+\_\+\+Hoover}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaac4a47abc1be36d809f873c3f2004f61}{exit\+Btn}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gab6b972db3f6972808197c0bd37bc91b9}{exit\+Btn\+\_\+\+Hoover}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga7533dbeea3446c214c54f1140974dfad}{cloud1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga5f088509a2829bc052955c284ddcdb42}{cloud2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaa42d2baf7ffe9a3f70bd13f38a6f01ba}{bigtree1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga87d10507a55e32eadb53c7b5b5a7c5bd}{bigtree2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga236a93749323c33538c1b8af33d402e2}{bigtree3}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaa623f4cf8854ac4fd7472d742d093e05}{bigtree4}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gae57db965af73a98cf267c4648aac5229}{bigtree5}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaa1d8848312af7ed89a835fbe846eb557}{bigtree6}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gae2486f561550aa001236dd7ee8d16bf4}{smalltree1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gad36c7f7ad09f5efe2a887ee8a9b12bd0}{smalltree2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga98497999f395460a381cbe49f3835413}{smalltree3}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga3c47a800ec4a2c9ce343a7dba9e9760b}{smalltree4}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gac5b9df59e3c9845304751ab688b587f6}{smalltree5}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga2c99be8b235858ed6d9d6ce0e27e43ab}{multitree1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga56d520fe42a88326fef0b743812b8678}{multitree2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gafaa0dd01349888e5d727730f2448e13a}{multitree3}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gad8866bfb8a8a8c3ccc3c2f106f702476}{multitree4}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gab6569d6e962596ac461c884f963e42d9}{bird1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga16b8ec706ffc74a0a9f59eb9643287f6}{bird2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga41402ca6fb41d3af66d2db9dac02cc23}{gameover}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga2b9a9b49755d7c404956c0d40010a1cb}{n0}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga66218845e25f315fce99212e1a9ea5e8}{n1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga5f29feea851cabaadac5161b633e76a4}{n2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga393c9c60356f92e79549218f0b1b0cb9}{n3}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga1a7a4bcfe18b4e83b4d0b9d85326d9a7}{n4}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga92b1094f85ea4d1b83be6fb4eaa88353}{n5}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaf921442664e7b991fa5b8aed4f832638}{n6}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaf0ac3cd4be46da3bcf1a9ec66b2eb245}{n7}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga35ce08aea42c6287e04f240b079ce7a3}{n8}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga85cc3ffc7642818816bab4026e571b49}{n9}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga636ce288d71a4cb12c313d5ec0cf1422}{bar}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga1510c7de2d7b44f2bf43d2d5f3b963ed}{time}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gac4458539f77b4a9a783b3a9e52fab71c}{sun}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga30466bc1fab546fd5468d870dd650fad}{moon}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga90535725d68940b5997a1bfbfdd9846e}{trackvelocity}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga1ef1bbe3f4cfab7c5bb5b3746e3ac9c9}{track\+Height}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga0d724d7141b8d9353b6c7be861ba1fcc}{cloudsvelocity}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gaf2e369f16d89433c2291b64dd012a6e6}{btrack}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gae51d9d0a5c77984acb16a894d45e6f8d}{bsmalltree}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gaf07c967a96593837bfcd199979521e3a}{bcloud}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga6f5278315bdfc23372ce68759f0e1d18}{bcloud\+Height}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga9bc5989f2e1767a2ff6def776d45f479}{sunX}}
+\item 
+bool \mbox{\hyperlink{group___main___menu_gade2db59a97434110a7045e9b68849954}{day}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga3df0b2dbb73b705736a9425693550408}{collision\+Count}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gac4d4a4d02b80a2c4acb194a7f7782dd4}{obstacle}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gaed202442cef6efb8a2df438135e7d836}{collision\+Limit}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_ga52c501a76550ced89fd3404923535f9f}{irq\+\_\+timer}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_ga9e6b13ba5012dbaa1901bf6857f06d5b}{irq\+\_\+kbd}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_gaa68617241efabd658f89ef301d1f7c9b}{irq\+\_\+mouse}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_ga8876f0168cf918c3727b27c14c6a5c77}{irq\+\_\+rtc}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_ga6ee3f6b3d20ac2ce636c007beba68eab}{trex1}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gab1f6ee43d3d4d26042feb0162ef337dd}{trex2}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaed5e9b95e871eb23ce495df1588423e1}{trex3}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gaadbd3d78af42142b3a00d5edcc1dfe48}{trex4}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___main___menu_gade39c1ee3f1cdd221dcd7600dde3263b}{trex5}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga9c8487354c8fd0055dabf97a2882b852}{hy}}
+\item 
+bool \mbox{\hyperlink{group___main___menu_gaa823bcc77d66aa3dd5d6204eb6d71d77}{under}}
+\item 
+bool \mbox{\hyperlink{group___main___menu_ga5e04a11e4f899c83e2f1cf36bde5798e}{jump}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga31ff0fd1f62d93c5730250a6a56be5cb}{corrector}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gaef160b7437d94056f1dc59646cd5b87d}{score}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_ga26d5bae76d83086900174b266fd2cd82}{hour}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_ga0de4531998c77245b8866f2ba909d0fa}{min}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_gaaf5f5a3fa5d596a9136b4331f2b54bfc}{sec}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_gaac3a162d2f192fe2360aba534eac7198}{year}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_ga55a5fa57878363d803833666ddf3c16f}{month}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___main___menu_ga897ed87b95b7a37afeeb935ca0b2366b}{day}}
+\item 
+\mbox{\hyperlink{struct_score}{Score}} \mbox{\hyperlink{group___main___menu_ga4f607ec7e9d1b09ae091708669588d06}{score1}}
+\item 
+\mbox{\hyperlink{struct_score}{Score}} \mbox{\hyperlink{group___main___menu_ga58bb41fc25346a16aed6ee3920b508ca}{score2}}
+\item 
+\mbox{\hyperlink{struct_score}{Score}} \mbox{\hyperlink{group___main___menu_ga76802f54d40e2f23194ec6a5e1c0369c}{score3}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga97fcb0e1731b36905e90757f211b1340}{x1}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga8835f524ad47049685e2eb4f0e296d3b}{xtrex}}
+\item 
+int \mbox{\hyperlink{group___main___menu_gad660c90589efbb535c7d55dc032c1b09}{x2}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga574963f0dce13e2b652dc8c0a9f8f414}{xtitle}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga1abb2b989ceaaa2723bee7532b73e8be}{xtrack}}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga499c3c2f17625bd809f5aa016e9fee34}{mover}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions from the Main Menu. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group___main___menu_ga5667b805d857c6d28f83f6038a0272d3}\label{group___main___menu_ga5667b805d857c6d28f83f6038a0272d3}} 
+\index{Main\_Menu@{Main\_Menu}!Event@{Event}}
+\index{Event@{Event}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{Event}{Event}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___main___menu_ga5667b805d857c6d28f83f6038a0272d3}{Event}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOTH@{NOTH}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!NOTH@{NOTH}}}\mbox{\Hypertarget{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3abc36d67b9f00abd1f9e8e1adb2734c4a}\label{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3abc36d67b9f00abd1f9e8e1adb2734c4a}} 
+N\+O\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPBTN@{SPBTN}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!SPBTN@{SPBTN}}}\mbox{\Hypertarget{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3a1e2111da2040dea9c8962afd4654510a}\label{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3a1e2111da2040dea9c8962afd4654510a}} 
+S\+P\+B\+TN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MPBTN@{MPBTN}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!MPBTN@{MPBTN}}}\mbox{\Hypertarget{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3ac9868e77b55c51d3e96d9257ab98bf0f}\label{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3ac9868e77b55c51d3e96d9257ab98bf0f}} 
+M\+P\+B\+TN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCBTN@{SCBTN}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!SCBTN@{SCBTN}}}\mbox{\Hypertarget{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3adc4eef9cc78e5c1a1e0084c4127bc163}\label{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3adc4eef9cc78e5c1a1e0084c4127bc163}} 
+S\+C\+B\+TN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXBTN@{EXBTN}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!EXBTN@{EXBTN}}}\mbox{\Hypertarget{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3a209e2d35e5b22bb13ee6dd2d5ead31d7}\label{group___main___menu_gga5667b805d857c6d28f83f6038a0272d3a209e2d35e5b22bb13ee6dd2d5ead31d7}} 
+E\+X\+B\+TN&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group___main___menu_ga5d74787dedbc4e11c1ab15bf487e61f8}\label{group___main___menu_ga5d74787dedbc4e11c1ab15bf487e61f8}} 
+\index{Main\_Menu@{Main\_Menu}!State@{State}}
+\index{State@{State}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___main___menu_ga5d74787dedbc4e11c1ab15bf487e61f8}{State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MENU@{MENU}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!MENU@{MENU}}}\mbox{\Hypertarget{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a4c40e60bc71a32b924ce1f08d57f9721}\label{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a4c40e60bc71a32b924ce1f08d57f9721}} 
+M\+E\+NU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SINGLEP@{SINGLEP}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!SINGLEP@{SINGLEP}}}\mbox{\Hypertarget{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8aeac647bad5869fccbbc34726077409f3}\label{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8aeac647bad5869fccbbc34726077409f3}} 
+S\+I\+N\+G\+L\+EP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULTIP@{MULTIP}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!MULTIP@{MULTIP}}}\mbox{\Hypertarget{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a818d3529ba1745ba3b559bf28d30ba09}\label{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a818d3529ba1745ba3b559bf28d30ba09}} 
+M\+U\+L\+T\+IP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCORES@{SCORES}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!SCORES@{SCORES}}}\mbox{\Hypertarget{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a90001ad69ab9874fbdfbbae899a92b1a}\label{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a90001ad69ab9874fbdfbbae899a92b1a}} 
+S\+C\+O\+R\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIT@{EXIT}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!EXIT@{EXIT}}}\mbox{\Hypertarget{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a7a10b5d68d31711288e1fe0fa17dbf4f}\label{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a7a10b5d68d31711288e1fe0fa17dbf4f}} 
+E\+X\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPLASHSCREEN@{SPLASHSCREEN}!Main\_Menu@{Main\_Menu}}\index{Main\_Menu@{Main\_Menu}!SPLASHSCREEN@{SPLASHSCREEN}}}\mbox{\Hypertarget{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a15a229e606cd3ab26f3498baaef24bcc}\label{group___main___menu_gga5d74787dedbc4e11c1ab15bf487e61f8a15a229e606cd3ab26f3498baaef24bcc}} 
+S\+P\+L\+A\+S\+H\+S\+C\+R\+E\+EN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___main___menu_ga0f17d97fd65719851e31f7427cd366b4}\label{group___main___menu_ga0f17d97fd65719851e31f7427cd366b4}} 
+\index{Main\_Menu@{Main\_Menu}!H@{H}}
+\index{H@{H}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{H()}{H()}}
+{\footnotesize\ttfamily int H (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+get\+Hres Shortener 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Fraction Numerator\\
+\hline
+{\em d} & Fraction Denominator \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{group___main___menu_ga0f17d97fd65719851e31f7427cd366b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga0f17d97fd65719851e31f7427cd366b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_gabe99afd17cbe516141e74b1be353746c}\label{group___main___menu_gabe99afd17cbe516141e74b1be353746c}} 
+\index{Main\_Menu@{Main\_Menu}!LoadBitmaps@{LoadBitmaps}}
+\index{LoadBitmaps@{LoadBitmaps}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{LoadBitmaps()}{LoadBitmaps()}}
+{\footnotesize\ttfamily void Load\+Bitmaps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads all the necessary images and initial data. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{group___main___menu_gabe99afd17cbe516141e74b1be353746c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_gabe99afd17cbe516141e74b1be353746c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga56a4c88966159c3f2eedead5470a0edf}\label{group___main___menu_ga56a4c88966159c3f2eedead5470a0edf}} 
+\index{Main\_Menu@{Main\_Menu}!mainLoop@{mainLoop}}
+\index{mainLoop@{mainLoop}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{mainLoop()}{mainLoop()}}
+{\footnotesize\ttfamily int main\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Game Main Loop. 
+
+\begin{DoxyReturn}{Returns}
+0 if OK, 1 if N\+O\+T\+\_\+\+OK 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group___main___menu_ga56a4c88966159c3f2eedead5470a0edf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{group___main___menu_ga56a4c88966159c3f2eedead5470a0edf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga05f4b8ca8a335f11e500572ae9628fc0}\label{group___main___menu_ga05f4b8ca8a335f11e500572ae9628fc0}} 
+\index{Main\_Menu@{Main\_Menu}!MenuDrawInterface@{MenuDrawInterface}}
+\index{MenuDrawInterface@{MenuDrawInterface}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{MenuDrawInterface()}{MenuDrawInterface()}}
+{\footnotesize\ttfamily void Menu\+Draw\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main Menu Graphic \mbox{\hyperlink{struct_interface}{Interface}}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga05f4b8ca8a335f11e500572ae9628fc0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga05f4b8ca8a335f11e500572ae9628fc0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga9d4a5885d6e1f1cf853857ef3b89d4cb}\label{group___main___menu_ga9d4a5885d6e1f1cf853857ef3b89d4cb}} 
+\index{Main\_Menu@{Main\_Menu}!MenuKbdEventHandler@{MenuKbdEventHandler}}
+\index{MenuKbdEventHandler@{MenuKbdEventHandler}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{MenuKbdEventHandler()}{MenuKbdEventHandler()}}
+{\footnotesize\ttfamily void Menu\+Kbd\+Event\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Event Handler for Keyboard on Main Menu. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{group___main___menu_ga9d4a5885d6e1f1cf853857ef3b89d4cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga9d4a5885d6e1f1cf853857ef3b89d4cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga13b05805722ba2719b244dffbf9a92a4}\label{group___main___menu_ga13b05805722ba2719b244dffbf9a92a4}} 
+\index{Main\_Menu@{Main\_Menu}!MenuMouseEventHandler@{MenuMouseEventHandler}}
+\index{MenuMouseEventHandler@{MenuMouseEventHandler}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{MenuMouseEventHandler()}{MenuMouseEventHandler()}}
+{\footnotesize\ttfamily void Menu\+Mouse\+Event\+Handler (\begin{DoxyParamCaption}\item[{struct packet}]{p }\end{DoxyParamCaption})}
+
+
+
+Event Handler for Mouse on Main Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Mouse packet to be parsed \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga13b05805722ba2719b244dffbf9a92a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga13b05805722ba2719b244dffbf9a92a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga4f13814c0a58711cbac3670a2b3a6364}\label{group___main___menu_ga4f13814c0a58711cbac3670a2b3a6364}} 
+\index{Main\_Menu@{Main\_Menu}!stEXIT@{stEXIT}}
+\index{stEXIT@{stEXIT}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{stEXIT()}{stEXIT()}}
+{\footnotesize\ttfamily int st\+E\+X\+IT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga4f13814c0a58711cbac3670a2b3a6364_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga1908c209edf5e521f31aa6981d2ad897}\label{group___main___menu_ga1908c209edf5e521f31aa6981d2ad897}} 
+\index{Main\_Menu@{Main\_Menu}!stMENU@{stMENU}}
+\index{stMENU@{stMENU}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{stMENU()}{stMENU()}}
+{\footnotesize\ttfamily int st\+M\+E\+NU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga1908c209edf5e521f31aa6981d2ad897_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{group___main___menu_ga1908c209edf5e521f31aa6981d2ad897_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_gaffec8ed06e17190243fee0c522811de7}\label{group___main___menu_gaffec8ed06e17190243fee0c522811de7}} 
+\index{Main\_Menu@{Main\_Menu}!stMULTIP@{stMULTIP}}
+\index{stMULTIP@{stMULTIP}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{stMULTIP()}{stMULTIP()}}
+{\footnotesize\ttfamily int st\+M\+U\+L\+T\+IP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_gaffec8ed06e17190243fee0c522811de7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_gaffec8ed06e17190243fee0c522811de7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga8015124af1c35b13fec728f2a6aca19d}\label{group___main___menu_ga8015124af1c35b13fec728f2a6aca19d}} 
+\index{Main\_Menu@{Main\_Menu}!stSCORES@{stSCORES}}
+\index{stSCORES@{stSCORES}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{stSCORES()}{stSCORES()}}
+{\footnotesize\ttfamily int st\+S\+C\+O\+R\+ES (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga8015124af1c35b13fec728f2a6aca19d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga8015124af1c35b13fec728f2a6aca19d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga97a08bed732e9bfb11e47b342b4aecea}\label{group___main___menu_ga97a08bed732e9bfb11e47b342b4aecea}} 
+\index{Main\_Menu@{Main\_Menu}!stSINGLEP@{stSINGLEP}}
+\index{stSINGLEP@{stSINGLEP}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{stSINGLEP()}{stSINGLEP()}}
+{\footnotesize\ttfamily int st\+S\+I\+N\+G\+L\+EP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga97a08bed732e9bfb11e47b342b4aecea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga97a08bed732e9bfb11e47b342b4aecea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___main___menu_ga8ccfb3b47fdee7d5755c504153677562}\label{group___main___menu_ga8ccfb3b47fdee7d5755c504153677562}} 
+\index{Main\_Menu@{Main\_Menu}!V@{V}}
+\index{V@{V}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{V()}{V()}}
+{\footnotesize\ttfamily int V (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+get\+Vres Shortener 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Fraction Numerator\\
+\hline
+{\em d} & Fraction Denominator \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{group___main___menu_ga8ccfb3b47fdee7d5755c504153677562_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___main___menu_ga8ccfb3b47fdee7d5755c504153677562_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group___main___menu_gaa08bd50cde7836f7b5d6d6f5f6c74c21}\label{group___main___menu_gaa08bd50cde7836f7b5d6d6f5f6c74c21}} 
+\index{Main\_Menu@{Main\_Menu}!actions@{actions}}
+\index{actions@{actions}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{actions}{actions}}
+{\footnotesize\ttfamily int($\ast$ actions\mbox{[}5\mbox{]})()}
+
+\mbox{\Hypertarget{group___main___menu_ga636ce288d71a4cb12c313d5ec0cf1422}\label{group___main___menu_ga636ce288d71a4cb12c313d5ec0cf1422}} 
+\index{Main\_Menu@{Main\_Menu}!bar@{bar}}
+\index{bar@{bar}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bar}{bar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bar}
+
+\mbox{\Hypertarget{group___main___menu_gaf07c967a96593837bfcd199979521e3a}\label{group___main___menu_gaf07c967a96593837bfcd199979521e3a}} 
+\index{Main\_Menu@{Main\_Menu}!bcloud@{bcloud}}
+\index{bcloud@{bcloud}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bcloud}{bcloud}}
+{\footnotesize\ttfamily int bcloud}
+
+\mbox{\Hypertarget{group___main___menu_ga6f5278315bdfc23372ce68759f0e1d18}\label{group___main___menu_ga6f5278315bdfc23372ce68759f0e1d18}} 
+\index{Main\_Menu@{Main\_Menu}!bcloudHeight@{bcloudHeight}}
+\index{bcloudHeight@{bcloudHeight}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bcloudHeight}{bcloudHeight}}
+{\footnotesize\ttfamily int bcloud\+Height}
+
+\mbox{\Hypertarget{group___main___menu_gaa42d2baf7ffe9a3f70bd13f38a6f01ba}\label{group___main___menu_gaa42d2baf7ffe9a3f70bd13f38a6f01ba}} 
+\index{Main\_Menu@{Main\_Menu}!bigtree1@{bigtree1}}
+\index{bigtree1@{bigtree1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bigtree1}{bigtree1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bigtree1}
+
+\mbox{\Hypertarget{group___main___menu_ga87d10507a55e32eadb53c7b5b5a7c5bd}\label{group___main___menu_ga87d10507a55e32eadb53c7b5b5a7c5bd}} 
+\index{Main\_Menu@{Main\_Menu}!bigtree2@{bigtree2}}
+\index{bigtree2@{bigtree2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bigtree2}{bigtree2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bigtree2}
+
+\mbox{\Hypertarget{group___main___menu_ga236a93749323c33538c1b8af33d402e2}\label{group___main___menu_ga236a93749323c33538c1b8af33d402e2}} 
+\index{Main\_Menu@{Main\_Menu}!bigtree3@{bigtree3}}
+\index{bigtree3@{bigtree3}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bigtree3}{bigtree3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bigtree3}
+
+\mbox{\Hypertarget{group___main___menu_gaa623f4cf8854ac4fd7472d742d093e05}\label{group___main___menu_gaa623f4cf8854ac4fd7472d742d093e05}} 
+\index{Main\_Menu@{Main\_Menu}!bigtree4@{bigtree4}}
+\index{bigtree4@{bigtree4}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bigtree4}{bigtree4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bigtree4}
+
+\mbox{\Hypertarget{group___main___menu_gae57db965af73a98cf267c4648aac5229}\label{group___main___menu_gae57db965af73a98cf267c4648aac5229}} 
+\index{Main\_Menu@{Main\_Menu}!bigtree5@{bigtree5}}
+\index{bigtree5@{bigtree5}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bigtree5}{bigtree5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bigtree5}
+
+\mbox{\Hypertarget{group___main___menu_gaa1d8848312af7ed89a835fbe846eb557}\label{group___main___menu_gaa1d8848312af7ed89a835fbe846eb557}} 
+\index{Main\_Menu@{Main\_Menu}!bigtree6@{bigtree6}}
+\index{bigtree6@{bigtree6}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bigtree6}{bigtree6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bigtree6}
+
+\mbox{\Hypertarget{group___main___menu_gab6569d6e962596ac461c884f963e42d9}\label{group___main___menu_gab6569d6e962596ac461c884f963e42d9}} 
+\index{Main\_Menu@{Main\_Menu}!bird1@{bird1}}
+\index{bird1@{bird1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bird1}{bird1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bird1}
+
+\mbox{\Hypertarget{group___main___menu_ga16b8ec706ffc74a0a9f59eb9643287f6}\label{group___main___menu_ga16b8ec706ffc74a0a9f59eb9643287f6}} 
+\index{Main\_Menu@{Main\_Menu}!bird2@{bird2}}
+\index{bird2@{bird2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bird2}{bird2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ bird2}
+
+\mbox{\Hypertarget{group___main___menu_gae51d9d0a5c77984acb16a894d45e6f8d}\label{group___main___menu_gae51d9d0a5c77984acb16a894d45e6f8d}} 
+\index{Main\_Menu@{Main\_Menu}!bsmalltree@{bsmalltree}}
+\index{bsmalltree@{bsmalltree}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{bsmalltree}{bsmalltree}}
+{\footnotesize\ttfamily int bsmalltree}
+
+\mbox{\Hypertarget{group___main___menu_gaf2e369f16d89433c2291b64dd012a6e6}\label{group___main___menu_gaf2e369f16d89433c2291b64dd012a6e6}} 
+\index{Main\_Menu@{Main\_Menu}!btrack@{btrack}}
+\index{btrack@{btrack}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{btrack}{btrack}}
+{\footnotesize\ttfamily int btrack}
+
+\mbox{\Hypertarget{group___main___menu_ga7533dbeea3446c214c54f1140974dfad}\label{group___main___menu_ga7533dbeea3446c214c54f1140974dfad}} 
+\index{Main\_Menu@{Main\_Menu}!cloud1@{cloud1}}
+\index{cloud1@{cloud1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{cloud1}{cloud1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ cloud1}
+
+\mbox{\Hypertarget{group___main___menu_ga5f088509a2829bc052955c284ddcdb42}\label{group___main___menu_ga5f088509a2829bc052955c284ddcdb42}} 
+\index{Main\_Menu@{Main\_Menu}!cloud2@{cloud2}}
+\index{cloud2@{cloud2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{cloud2}{cloud2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ cloud2}
+
+\mbox{\Hypertarget{group___main___menu_ga0d724d7141b8d9353b6c7be861ba1fcc}\label{group___main___menu_ga0d724d7141b8d9353b6c7be861ba1fcc}} 
+\index{Main\_Menu@{Main\_Menu}!cloudsvelocity@{cloudsvelocity}}
+\index{cloudsvelocity@{cloudsvelocity}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{cloudsvelocity}{cloudsvelocity}}
+{\footnotesize\ttfamily int cloudsvelocity}
+
+\mbox{\Hypertarget{group___main___menu_ga3df0b2dbb73b705736a9425693550408}\label{group___main___menu_ga3df0b2dbb73b705736a9425693550408}} 
+\index{Main\_Menu@{Main\_Menu}!collisionCount@{collisionCount}}
+\index{collisionCount@{collisionCount}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{collisionCount}{collisionCount}}
+{\footnotesize\ttfamily int collision\+Count}
+
+\mbox{\Hypertarget{group___main___menu_gaed202442cef6efb8a2df438135e7d836}\label{group___main___menu_gaed202442cef6efb8a2df438135e7d836}} 
+\index{Main\_Menu@{Main\_Menu}!collisionLimit@{collisionLimit}}
+\index{collisionLimit@{collisionLimit}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{collisionLimit}{collisionLimit}}
+{\footnotesize\ttfamily int collision\+Limit}
+
+\mbox{\Hypertarget{group___main___menu_ga31ff0fd1f62d93c5730250a6a56be5cb}\label{group___main___menu_ga31ff0fd1f62d93c5730250a6a56be5cb}} 
+\index{Main\_Menu@{Main\_Menu}!corrector@{corrector}}
+\index{corrector@{corrector}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{corrector}{corrector}}
+{\footnotesize\ttfamily int corrector}
+
+\mbox{\Hypertarget{group___main___menu_gade2db59a97434110a7045e9b68849954}\label{group___main___menu_gade2db59a97434110a7045e9b68849954}} 
+\index{Main\_Menu@{Main\_Menu}!day@{day}}
+\index{day@{day}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{day}{day}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool day}
+
+\mbox{\Hypertarget{group___main___menu_ga897ed87b95b7a37afeeb935ca0b2366b}\label{group___main___menu_ga897ed87b95b7a37afeeb935ca0b2366b}} 
+\index{Main\_Menu@{Main\_Menu}!day@{day}}
+\index{day@{day}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{day}{day}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t day}
+
+\mbox{\Hypertarget{group___main___menu_gacf61400dc69c74e927a476661f47141d}\label{group___main___menu_gacf61400dc69c74e927a476661f47141d}} 
+\index{Main\_Menu@{Main\_Menu}!event@{event}}
+\index{event@{event}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___main___menu_ga5667b805d857c6d28f83f6038a0272d3}{Event}} event}
+
+\mbox{\Hypertarget{group___main___menu_gaac4a47abc1be36d809f873c3f2004f61}\label{group___main___menu_gaac4a47abc1be36d809f873c3f2004f61}} 
+\index{Main\_Menu@{Main\_Menu}!exitBtn@{exitBtn}}
+\index{exitBtn@{exitBtn}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{exitBtn}{exitBtn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ exit\+Btn}
+
+\mbox{\Hypertarget{group___main___menu_gab6b972db3f6972808197c0bd37bc91b9}\label{group___main___menu_gab6b972db3f6972808197c0bd37bc91b9}} 
+\index{Main\_Menu@{Main\_Menu}!exitBtn\_Hoover@{exitBtn\_Hoover}}
+\index{exitBtn\_Hoover@{exitBtn\_Hoover}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{exitBtn\_Hoover}{exitBtn\_Hoover}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ exit\+Btn\+\_\+\+Hoover}
+
+\mbox{\Hypertarget{group___main___menu_ga41402ca6fb41d3af66d2db9dac02cc23}\label{group___main___menu_ga41402ca6fb41d3af66d2db9dac02cc23}} 
+\index{Main\_Menu@{Main\_Menu}!gameover@{gameover}}
+\index{gameover@{gameover}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{gameover}{gameover}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ gameover}
+
+\mbox{\Hypertarget{group___main___menu_ga26d5bae76d83086900174b266fd2cd82}\label{group___main___menu_ga26d5bae76d83086900174b266fd2cd82}} 
+\index{Main\_Menu@{Main\_Menu}!hour@{hour}}
+\index{hour@{hour}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily uint32\+\_\+t hour}
+
+\mbox{\Hypertarget{group___main___menu_ga9c8487354c8fd0055dabf97a2882b852}\label{group___main___menu_ga9c8487354c8fd0055dabf97a2882b852}} 
+\index{Main\_Menu@{Main\_Menu}!hy@{hy}}
+\index{hy@{hy}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{hy}{hy}}
+{\footnotesize\ttfamily int hy}
+
+\mbox{\Hypertarget{group___main___menu_ga9e6b13ba5012dbaa1901bf6857f06d5b}\label{group___main___menu_ga9e6b13ba5012dbaa1901bf6857f06d5b}} 
+\index{Main\_Menu@{Main\_Menu}!irq\_kbd@{irq\_kbd}}
+\index{irq\_kbd@{irq\_kbd}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{irq\_kbd}{irq\_kbd}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+kbd}
+
+\mbox{\Hypertarget{group___main___menu_gaa68617241efabd658f89ef301d1f7c9b}\label{group___main___menu_gaa68617241efabd658f89ef301d1f7c9b}} 
+\index{Main\_Menu@{Main\_Menu}!irq\_mouse@{irq\_mouse}}
+\index{irq\_mouse@{irq\_mouse}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{irq\_mouse}{irq\_mouse}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+mouse}
+
+\mbox{\Hypertarget{group___main___menu_ga8876f0168cf918c3727b27c14c6a5c77}\label{group___main___menu_ga8876f0168cf918c3727b27c14c6a5c77}} 
+\index{Main\_Menu@{Main\_Menu}!irq\_rtc@{irq\_rtc}}
+\index{irq\_rtc@{irq\_rtc}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{irq\_rtc}{irq\_rtc}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+rtc}
+
+\mbox{\Hypertarget{group___main___menu_ga52c501a76550ced89fd3404923535f9f}\label{group___main___menu_ga52c501a76550ced89fd3404923535f9f}} 
+\index{Main\_Menu@{Main\_Menu}!irq\_timer@{irq\_timer}}
+\index{irq\_timer@{irq\_timer}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{irq\_timer}{irq\_timer}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+timer}
+
+\mbox{\Hypertarget{group___main___menu_ga5e04a11e4f899c83e2f1cf36bde5798e}\label{group___main___menu_ga5e04a11e4f899c83e2f1cf36bde5798e}} 
+\index{Main\_Menu@{Main\_Menu}!jump@{jump}}
+\index{jump@{jump}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{jump}{jump}}
+{\footnotesize\ttfamily bool jump}
+
+\mbox{\Hypertarget{group___main___menu_ga0de4531998c77245b8866f2ba909d0fa}\label{group___main___menu_ga0de4531998c77245b8866f2ba909d0fa}} 
+\index{Main\_Menu@{Main\_Menu}!min@{min}}
+\index{min@{min}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{min}{min}}
+{\footnotesize\ttfamily uint32\+\_\+t min}
+
+\mbox{\Hypertarget{group___main___menu_ga55a5fa57878363d803833666ddf3c16f}\label{group___main___menu_ga55a5fa57878363d803833666ddf3c16f}} 
+\index{Main\_Menu@{Main\_Menu}!month@{month}}
+\index{month@{month}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily uint32\+\_\+t month}
+
+\mbox{\Hypertarget{group___main___menu_ga30466bc1fab546fd5468d870dd650fad}\label{group___main___menu_ga30466bc1fab546fd5468d870dd650fad}} 
+\index{Main\_Menu@{Main\_Menu}!moon@{moon}}
+\index{moon@{moon}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{moon}{moon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ moon}
+
+\mbox{\Hypertarget{group___main___menu_ga3c44e12d021ee83fe192c72582559ae5}\label{group___main___menu_ga3c44e12d021ee83fe192c72582559ae5}} 
+\index{Main\_Menu@{Main\_Menu}!mouse@{mouse}}
+\index{mouse@{mouse}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ mouse}
+
+\mbox{\Hypertarget{group___main___menu_ga499c3c2f17625bd809f5aa016e9fee34}\label{group___main___menu_ga499c3c2f17625bd809f5aa016e9fee34}} 
+\index{Main\_Menu@{Main\_Menu}!mover@{mover}}
+\index{mover@{mover}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{mover}{mover}}
+{\footnotesize\ttfamily int mover}
+
+\mbox{\Hypertarget{group___main___menu_ga3bcdc5197e99ffd0bc9784efd310f6c5}\label{group___main___menu_ga3bcdc5197e99ffd0bc9784efd310f6c5}} 
+\index{Main\_Menu@{Main\_Menu}!multiBtn@{multiBtn}}
+\index{multiBtn@{multiBtn}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{multiBtn}{multiBtn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ multi\+Btn}
+
+\mbox{\Hypertarget{group___main___menu_gaeffd2f459ea3e05826c0037e5e73fcb1}\label{group___main___menu_gaeffd2f459ea3e05826c0037e5e73fcb1}} 
+\index{Main\_Menu@{Main\_Menu}!multiBtn\_Hoover@{multiBtn\_Hoover}}
+\index{multiBtn\_Hoover@{multiBtn\_Hoover}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{multiBtn\_Hoover}{multiBtn\_Hoover}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ multi\+Btn\+\_\+\+Hoover}
+
+\mbox{\Hypertarget{group___main___menu_ga2c99be8b235858ed6d9d6ce0e27e43ab}\label{group___main___menu_ga2c99be8b235858ed6d9d6ce0e27e43ab}} 
+\index{Main\_Menu@{Main\_Menu}!multitree1@{multitree1}}
+\index{multitree1@{multitree1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{multitree1}{multitree1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ multitree1}
+
+\mbox{\Hypertarget{group___main___menu_ga56d520fe42a88326fef0b743812b8678}\label{group___main___menu_ga56d520fe42a88326fef0b743812b8678}} 
+\index{Main\_Menu@{Main\_Menu}!multitree2@{multitree2}}
+\index{multitree2@{multitree2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{multitree2}{multitree2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ multitree2}
+
+\mbox{\Hypertarget{group___main___menu_gafaa0dd01349888e5d727730f2448e13a}\label{group___main___menu_gafaa0dd01349888e5d727730f2448e13a}} 
+\index{Main\_Menu@{Main\_Menu}!multitree3@{multitree3}}
+\index{multitree3@{multitree3}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{multitree3}{multitree3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ multitree3}
+
+\mbox{\Hypertarget{group___main___menu_gad8866bfb8a8a8c3ccc3c2f106f702476}\label{group___main___menu_gad8866bfb8a8a8c3ccc3c2f106f702476}} 
+\index{Main\_Menu@{Main\_Menu}!multitree4@{multitree4}}
+\index{multitree4@{multitree4}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{multitree4}{multitree4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ multitree4}
+
+\mbox{\Hypertarget{group___main___menu_ga2b9a9b49755d7c404956c0d40010a1cb}\label{group___main___menu_ga2b9a9b49755d7c404956c0d40010a1cb}} 
+\index{Main\_Menu@{Main\_Menu}!n0@{n0}}
+\index{n0@{n0}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n0}{n0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n0}
+
+\mbox{\Hypertarget{group___main___menu_ga66218845e25f315fce99212e1a9ea5e8}\label{group___main___menu_ga66218845e25f315fce99212e1a9ea5e8}} 
+\index{Main\_Menu@{Main\_Menu}!n1@{n1}}
+\index{n1@{n1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n1}{n1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n1}
+
+\mbox{\Hypertarget{group___main___menu_ga5f29feea851cabaadac5161b633e76a4}\label{group___main___menu_ga5f29feea851cabaadac5161b633e76a4}} 
+\index{Main\_Menu@{Main\_Menu}!n2@{n2}}
+\index{n2@{n2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n2}{n2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n2}
+
+\mbox{\Hypertarget{group___main___menu_ga393c9c60356f92e79549218f0b1b0cb9}\label{group___main___menu_ga393c9c60356f92e79549218f0b1b0cb9}} 
+\index{Main\_Menu@{Main\_Menu}!n3@{n3}}
+\index{n3@{n3}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n3}{n3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n3}
+
+\mbox{\Hypertarget{group___main___menu_ga1a7a4bcfe18b4e83b4d0b9d85326d9a7}\label{group___main___menu_ga1a7a4bcfe18b4e83b4d0b9d85326d9a7}} 
+\index{Main\_Menu@{Main\_Menu}!n4@{n4}}
+\index{n4@{n4}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n4}{n4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n4}
+
+\mbox{\Hypertarget{group___main___menu_ga92b1094f85ea4d1b83be6fb4eaa88353}\label{group___main___menu_ga92b1094f85ea4d1b83be6fb4eaa88353}} 
+\index{Main\_Menu@{Main\_Menu}!n5@{n5}}
+\index{n5@{n5}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n5}{n5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n5}
+
+\mbox{\Hypertarget{group___main___menu_gaf921442664e7b991fa5b8aed4f832638}\label{group___main___menu_gaf921442664e7b991fa5b8aed4f832638}} 
+\index{Main\_Menu@{Main\_Menu}!n6@{n6}}
+\index{n6@{n6}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n6}{n6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n6}
+
+\mbox{\Hypertarget{group___main___menu_gaf0ac3cd4be46da3bcf1a9ec66b2eb245}\label{group___main___menu_gaf0ac3cd4be46da3bcf1a9ec66b2eb245}} 
+\index{Main\_Menu@{Main\_Menu}!n7@{n7}}
+\index{n7@{n7}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n7}{n7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n7}
+
+\mbox{\Hypertarget{group___main___menu_ga35ce08aea42c6287e04f240b079ce7a3}\label{group___main___menu_ga35ce08aea42c6287e04f240b079ce7a3}} 
+\index{Main\_Menu@{Main\_Menu}!n8@{n8}}
+\index{n8@{n8}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n8}{n8}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n8}
+
+\mbox{\Hypertarget{group___main___menu_ga85cc3ffc7642818816bab4026e571b49}\label{group___main___menu_ga85cc3ffc7642818816bab4026e571b49}} 
+\index{Main\_Menu@{Main\_Menu}!n9@{n9}}
+\index{n9@{n9}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{n9}{n9}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ n9}
+
+\mbox{\Hypertarget{group___main___menu_gac4d4a4d02b80a2c4acb194a7f7782dd4}\label{group___main___menu_gac4d4a4d02b80a2c4acb194a7f7782dd4}} 
+\index{Main\_Menu@{Main\_Menu}!obstacle@{obstacle}}
+\index{obstacle@{obstacle}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{obstacle}{obstacle}}
+{\footnotesize\ttfamily int obstacle}
+
+\mbox{\Hypertarget{group___main___menu_ga561c34079686d9aeafe37100dc71363f}\label{group___main___menu_ga561c34079686d9aeafe37100dc71363f}} 
+\index{Main\_Menu@{Main\_Menu}!playBtn@{playBtn}}
+\index{playBtn@{playBtn}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{playBtn}{playBtn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ play\+Btn}
+
+\mbox{\Hypertarget{group___main___menu_ga1dd7f99cadfae95fd335a7d1ad67b10c}\label{group___main___menu_ga1dd7f99cadfae95fd335a7d1ad67b10c}} 
+\index{Main\_Menu@{Main\_Menu}!playBtn\_Hoover@{playBtn\_Hoover}}
+\index{playBtn\_Hoover@{playBtn\_Hoover}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{playBtn\_Hoover}{playBtn\_Hoover}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ play\+Btn\+\_\+\+Hoover}
+
+\mbox{\Hypertarget{group___main___menu_gaef160b7437d94056f1dc59646cd5b87d}\label{group___main___menu_gaef160b7437d94056f1dc59646cd5b87d}} 
+\index{Main\_Menu@{Main\_Menu}!score@{score}}
+\index{score@{score}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int score}
+
+\mbox{\Hypertarget{group___main___menu_ga4f607ec7e9d1b09ae091708669588d06}\label{group___main___menu_ga4f607ec7e9d1b09ae091708669588d06}} 
+\index{Main\_Menu@{Main\_Menu}!score1@{score1}}
+\index{score1@{score1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{score1}{score1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_score}{Score}} score1}
+
+\mbox{\Hypertarget{group___main___menu_ga58bb41fc25346a16aed6ee3920b508ca}\label{group___main___menu_ga58bb41fc25346a16aed6ee3920b508ca}} 
+\index{Main\_Menu@{Main\_Menu}!score2@{score2}}
+\index{score2@{score2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{score2}{score2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_score}{Score}} score2}
+
+\mbox{\Hypertarget{group___main___menu_ga76802f54d40e2f23194ec6a5e1c0369c}\label{group___main___menu_ga76802f54d40e2f23194ec6a5e1c0369c}} 
+\index{Main\_Menu@{Main\_Menu}!score3@{score3}}
+\index{score3@{score3}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{score3}{score3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_score}{Score}} score3}
+
+\mbox{\Hypertarget{group___main___menu_ga7a2dd2d37369dc65fadd852eecc3d20c}\label{group___main___menu_ga7a2dd2d37369dc65fadd852eecc3d20c}} 
+\index{Main\_Menu@{Main\_Menu}!scoresBtn@{scoresBtn}}
+\index{scoresBtn@{scoresBtn}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{scoresBtn}{scoresBtn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ scores\+Btn}
+
+\mbox{\Hypertarget{group___main___menu_gaea73086dbd25a3ab29df2a7106432cb8}\label{group___main___menu_gaea73086dbd25a3ab29df2a7106432cb8}} 
+\index{Main\_Menu@{Main\_Menu}!scoresBtn\_Hoover@{scoresBtn\_Hoover}}
+\index{scoresBtn\_Hoover@{scoresBtn\_Hoover}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{scoresBtn\_Hoover}{scoresBtn\_Hoover}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ scores\+Btn\+\_\+\+Hoover}
+
+\mbox{\Hypertarget{group___main___menu_gaaf5f5a3fa5d596a9136b4331f2b54bfc}\label{group___main___menu_gaaf5f5a3fa5d596a9136b4331f2b54bfc}} 
+\index{Main\_Menu@{Main\_Menu}!sec@{sec}}
+\index{sec@{sec}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{sec}{sec}}
+{\footnotesize\ttfamily uint32\+\_\+t sec}
+
+\mbox{\Hypertarget{group___main___menu_gae2486f561550aa001236dd7ee8d16bf4}\label{group___main___menu_gae2486f561550aa001236dd7ee8d16bf4}} 
+\index{Main\_Menu@{Main\_Menu}!smalltree1@{smalltree1}}
+\index{smalltree1@{smalltree1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{smalltree1}{smalltree1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ smalltree1}
+
+\mbox{\Hypertarget{group___main___menu_gad36c7f7ad09f5efe2a887ee8a9b12bd0}\label{group___main___menu_gad36c7f7ad09f5efe2a887ee8a9b12bd0}} 
+\index{Main\_Menu@{Main\_Menu}!smalltree2@{smalltree2}}
+\index{smalltree2@{smalltree2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{smalltree2}{smalltree2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ smalltree2}
+
+\mbox{\Hypertarget{group___main___menu_ga98497999f395460a381cbe49f3835413}\label{group___main___menu_ga98497999f395460a381cbe49f3835413}} 
+\index{Main\_Menu@{Main\_Menu}!smalltree3@{smalltree3}}
+\index{smalltree3@{smalltree3}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{smalltree3}{smalltree3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ smalltree3}
+
+\mbox{\Hypertarget{group___main___menu_ga3c47a800ec4a2c9ce343a7dba9e9760b}\label{group___main___menu_ga3c47a800ec4a2c9ce343a7dba9e9760b}} 
+\index{Main\_Menu@{Main\_Menu}!smalltree4@{smalltree4}}
+\index{smalltree4@{smalltree4}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{smalltree4}{smalltree4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ smalltree4}
+
+\mbox{\Hypertarget{group___main___menu_gac5b9df59e3c9845304751ab688b587f6}\label{group___main___menu_gac5b9df59e3c9845304751ab688b587f6}} 
+\index{Main\_Menu@{Main\_Menu}!smalltree5@{smalltree5}}
+\index{smalltree5@{smalltree5}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{smalltree5}{smalltree5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ smalltree5}
+
+\mbox{\Hypertarget{group___main___menu_ga876b486d3a5241a126bd5751c5f70f79}\label{group___main___menu_ga876b486d3a5241a126bd5751c5f70f79}} 
+\index{Main\_Menu@{Main\_Menu}!state@{state}}
+\index{state@{state}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___main___menu_ga5d74787dedbc4e11c1ab15bf487e61f8}{State}} state}
+
+\mbox{\Hypertarget{group___main___menu_gac4458539f77b4a9a783b3a9e52fab71c}\label{group___main___menu_gac4458539f77b4a9a783b3a9e52fab71c}} 
+\index{Main\_Menu@{Main\_Menu}!sun@{sun}}
+\index{sun@{sun}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{sun}{sun}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ sun}
+
+\mbox{\Hypertarget{group___main___menu_ga9bc5989f2e1767a2ff6def776d45f479}\label{group___main___menu_ga9bc5989f2e1767a2ff6def776d45f479}} 
+\index{Main\_Menu@{Main\_Menu}!sunX@{sunX}}
+\index{sunX@{sunX}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{sunX}{sunX}}
+{\footnotesize\ttfamily int sunX}
+
+\mbox{\Hypertarget{group___main___menu_ga1510c7de2d7b44f2bf43d2d5f3b963ed}\label{group___main___menu_ga1510c7de2d7b44f2bf43d2d5f3b963ed}} 
+\index{Main\_Menu@{Main\_Menu}!time@{time}}
+\index{time@{time}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ time}
+
+\mbox{\Hypertarget{group___main___menu_ga2154859873dff0f98545402cea9e2689}\label{group___main___menu_ga2154859873dff0f98545402cea9e2689}} 
+\index{Main\_Menu@{Main\_Menu}!title@{title}}
+\index{title@{title}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ title}
+
+\mbox{\Hypertarget{group___main___menu_ga06aae219580fa64328573956fbbf75eb}\label{group___main___menu_ga06aae219580fa64328573956fbbf75eb}} 
+\index{Main\_Menu@{Main\_Menu}!track1@{track1}}
+\index{track1@{track1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{track1}{track1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ track1}
+
+\mbox{\Hypertarget{group___main___menu_gaf23a90aa314bffce24c035ea68a5a24c}\label{group___main___menu_gaf23a90aa314bffce24c035ea68a5a24c}} 
+\index{Main\_Menu@{Main\_Menu}!track2@{track2}}
+\index{track2@{track2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{track2}{track2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ track2}
+
+\mbox{\Hypertarget{group___main___menu_ga1ef1bbe3f4cfab7c5bb5b3746e3ac9c9}\label{group___main___menu_ga1ef1bbe3f4cfab7c5bb5b3746e3ac9c9}} 
+\index{Main\_Menu@{Main\_Menu}!trackHeight@{trackHeight}}
+\index{trackHeight@{trackHeight}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{trackHeight}{trackHeight}}
+{\footnotesize\ttfamily int track\+Height}
+
+\mbox{\Hypertarget{group___main___menu_ga90535725d68940b5997a1bfbfdd9846e}\label{group___main___menu_ga90535725d68940b5997a1bfbfdd9846e}} 
+\index{Main\_Menu@{Main\_Menu}!trackvelocity@{trackvelocity}}
+\index{trackvelocity@{trackvelocity}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{trackvelocity}{trackvelocity}}
+{\footnotesize\ttfamily int trackvelocity}
+
+\mbox{\Hypertarget{group___main___menu_ga6ee3f6b3d20ac2ce636c007beba68eab}\label{group___main___menu_ga6ee3f6b3d20ac2ce636c007beba68eab}} 
+\index{Main\_Menu@{Main\_Menu}!trex1@{trex1}}
+\index{trex1@{trex1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{trex1}{trex1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ trex1}
+
+\mbox{\Hypertarget{group___main___menu_gab1f6ee43d3d4d26042feb0162ef337dd}\label{group___main___menu_gab1f6ee43d3d4d26042feb0162ef337dd}} 
+\index{Main\_Menu@{Main\_Menu}!trex2@{trex2}}
+\index{trex2@{trex2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{trex2}{trex2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ trex2}
+
+\mbox{\Hypertarget{group___main___menu_gaed5e9b95e871eb23ce495df1588423e1}\label{group___main___menu_gaed5e9b95e871eb23ce495df1588423e1}} 
+\index{Main\_Menu@{Main\_Menu}!trex3@{trex3}}
+\index{trex3@{trex3}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{trex3}{trex3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ trex3}
+
+\mbox{\Hypertarget{group___main___menu_gaadbd3d78af42142b3a00d5edcc1dfe48}\label{group___main___menu_gaadbd3d78af42142b3a00d5edcc1dfe48}} 
+\index{Main\_Menu@{Main\_Menu}!trex4@{trex4}}
+\index{trex4@{trex4}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{trex4}{trex4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ trex4}
+
+\mbox{\Hypertarget{group___main___menu_gade39c1ee3f1cdd221dcd7600dde3263b}\label{group___main___menu_gade39c1ee3f1cdd221dcd7600dde3263b}} 
+\index{Main\_Menu@{Main\_Menu}!trex5@{trex5}}
+\index{trex5@{trex5}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{trex5}{trex5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ trex5}
+
+\mbox{\Hypertarget{group___main___menu_gaa823bcc77d66aa3dd5d6204eb6d71d77}\label{group___main___menu_gaa823bcc77d66aa3dd5d6204eb6d71d77}} 
+\index{Main\_Menu@{Main\_Menu}!under@{under}}
+\index{under@{under}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{under}{under}}
+{\footnotesize\ttfamily bool under}
+
+\mbox{\Hypertarget{group___main___menu_ga97fcb0e1731b36905e90757f211b1340}\label{group___main___menu_ga97fcb0e1731b36905e90757f211b1340}} 
+\index{Main\_Menu@{Main\_Menu}!x1@{x1}}
+\index{x1@{x1}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{x1}{x1}}
+{\footnotesize\ttfamily int x1}
+
+\mbox{\Hypertarget{group___main___menu_gad660c90589efbb535c7d55dc032c1b09}\label{group___main___menu_gad660c90589efbb535c7d55dc032c1b09}} 
+\index{Main\_Menu@{Main\_Menu}!x2@{x2}}
+\index{x2@{x2}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{x2}{x2}}
+{\footnotesize\ttfamily int x2}
+
+\mbox{\Hypertarget{group___main___menu_gaf55497c668909df153bd9818cf765594}\label{group___main___menu_gaf55497c668909df153bd9818cf765594}} 
+\index{Main\_Menu@{Main\_Menu}!xi@{xi}}
+\index{xi@{xi}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{xi}{xi}}
+{\footnotesize\ttfamily int xi}
+
+\mbox{\Hypertarget{group___main___menu_ga574963f0dce13e2b652dc8c0a9f8f414}\label{group___main___menu_ga574963f0dce13e2b652dc8c0a9f8f414}} 
+\index{Main\_Menu@{Main\_Menu}!xtitle@{xtitle}}
+\index{xtitle@{xtitle}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{xtitle}{xtitle}}
+{\footnotesize\ttfamily int xtitle}
+
+\mbox{\Hypertarget{group___main___menu_ga1abb2b989ceaaa2723bee7532b73e8be}\label{group___main___menu_ga1abb2b989ceaaa2723bee7532b73e8be}} 
+\index{Main\_Menu@{Main\_Menu}!xtrack@{xtrack}}
+\index{xtrack@{xtrack}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{xtrack}{xtrack}}
+{\footnotesize\ttfamily int xtrack}
+
+\mbox{\Hypertarget{group___main___menu_ga8835f524ad47049685e2eb4f0e296d3b}\label{group___main___menu_ga8835f524ad47049685e2eb4f0e296d3b}} 
+\index{Main\_Menu@{Main\_Menu}!xtrex@{xtrex}}
+\index{xtrex@{xtrex}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{xtrex}{xtrex}}
+{\footnotesize\ttfamily int xtrex}
+
+\mbox{\Hypertarget{group___main___menu_gaac3a162d2f192fe2360aba534eac7198}\label{group___main___menu_gaac3a162d2f192fe2360aba534eac7198}} 
+\index{Main\_Menu@{Main\_Menu}!year@{year}}
+\index{year@{year}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily uint32\+\_\+t year}
+
+\mbox{\Hypertarget{group___main___menu_ga525987ab72296fdd74c5bad7185fc0a4}\label{group___main___menu_ga525987ab72296fdd74c5bad7185fc0a4}} 
+\index{Main\_Menu@{Main\_Menu}!yi@{yi}}
+\index{yi@{yi}!Main\_Menu@{Main\_Menu}}
+\doxysubsubsection{\texorpdfstring{yi}{yi}}
+{\footnotesize\ttfamily int yi}
+

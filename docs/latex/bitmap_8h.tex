@@ -1,0 +1,49 @@
+\hypertarget{bitmap_8h}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/bitmap.h File Reference}
+\label{bitmap_8h}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/bitmap.h@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/bitmap.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitmap_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_bitmap_file_header}{Bitmap\+File\+Header}}
+\item 
+struct \mbox{\hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}}
+\item 
+struct \mbox{\hyperlink{struct_bitmap}{Bitmap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___bitmap_ga9148c18156d7120a3cea5be0d59810d0}{pink\+\_\+first\+\_\+byte}}~0x1f
+\item 
+\#define \mbox{\hyperlink{group___bitmap_ga603eb7046abe2e43a7ac3c19be9553f1}{pink\+\_\+second\+\_\+byte}}~0xf8
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} \{ \mbox{\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305}{A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6}{A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}}, 
+\mbox{\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354}{A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}{Buffer}} \{ \mbox{\hyperlink{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a3f6dbfa8692817b3d10fc878d459a14f}{R\+E\+A\+L\+\_\+\+B\+U\+F\+F\+ER}}, 
+\mbox{\hyperlink{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a9b75da7e04ec3aecda0594b559b339b5}{S\+E\+C\+O\+N\+D\+\_\+\+B\+U\+F\+F\+ER}}, 
+\mbox{\hyperlink{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a8432afc667a8f885e90f18b571ee435d}{T\+H\+I\+R\+D\+\_\+\+B\+U\+F\+F\+ER}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga83b894655c230a75c2131959768b554f}{draw\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} alignment, \mbox{\hyperlink{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}{Buffer}} buffer)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___bitmap_ga52585436362e08751c81132c68eed21e}{draw\+Bitmap\+\_\+collision}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} alignment)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a collision in each pixel in the 3rd buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap and frees the allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}

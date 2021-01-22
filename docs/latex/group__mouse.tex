@@ -1,0 +1,323 @@
+\hypertarget{group__mouse}{}\doxysection{mouse}
+\label{group__mouse}\index{mouse@{mouse}}
+
+
+Functions for using the mouse.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga85964cb90343bb1a029b1d1b4229f910}{M\+O\+U\+S\+E\+\_\+\+I\+RQ}}~12
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga5ca1baba7129f2acebcc07cbbbde8736}{W\+R\+I\+T\+E\+\_\+\+M\+O\+U\+SE}}~0x\+D4
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga28a9ae663327fef796d92e108bbd5fc2}{D\+I\+S\+A\+B\+L\+E\+\_\+\+R\+EP}}~0x\+F5
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga7caa7490bb3c39a846b8823bbe6d1d42}{E\+N\+A\+B\+L\+E\+\_\+\+R\+EP}}~0x\+F4
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga19a57d9d2eafd32ee130c0f526906719}{S\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+O\+DE}}~0x\+F0
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga8d406d5aff787991429e62cfd9bac721}{R\+E\+A\+D\+\_\+\+D\+A\+TA}}~0x\+EB
+\item 
+\#define \mbox{\hyperlink{group__mouse_gaabf49b4a4d8ad72d202c8a7197058e35}{S\+E\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE}}~0x\+EA
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga6f6489887e08bff4887d0bc5dcf214d8}{A\+CK}}~0x\+FA
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga958518a45b12053ae33606ee7cb68a55}{N\+A\+CK}}~0x\+FE
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga8fe83ac76edc595f6b98cd4a4127aed5}{E\+R\+R\+OR}}~0x\+FC
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Mouse interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_gac7aa3e494e115ca0a8b43d096448426c}{mouse\+\_\+data\+\_\+reporting}} (bool en)
+\begin{DoxyCompactList}\small\item\em Enable or Disable Data Reporting. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__mouse_ga804f3ad295d12a6ded4e93b117b8dfb3}{rev2comp}} (uint8\+\_\+t num, struct packet $\ast$p, uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Revert num from 2comp to no sign representation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mouse_gad10ae4a81a7c67a6ab257aa4b445f583}{packet\+\_\+assemble}} (struct packet $\ast$\mbox{\hyperlink{mouse_8c_a8157bf781a46354f771dbe645e53ec1f}{pack}})
+\begin{DoxyCompactList}\small\item\em Assembles the packet according to the struct. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Mouse interrupt handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_ga8c054e7d95d71c3fc2a26b9df115918a}{mouse\+\_\+write\+\_\+commands}} (uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Write commands to Mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the mouse. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__mouse_ga6f6489887e08bff4887d0bc5dcf214d8}\label{group__mouse_ga6f6489887e08bff4887d0bc5dcf214d8}} 
+\index{mouse@{mouse}!ACK@{ACK}}
+\index{ACK@{ACK}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{ACK}{ACK}}
+{\footnotesize\ttfamily \#define A\+CK~0x\+FA}
+
+\mbox{\Hypertarget{group__mouse_ga28a9ae663327fef796d92e108bbd5fc2}\label{group__mouse_ga28a9ae663327fef796d92e108bbd5fc2}} 
+\index{mouse@{mouse}!DISABLE\_REP@{DISABLE\_REP}}
+\index{DISABLE\_REP@{DISABLE\_REP}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{DISABLE\_REP}{DISABLE\_REP}}
+{\footnotesize\ttfamily \#define D\+I\+S\+A\+B\+L\+E\+\_\+\+R\+EP~0x\+F5}
+
+\mbox{\Hypertarget{group__mouse_ga7caa7490bb3c39a846b8823bbe6d1d42}\label{group__mouse_ga7caa7490bb3c39a846b8823bbe6d1d42}} 
+\index{mouse@{mouse}!ENABLE\_REP@{ENABLE\_REP}}
+\index{ENABLE\_REP@{ENABLE\_REP}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_REP}{ENABLE\_REP}}
+{\footnotesize\ttfamily \#define E\+N\+A\+B\+L\+E\+\_\+\+R\+EP~0x\+F4}
+
+\mbox{\Hypertarget{group__mouse_ga8fe83ac76edc595f6b98cd4a4127aed5}\label{group__mouse_ga8fe83ac76edc595f6b98cd4a4127aed5}} 
+\index{mouse@{mouse}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily \#define E\+R\+R\+OR~0x\+FC}
+
+\mbox{\Hypertarget{group__mouse_ga85964cb90343bb1a029b1d1b4229f910}\label{group__mouse_ga85964cb90343bb1a029b1d1b4229f910}} 
+\index{mouse@{mouse}!MOUSE\_IRQ@{MOUSE\_IRQ}}
+\index{MOUSE\_IRQ@{MOUSE\_IRQ}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_IRQ}{MOUSE\_IRQ}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+I\+RQ~12}
+
+\mbox{\Hypertarget{group__mouse_ga958518a45b12053ae33606ee7cb68a55}\label{group__mouse_ga958518a45b12053ae33606ee7cb68a55}} 
+\index{mouse@{mouse}!NACK@{NACK}}
+\index{NACK@{NACK}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{NACK}{NACK}}
+{\footnotesize\ttfamily \#define N\+A\+CK~0x\+FE}
+
+\mbox{\Hypertarget{group__mouse_ga8d406d5aff787991429e62cfd9bac721}\label{group__mouse_ga8d406d5aff787991429e62cfd9bac721}} 
+\index{mouse@{mouse}!READ\_DATA@{READ\_DATA}}
+\index{READ\_DATA@{READ\_DATA}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{READ\_DATA}{READ\_DATA}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+\_\+\+D\+A\+TA~0x\+EB}
+
+\mbox{\Hypertarget{group__mouse_ga19a57d9d2eafd32ee130c0f526906719}\label{group__mouse_ga19a57d9d2eafd32ee130c0f526906719}} 
+\index{mouse@{mouse}!SET\_REMOTE\_MODE@{SET\_REMOTE\_MODE}}
+\index{SET\_REMOTE\_MODE@{SET\_REMOTE\_MODE}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{SET\_REMOTE\_MODE}{SET\_REMOTE\_MODE}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+O\+DE~0x\+F0}
+
+\mbox{\Hypertarget{group__mouse_gaabf49b4a4d8ad72d202c8a7197058e35}\label{group__mouse_gaabf49b4a4d8ad72d202c8a7197058e35}} 
+\index{mouse@{mouse}!SET\_STREAM\_MODE@{SET\_STREAM\_MODE}}
+\index{SET\_STREAM\_MODE@{SET\_STREAM\_MODE}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{SET\_STREAM\_MODE}{SET\_STREAM\_MODE}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE~0x\+EA}
+
+\mbox{\Hypertarget{group__mouse_ga5ca1baba7129f2acebcc07cbbbde8736}\label{group__mouse_ga5ca1baba7129f2acebcc07cbbbde8736}} 
+\index{mouse@{mouse}!WRITE\_MOUSE@{WRITE\_MOUSE}}
+\index{WRITE\_MOUSE@{WRITE\_MOUSE}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{WRITE\_MOUSE}{WRITE\_MOUSE}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+M\+O\+U\+SE~0x\+D4}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__mouse_gac7aa3e494e115ca0a8b43d096448426c}\label{group__mouse_gac7aa3e494e115ca0a8b43d096448426c}} 
+\index{mouse@{mouse}!mouse\_data\_reporting@{mouse\_data\_reporting}}
+\index{mouse\_data\_reporting@{mouse\_data\_reporting}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_data\_reporting()}{mouse\_data\_reporting()}}
+{\footnotesize\ttfamily int mouse\+\_\+data\+\_\+reporting (\begin{DoxyParamCaption}\item[{bool}]{en }\end{DoxyParamCaption})}
+
+
+
+Enable or Disable Data Reporting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em en} & True if Enable, False if Disable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if OK, 1 if N\+O\+T\+\_\+\+OK 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_gac7aa3e494e115ca0a8b43d096448426c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{group__mouse_gac7aa3e494e115ca0a8b43d096448426c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga210374b50462acdedab00df64d5cea3c}\label{group__mouse_ga210374b50462acdedab00df64d5cea3c}} 
+\index{mouse@{mouse}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mouse interrupt handler. 
+
+Grab the scancodes from output buffer Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{group__mouse_ga210374b50462acdedab00df64d5cea3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga210374b50462acdedab00df64d5cea3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga20285aed4b3ef45812cd967532dd09db}\label{group__mouse_ga20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse@{mouse}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Mouse interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{group__mouse_ga20285aed4b3ef45812cd967532dd09db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{group__mouse_ga20285aed4b3ef45812cd967532dd09db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}\label{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse@{mouse}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga8c054e7d95d71c3fc2a26b9df115918a}\label{group__mouse_ga8c054e7d95d71c3fc2a26b9df115918a}} 
+\index{mouse@{mouse}!mouse\_write\_commands@{mouse\_write\_commands}}
+\index{mouse\_write\_commands@{mouse\_write\_commands}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_write\_commands()}{mouse\_write\_commands()}}
+{\footnotesize\ttfamily int mouse\+\_\+write\+\_\+commands (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Write commands to Mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Command to be written on register\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if OK, 1 if N\+O\+T\+\_\+\+OK 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga8c054e7d95d71c3fc2a26b9df115918a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga8c054e7d95d71c3fc2a26b9df115918a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_gad10ae4a81a7c67a6ab257aa4b445f583}\label{group__mouse_gad10ae4a81a7c67a6ab257aa4b445f583}} 
+\index{mouse@{mouse}!packet\_assemble@{packet\_assemble}}
+\index{packet\_assemble@{packet\_assemble}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{packet\_assemble()}{packet\_assemble()}}
+{\footnotesize\ttfamily void packet\+\_\+assemble (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pack }\end{DoxyParamCaption})}
+
+
+
+Assembles the packet according to the struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pack} & Pack that is going to be assembled \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{group__mouse_gad10ae4a81a7c67a6ab257aa4b445f583_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_gad10ae4a81a7c67a6ab257aa4b445f583_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga804f3ad295d12a6ded4e93b117b8dfb3}\label{group__mouse_ga804f3ad295d12a6ded4e93b117b8dfb3}} 
+\index{mouse@{mouse}!rev2comp@{rev2comp}}
+\index{rev2comp@{rev2comp}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{rev2comp()}{rev2comp()}}
+{\footnotesize\ttfamily uint16\+\_\+t rev2comp (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{num,  }\item[{struct packet $\ast$}]{p,  }\item[{uint8\+\_\+t}]{bit }\end{DoxyParamCaption})}
+
+
+
+Revert num from 2comp to no sign representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number to be reverted\\
+\hline
+{\em p} & packet which contains byte 0 to check B\+IT 4 or 5\\
+\hline
+{\em bit} & 4 or 5 depending on x-\/delta or y-\/delta\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No sign representation of num 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga804f3ad295d12a6ded4e93b117b8dfb3_icgraph}
+\end{center}
+\end{figure}

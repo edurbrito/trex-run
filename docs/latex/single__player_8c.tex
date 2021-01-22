@@ -1,0 +1,84 @@
+\hypertarget{single__player_8c}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/single\+\_\+player.c File Reference}
+\label{single__player_8c}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/single\_player.c@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/single\_player.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}main\+\_\+menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}single\+\_\+player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}score.\+h\char`\"{}}\newline
+Include dependency graph for single\+\_\+player.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{single__player_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___main___menu_ga97a08bed732e9bfb11e47b342b4aecea}{st\+S\+I\+N\+G\+L\+EP}} ()
+\item 
+void \mbox{\hyperlink{group___single___player_ga9e9cfcda3ff9124f2c9e353c6c92f5a3}{Play\+Kbd\+Event\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Event Handler for Keyboard on Play State. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___single___player_ga80e749a9e8f2c366a3ab4fbc7117e4f2}{Play\+Draw\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Play State Graphic \mbox{\hyperlink{struct_interface}{Interface}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{single__player_8c_ac6c464b0a83a481fee26175f6229c5cc}{counter}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{single__player_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}{scancodes}} \mbox{[}2\mbox{]}
+\item 
+bool \mbox{\hyperlink{single__player_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}{two\+\_\+byte\+\_\+code}}
+\item 
+\mbox{\hyperlink{struct_interface}{Interface}} \mbox{\hyperlink{single__player_8c_a29e5ddc97c8f8fd1d22cea106fcd54ff}{background}}
+\item 
+\mbox{\hyperlink{struct_trex}{Trex}} \mbox{\hyperlink{single__player_8c_a2c54d10c6e4fcecb507d7a8819276516}{trex}}
+\item 
+\mbox{\hyperlink{struct_main_menu_st_m}{Main\+Menu\+StM}} \mbox{\hyperlink{single__player_8c_abb33be10c6040033dbb3f530e827ecc6}{stm}}
+\item 
+\mbox{\hyperlink{struct_score}{Score}} \mbox{\hyperlink{single__player_8c_a94014506ee2a0c05dcb878c5f6a1ce0f}{score}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{single__player_8c_a29e5ddc97c8f8fd1d22cea106fcd54ff}\label{single__player_8c_a29e5ddc97c8f8fd1d22cea106fcd54ff}} 
+\index{single\_player.c@{single\_player.c}!background@{background}}
+\index{background@{background}!single\_player.c@{single\_player.c}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_interface}{Interface}} background}
+
+\mbox{\Hypertarget{single__player_8c_ac6c464b0a83a481fee26175f6229c5cc}\label{single__player_8c_ac6c464b0a83a481fee26175f6229c5cc}} 
+\index{single\_player.c@{single\_player.c}!counter@{counter}}
+\index{counter@{counter}!single\_player.c@{single\_player.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily unsigned int counter}
+
+\mbox{\Hypertarget{single__player_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}\label{single__player_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}} 
+\index{single\_player.c@{single\_player.c}!scancodes@{scancodes}}
+\index{scancodes@{scancodes}!single\_player.c@{single\_player.c}}
+\doxysubsubsection{\texorpdfstring{scancodes}{scancodes}}
+{\footnotesize\ttfamily uint8\+\_\+t scancodes\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{single__player_8c_a94014506ee2a0c05dcb878c5f6a1ce0f}\label{single__player_8c_a94014506ee2a0c05dcb878c5f6a1ce0f}} 
+\index{single\_player.c@{single\_player.c}!score@{score}}
+\index{score@{score}!single\_player.c@{single\_player.c}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_score}{Score}} score}
+
+\mbox{\Hypertarget{single__player_8c_abb33be10c6040033dbb3f530e827ecc6}\label{single__player_8c_abb33be10c6040033dbb3f530e827ecc6}} 
+\index{single\_player.c@{single\_player.c}!stm@{stm}}
+\index{stm@{stm}!single\_player.c@{single\_player.c}}
+\doxysubsubsection{\texorpdfstring{stm}{stm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_main_menu_st_m}{Main\+Menu\+StM}} stm}
+
+\mbox{\Hypertarget{single__player_8c_a2c54d10c6e4fcecb507d7a8819276516}\label{single__player_8c_a2c54d10c6e4fcecb507d7a8819276516}} 
+\index{single\_player.c@{single\_player.c}!trex@{trex}}
+\index{trex@{trex}!single\_player.c@{single\_player.c}}
+\doxysubsubsection{\texorpdfstring{trex}{trex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_trex}{Trex}} trex}
+
+\mbox{\Hypertarget{single__player_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}\label{single__player_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}} 
+\index{single\_player.c@{single\_player.c}!two\_byte\_code@{two\_byte\_code}}
+\index{two\_byte\_code@{two\_byte\_code}!single\_player.c@{single\_player.c}}
+\doxysubsubsection{\texorpdfstring{two\_byte\_code}{two\_byte\_code}}
+{\footnotesize\ttfamily bool two\+\_\+byte\+\_\+code}
+

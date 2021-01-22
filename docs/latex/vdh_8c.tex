@@ -1,0 +1,111 @@
+\hypertarget{vdh_8c}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/vdh.c File Reference}
+\label{vdh_8c}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/vdh.c@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/vdh.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vdh.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for vdh.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vdh_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___vdh_ga16d73f78d19c944e160e8b3e7024f0cd}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t mode)
+\item 
+int \mbox{\hyperlink{group___vdh_ga0871aeb2df729976dbffacf9c738b11b}{vbe\+\_\+get\+\_\+info}} (uint16\+\_\+t mode)
+\item 
+int() \mbox{\hyperlink{group___vdh_gaaad6f9e5e5c976c41adacd068b4eb6ba}{vg\+\_\+draw\+\_\+hline2}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color, void $\ast$buff)
+\item 
+int() \mbox{\hyperlink{group___vdh_gadfeb1e403e26a57c2e1dc3452f8bc8ba}{vg\+\_\+draw\+\_\+rectangle2}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color, void $\ast$buff)
+\item 
+int() \mbox{\hyperlink{group___vdh_ga31d38fd65e779ced838c1fd2a215667d}{change\+Pixel\+Color2}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, void $\ast$buff)
+\item 
+unsigned \mbox{\hyperlink{group___vdh_ga5c30cdd3eab0edd2734ab3871f7000c7}{get\+Bits\+Per\+Pixel}} ()
+\item 
+int \mbox{\hyperlink{group___vdh_ga9e1e245889a96a471a23b0e79ddb2333}{get\+Hres}} ()
+\item 
+int \mbox{\hyperlink{group___vdh_gabf1983214d2197b9e42c20430f12de0a}{get\+Vres}} ()
+\item 
+void $\ast$ \mbox{\hyperlink{group___vdh_ga0c08a2af1d6d4064003add793f30b74a}{get\+\_\+vid\+\_\+mem}} ()
+\begin{DoxyCompactList}\small\item\em Returns video memory. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group___vdh_ga55c5883685bf347fccf094f10aa399e8}{get\+\_\+double\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns double buffer. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \mbox{\hyperlink{group___vdh_gac72f9cdd3785847a4ac65e7752c3e894}{get\+\_\+rd\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns a third buffer that is used to detect collisions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___vdh_ga497f4cb2694b612f486ec901dcdb8431}{change\+\_\+buffers}} ()
+\begin{DoxyCompactList}\small\item\em Copies memory from double buffer to video\+\_\+mem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \mbox{\hyperlink{vdh_8c_a5077a1a703b40b073dc6b5c1129ab0a1}{video\+\_\+mem}}
+\item 
+static char $\ast$ \mbox{\hyperlink{vdh_8c_aa3b05db7dca7a1fd396ecb42c0432467}{double\+\_\+buf}}
+\item 
+static unsigned char $\ast$ \mbox{\hyperlink{vdh_8c_ac6c92641b1af8449038ce59ef304d9c2}{rd\+\_\+buf}}
+\item 
+static unsigned \mbox{\hyperlink{vdh_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}{h\+\_\+res}}
+\item 
+static unsigned \mbox{\hyperlink{vdh_8c_a5bda1b499253a8fbf3cab646f8760391}{v\+\_\+res}}
+\item 
+static unsigned \mbox{\hyperlink{vdh_8c_a89fa3fb58e975d148fcb2413e24b78a1}{bits\+\_\+per\+\_\+pixel}}
+\item 
+static vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{vdh_8c_aa77c01a656548f7526be497c36f75866}{vbe}}
+\item 
+static mmap\+\_\+t \mbox{\hyperlink{vdh_8c_ababd4eb643749518207160e3c6e4e627}{map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{vdh_8c_a89fa3fb58e975d148fcb2413e24b78a1}\label{vdh_8c_a89fa3fb58e975d148fcb2413e24b78a1}} 
+\index{vdh.c@{vdh.c}!bits\_per\_pixel@{bits\_per\_pixel}}
+\index{bits\_per\_pixel@{bits\_per\_pixel}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{bits\_per\_pixel}{bits\_per\_pixel}}
+{\footnotesize\ttfamily unsigned bits\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{vdh_8c_aa3b05db7dca7a1fd396ecb42c0432467}\label{vdh_8c_aa3b05db7dca7a1fd396ecb42c0432467}} 
+\index{vdh.c@{vdh.c}!double\_buf@{double\_buf}}
+\index{double\_buf@{double\_buf}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{double\_buf}{double\_buf}}
+{\footnotesize\ttfamily char$\ast$ double\+\_\+buf\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{vdh_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}\label{vdh_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}} 
+\index{vdh.c@{vdh.c}!h\_res@{h\_res}}
+\index{h\_res@{h\_res}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{h\_res}{h\_res}}
+{\footnotesize\ttfamily unsigned h\+\_\+res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{vdh_8c_ababd4eb643749518207160e3c6e4e627}\label{vdh_8c_ababd4eb643749518207160e3c6e4e627}} 
+\index{vdh.c@{vdh.c}!map@{map}}
+\index{map@{map}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily mmap\+\_\+t map\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{vdh_8c_ac6c92641b1af8449038ce59ef304d9c2}\label{vdh_8c_ac6c92641b1af8449038ce59ef304d9c2}} 
+\index{vdh.c@{vdh.c}!rd\_buf@{rd\_buf}}
+\index{rd\_buf@{rd\_buf}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{rd\_buf}{rd\_buf}}
+{\footnotesize\ttfamily unsigned char$\ast$ rd\+\_\+buf\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{vdh_8c_a5bda1b499253a8fbf3cab646f8760391}\label{vdh_8c_a5bda1b499253a8fbf3cab646f8760391}} 
+\index{vdh.c@{vdh.c}!v\_res@{v\_res}}
+\index{v\_res@{v\_res}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{v\_res}{v\_res}}
+{\footnotesize\ttfamily unsigned v\+\_\+res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{vdh_8c_aa77c01a656548f7526be497c36f75866}\label{vdh_8c_aa77c01a656548f7526be497c36f75866}} 
+\index{vdh.c@{vdh.c}!vbe@{vbe}}
+\index{vbe@{vbe}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{vbe}{vbe}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t vbe\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{vdh_8c_a5077a1a703b40b073dc6b5c1129ab0a1}\label{vdh_8c_a5077a1a703b40b073dc6b5c1129ab0a1}} 
+\index{vdh.c@{vdh.c}!video\_mem@{video\_mem}}
+\index{video\_mem@{video\_mem}!vdh.c@{vdh.c}}
+\doxysubsubsection{\texorpdfstring{video\_mem}{video\_mem}}
+{\footnotesize\ttfamily void$\ast$ video\+\_\+mem\hspace{0.3cm}{\ttfamily [static]}}
+

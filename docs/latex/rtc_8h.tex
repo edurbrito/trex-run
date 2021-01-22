@@ -1,0 +1,61 @@
+\hypertarget{rtc_8h}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/rtc.h File Reference}
+\label{rtc_8h}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/rtc.h@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/rtc.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga4e22feb6ffbc1cda32fadff5c740dc51}{R\+T\+C\+\_\+\+I\+RQ}}~8
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga710b98232df2c563009e6f8a6cd18220}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}}~0x70
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga2f258a00c59c3f347c8d2d4a75471ce0}{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}}~0x71
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga8bc5e463885769f21393880576c25f6b}{S\+EC}}~0x00
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga82c6557ea3851dd884fe48509d789abf}{M\+I\+NT}}~0x02
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga4698ae12cf6a8acb5886fffd0ec897e6}{H\+O\+UR}}~0x04
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga509a01c55cbe47386fe24602b7c7fda1}{D\+AY}}~0x07
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga3729d06495d9713592f79f3122c9e677}{M\+O\+N\+TH}}~0x08
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga5871356500f559add06ea81d60331b1b}{Y\+E\+AR}}~0x09
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_gaa0e40d1cb9fea79e800aa79b8ca291f7}{R\+E\+G\+\_\+A}}~10
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga28ed75c6727784e56c2bb8d828c876c9}{R\+E\+G\+\_\+B}}~11
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga088e580de0961d5f30eb3366f97b324c}{R\+E\+G\+\_\+C}}~12
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga8f2a2da8b96e20112d3f225636392424}{R\+E\+G\+\_\+D}}~13
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_ga3e169c0bddfe65e8e57ee08307b36a66}{R\+E\+G\+AP}}~B\+IT(7)
+\item 
+\#define \mbox{\hyperlink{group___r_t_c_gafb6b9e3cf488830420a6d266aa995d60}{R\+E\+G\+BM}}~B\+IT(2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___r_t_c_ga5171a9c0f54940fe60f7500896afcc86}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables R\+TC interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___r_t_c_gab8f17bf5280c908c8b199a90fefcc758}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes R\+TC interrupts. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group___r_t_c_ga2f48be74e6a2fbcbf5d0331841099d1e}{rtc\+\_\+data}} (uint8\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Reads the content in the specified port. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group___r_t_c_gaae354aef8519b62ea1234752dde7db5d}{check\+\_\+bcd}} ()
+\begin{DoxyCompactList}\small\item\em Checks if data is in bcd. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c_ga119d7b2d19f5a9db3515b99e215ec5a3}{bcd\+\_\+to\+\_\+bin}} (uint32\+\_\+t $\ast$num)
+\begin{DoxyCompactList}\small\item\em Converts num to binary if it\textquotesingle{}s in bcd. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___r_t_c_ga2612ab4da31e866317aedbbc8cdadbc4}{is\+Updating}} ()
+\begin{DoxyCompactList}\small\item\em Checks if R\+TC is updating. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c_ga14af1c4c1b299edb657641a0daa2eef8}{get\+\_\+time}} (uint32\+\_\+t $\ast$sec, uint32\+\_\+t $\ast$min, uint32\+\_\+t $\ast$hour)
+\begin{DoxyCompactList}\small\item\em Reads time from the R\+TC if it\textquotesingle{}s not updating. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_c_gafeffa208f3d89fab9e401c534ef0a272}{get\+\_\+date}} (uint32\+\_\+t $\ast$day, uint32\+\_\+t $\ast$month, uint32\+\_\+t $\ast$year)
+\begin{DoxyCompactList}\small\item\em Reads date from the R\+TC if it\textquotesingle{}s not updating. \end{DoxyCompactList}\end{DoxyCompactItemize}

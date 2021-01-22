@@ -1,0 +1,374 @@
+\hypertarget{group___bitmap}{}\doxysection{bitmap}
+\label{group___bitmap}\index{bitmap@{bitmap}}
+
+
+Functions for using the bitmap assets.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_bitmap_file_header}{Bitmap\+File\+Header}}
+\item 
+struct \mbox{\hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}}
+\item 
+struct \mbox{\hyperlink{struct_bitmap}{Bitmap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___bitmap_ga9148c18156d7120a3cea5be0d59810d0}{pink\+\_\+first\+\_\+byte}}~0x1f
+\item 
+\#define \mbox{\hyperlink{group___bitmap_ga603eb7046abe2e43a7ac3c19be9553f1}{pink\+\_\+second\+\_\+byte}}~0xf8
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} \{ \mbox{\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305}{A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6}{A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}}, 
+\mbox{\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354}{A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}}
+ \}
+\item 
+enum \mbox{\hyperlink{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}{Buffer}} \{ \mbox{\hyperlink{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a3f6dbfa8692817b3d10fc878d459a14f}{R\+E\+A\+L\+\_\+\+B\+U\+F\+F\+ER}}, 
+\mbox{\hyperlink{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a9b75da7e04ec3aecda0594b559b339b5}{S\+E\+C\+O\+N\+D\+\_\+\+B\+U\+F\+F\+ER}}, 
+\mbox{\hyperlink{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a8432afc667a8f885e90f18b571ee435d}{T\+H\+I\+R\+D\+\_\+\+B\+U\+F\+F\+ER}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga83b894655c230a75c2131959768b554f}{draw\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} alignment, \mbox{\hyperlink{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}{Buffer}} buffer)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___bitmap_ga52585436362e08751c81132c68eed21e}{draw\+Bitmap\+\_\+collision}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} alignment)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a collision in each pixel in the 3rd buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap and frees the allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short \mbox{\hyperlink{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63}{type}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}{size}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced}{reserved}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c}{offset}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}{size}}
+\item 
+int \mbox{\hyperlink{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4}{width}}
+\item 
+int \mbox{\hyperlink{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534}{height}}
+\item 
+unsigned short \mbox{\hyperlink{group___bitmap_ga8c89d091e05544a82dc2398eed99634f}{planes}}
+\item 
+unsigned short \mbox{\hyperlink{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534}{bits}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3}{compression}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_gadcd57a0168319e747bc8099218d3822c}{image\+Size}}
+\item 
+int \mbox{\hyperlink{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5}{x\+Resolution}}
+\item 
+int \mbox{\hyperlink{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3}{y\+Resolution}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_gaed4506bad904845183194f199f1bdb98}{n\+Colors}}
+\item 
+unsigned int \mbox{\hyperlink{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0}{important\+Colors}}
+\item 
+\mbox{\hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}} \mbox{\hyperlink{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313}{bitmap\+Info\+Header}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0}{bitmap\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the bitmap assets. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___bitmap_ga9148c18156d7120a3cea5be0d59810d0}\label{group___bitmap_ga9148c18156d7120a3cea5be0d59810d0}} 
+\index{bitmap@{bitmap}!pink\_first\_byte@{pink\_first\_byte}}
+\index{pink\_first\_byte@{pink\_first\_byte}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{pink\_first\_byte}{pink\_first\_byte}}
+{\footnotesize\ttfamily \#define pink\+\_\+first\+\_\+byte~0x1f}
+
+\mbox{\Hypertarget{group___bitmap_ga603eb7046abe2e43a7ac3c19be9553f1}\label{group___bitmap_ga603eb7046abe2e43a7ac3c19be9553f1}} 
+\index{bitmap@{bitmap}!pink\_second\_byte@{pink\_second\_byte}}
+\index{pink\_second\_byte@{pink\_second\_byte}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{pink\_second\_byte}{pink\_second\_byte}}
+{\footnotesize\ttfamily \#define pink\+\_\+second\+\_\+byte~0xf8}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}\label{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}} 
+\index{bitmap@{bitmap}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{Alignment}{Alignment}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALIGN\_LEFT@{ALIGN\_LEFT}!bitmap@{bitmap}}\index{bitmap@{bitmap}!ALIGN\_LEFT@{ALIGN\_LEFT}}}\mbox{\Hypertarget{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305}\label{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305}} 
+A\+L\+I\+G\+N\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALIGN\_CENTER@{ALIGN\_CENTER}!bitmap@{bitmap}}\index{bitmap@{bitmap}!ALIGN\_CENTER@{ALIGN\_CENTER}}}\mbox{\Hypertarget{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6}\label{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6}} 
+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALIGN\_RIGHT@{ALIGN\_RIGHT}!bitmap@{bitmap}}\index{bitmap@{bitmap}!ALIGN\_RIGHT@{ALIGN\_RIGHT}}}\mbox{\Hypertarget{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354}\label{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354}} 
+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}\label{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}} 
+\index{bitmap@{bitmap}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}{Buffer}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REAL\_BUFFER@{REAL\_BUFFER}!bitmap@{bitmap}}\index{bitmap@{bitmap}!REAL\_BUFFER@{REAL\_BUFFER}}}\mbox{\Hypertarget{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a3f6dbfa8692817b3d10fc878d459a14f}\label{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a3f6dbfa8692817b3d10fc878d459a14f}} 
+R\+E\+A\+L\+\_\+\+B\+U\+F\+F\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECOND\_BUFFER@{SECOND\_BUFFER}!bitmap@{bitmap}}\index{bitmap@{bitmap}!SECOND\_BUFFER@{SECOND\_BUFFER}}}\mbox{\Hypertarget{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a9b75da7e04ec3aecda0594b559b339b5}\label{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a9b75da7e04ec3aecda0594b559b339b5}} 
+S\+E\+C\+O\+N\+D\+\_\+\+B\+U\+F\+F\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{THIRD\_BUFFER@{THIRD\_BUFFER}!bitmap@{bitmap}}\index{bitmap@{bitmap}!THIRD\_BUFFER@{THIRD\_BUFFER}}}\mbox{\Hypertarget{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a8432afc667a8f885e90f18b571ee435d}\label{group___bitmap_gga92830fcb909115d88f2dfeb3972d6211a8432afc667a8f885e90f18b571ee435d}} 
+T\+H\+I\+R\+D\+\_\+\+B\+U\+F\+F\+ER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}\label{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}} 
+\index{bitmap@{bitmap}!deleteBitmap@{deleteBitmap}}
+\index{deleteBitmap@{deleteBitmap}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{deleteBitmap()}{deleteBitmap()}}
+{\footnotesize\ttfamily void delete\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$}]{bmp }\end{DoxyParamCaption})}
+
+
+
+Destroys the given bitmap and frees the allocated memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bmp} & bitmap to be freed \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___bitmap_ga83b894655c230a75c2131959768b554f}\label{group___bitmap_ga83b894655c230a75c2131959768b554f}} 
+\index{bitmap@{bitmap}!drawBitmap@{drawBitmap}}
+\index{drawBitmap@{drawBitmap}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{drawBitmap()}{drawBitmap()}}
+{\footnotesize\ttfamily void draw\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$}]{bmp,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}}}]{alignment,  }\item[{\mbox{\hyperlink{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}{Buffer}}}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Draws a bitmap at the given position x,y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & bitmap to be drawn \\
+\hline
+{\em x} & x-\/axis coordenate \\
+\hline
+{\em y} & y-\/axis coordenate \\
+\hline
+{\em alignment} & image alignment \\
+\hline
+{\em buffer} & select Buffer to draw \mbox{\hyperlink{struct_bitmap}{Bitmap}} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{group___bitmap_ga83b894655c230a75c2131959768b554f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___bitmap_ga83b894655c230a75c2131959768b554f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___bitmap_ga52585436362e08751c81132c68eed21e}\label{group___bitmap_ga52585436362e08751c81132c68eed21e}} 
+\index{bitmap@{bitmap}!drawBitmap\_collision@{drawBitmap\_collision}}
+\index{drawBitmap\_collision@{drawBitmap\_collision}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{drawBitmap\_collision()}{drawBitmap\_collision()}}
+{\footnotesize\ttfamily int draw\+Bitmap\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$}]{bmp,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}}}]{alignment }\end{DoxyParamCaption})}
+
+
+
+Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a collision in each pixel in the 3rd buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & bitmap to be drawn \\
+\hline
+{\em x} & x-\/axis coordenate \\
+\hline
+{\em y} & y-\/axis coordenate \\
+\hline
+{\em alignment} & image alignment \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{group___bitmap_ga52585436362e08751c81132c68eed21e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___bitmap_ga52585436362e08751c81132c68eed21e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}\label{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}} 
+\index{bitmap@{bitmap}!loadBitmap@{loadBitmap}}
+\index{loadBitmap@{loadBitmap}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{loadBitmap()}{loadBitmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ load\+Bitmap (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads a bmp image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path of the image to be loaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the image buffer 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0}\label{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0}} 
+\index{bitmap@{bitmap}!bitmapData@{bitmapData}}
+\index{bitmapData@{bitmapData}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{bitmapData}{bitmapData}}
+{\footnotesize\ttfamily unsigned char$\ast$ bitmap\+Data}
+
+\mbox{\Hypertarget{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313}\label{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313}} 
+\index{bitmap@{bitmap}!bitmapInfoHeader@{bitmapInfoHeader}}
+\index{bitmapInfoHeader@{bitmapInfoHeader}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{bitmapInfoHeader}{bitmapInfoHeader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}} bitmap\+Info\+Header}
+
+\mbox{\Hypertarget{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534}\label{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534}} 
+\index{bitmap@{bitmap}!bits@{bits}}
+\index{bits@{bits}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{bits}{bits}}
+{\footnotesize\ttfamily unsigned short bits}
+
+\mbox{\Hypertarget{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3}\label{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3}} 
+\index{bitmap@{bitmap}!compression@{compression}}
+\index{compression@{compression}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{compression}{compression}}
+{\footnotesize\ttfamily unsigned int compression}
+
+\mbox{\Hypertarget{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534}\label{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534}} 
+\index{bitmap@{bitmap}!height@{height}}
+\index{height@{height}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int height}
+
+\mbox{\Hypertarget{group___bitmap_gadcd57a0168319e747bc8099218d3822c}\label{group___bitmap_gadcd57a0168319e747bc8099218d3822c}} 
+\index{bitmap@{bitmap}!imageSize@{imageSize}}
+\index{imageSize@{imageSize}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{imageSize}{imageSize}}
+{\footnotesize\ttfamily unsigned int image\+Size}
+
+\mbox{\Hypertarget{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0}\label{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0}} 
+\index{bitmap@{bitmap}!importantColors@{importantColors}}
+\index{importantColors@{importantColors}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{importantColors}{importantColors}}
+{\footnotesize\ttfamily unsigned int important\+Colors}
+
+\mbox{\Hypertarget{group___bitmap_gaed4506bad904845183194f199f1bdb98}\label{group___bitmap_gaed4506bad904845183194f199f1bdb98}} 
+\index{bitmap@{bitmap}!nColors@{nColors}}
+\index{nColors@{nColors}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{nColors}{nColors}}
+{\footnotesize\ttfamily unsigned int n\+Colors}
+
+\mbox{\Hypertarget{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c}\label{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c}} 
+\index{bitmap@{bitmap}!offset@{offset}}
+\index{offset@{offset}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily unsigned int offset}
+
+\mbox{\Hypertarget{group___bitmap_ga8c89d091e05544a82dc2398eed99634f}\label{group___bitmap_ga8c89d091e05544a82dc2398eed99634f}} 
+\index{bitmap@{bitmap}!planes@{planes}}
+\index{planes@{planes}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{planes}{planes}}
+{\footnotesize\ttfamily unsigned short planes}
+
+\mbox{\Hypertarget{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced}\label{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced}} 
+\index{bitmap@{bitmap}!reserved@{reserved}}
+\index{reserved@{reserved}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily unsigned int reserved}
+
+\mbox{\Hypertarget{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}\label{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}} 
+\index{bitmap@{bitmap}!size@{size}}
+\index{size@{size}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{size}{size}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int size}
+
+\mbox{\Hypertarget{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}\label{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}} 
+\index{bitmap@{bitmap}!size@{size}}
+\index{size@{size}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{size}{size}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned int size}
+
+\mbox{\Hypertarget{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63}\label{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63}} 
+\index{bitmap@{bitmap}!type@{type}}
+\index{type@{type}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily unsigned short type}
+
+\mbox{\Hypertarget{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4}\label{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4}} 
+\index{bitmap@{bitmap}!width@{width}}
+\index{width@{width}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int width}
+
+\mbox{\Hypertarget{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5}\label{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5}} 
+\index{bitmap@{bitmap}!xResolution@{xResolution}}
+\index{xResolution@{xResolution}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{xResolution}{xResolution}}
+{\footnotesize\ttfamily int x\+Resolution}
+
+\mbox{\Hypertarget{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3}\label{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3}} 
+\index{bitmap@{bitmap}!yResolution@{yResolution}}
+\index{yResolution@{yResolution}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{yResolution}{yResolution}}
+{\footnotesize\ttfamily int y\+Resolution}
+

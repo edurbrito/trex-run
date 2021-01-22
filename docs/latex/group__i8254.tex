@@ -1,0 +1,364 @@
+\hypertarget{group__i8254}{}\doxysection{i8254}
+\label{group__i8254}\index{i8254@{i8254}}
+
+
+Constants for programming the i8254 Timer. Needs to be completed.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__i8254_gacf926951944b6cf370b7229ebd50dd8b}{T\+I\+M\+E\+R\+\_\+\+F\+R\+EQ}}~1193182
+\begin{DoxyCompactList}\small\item\em clock frequency for timer in PC and AT \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga30bf84c312af248cb81bb224e09f9ba8}{T\+I\+M\+E\+R0\+\_\+\+I\+RQ}}~0
+\begin{DoxyCompactList}\small\item\em Timer 0 I\+RQ line. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gacc9ff9df4a9674a1ce9ba08fc4a4679e}{T\+I\+M\+E\+R\+\_\+0}}~0x40
+\begin{DoxyCompactList}\small\item\em Timer 0 count register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gac62c99c2a9289891c1b83052242cca49}{T\+I\+M\+E\+R\+\_\+1}}~0x41
+\begin{DoxyCompactList}\small\item\em Timer 1 count register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga1f34f18ad0ab8cace46b615773b48735}{T\+I\+M\+E\+R\+\_\+2}}~0x42
+\begin{DoxyCompactList}\small\item\em Timer 2 count register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga282832448fb0281ef53d243c1cd48491}{T\+I\+M\+E\+R\+\_\+\+C\+T\+RL}}~0x43
+\begin{DoxyCompactList}\small\item\em Control register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga51b3a5e3d4811ca063fe25e35560ab40}{S\+P\+E\+A\+K\+E\+R\+\_\+\+C\+T\+RL}}~0x61
+\begin{DoxyCompactList}\small\item\em Register for speaker control ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga6a4822642d40c248435692324a818010}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L0}}~0x00
+\begin{DoxyCompactList}\small\item\em Control Word for Timer 0. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga8349623fd8d99f9cc5d8ae29d78594fc}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L1}}~B\+IT(6)
+\begin{DoxyCompactList}\small\item\em Control Word for Timer 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga142a255de0dbc48aeabd45fc10c33672}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L2}}~B\+IT(7)
+\begin{DoxyCompactList}\small\item\em Control Word for Timer 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga4c2eecbfb96744a9c2af71dba75ecb18}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+MD}}~(B\+IT(7) $\vert$ B\+IT(6))
+\begin{DoxyCompactList}\small\item\em Read Back Command. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{T\+I\+M\+E\+R\+\_\+\+L\+SB}}~B\+IT(4)
+\begin{DoxyCompactList}\small\item\em Initialize Counter L\+SB only. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{T\+I\+M\+E\+R\+\_\+\+M\+SB}}~B\+IT(5)
+\begin{DoxyCompactList}\small\item\em Initialize Counter M\+SB only. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga8c0f1933323274c765e23837e4fbc8c7}{T\+I\+M\+E\+R\+\_\+\+L\+S\+B\+\_\+\+M\+SB}}~(\mbox{\hyperlink{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{T\+I\+M\+E\+R\+\_\+\+L\+SB}} $\vert$ \mbox{\hyperlink{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{T\+I\+M\+E\+R\+\_\+\+M\+SB}})
+\begin{DoxyCompactList}\small\item\em Initialize L\+SB first and M\+SB afterwards. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga4745cbf21da3d3fea5dbb080b2b73bac}{T\+I\+M\+E\+R\+\_\+\+S\+Q\+R\+\_\+\+W\+A\+VE}}~(B\+IT(2) $\vert$ B\+IT(1))
+\begin{DoxyCompactList}\small\item\em Mode 3\+: square wave generator. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga5d4449e0fa1cf4a4d107a48a04a1265f}{T\+I\+M\+E\+R\+\_\+\+R\+A\+T\+E\+\_\+\+G\+EN}}~B\+IT(2)
+\begin{DoxyCompactList}\small\item\em Mode 2\+: rate generator. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga325b992a371d5d981c4eceff42fa5956}{T\+I\+M\+E\+R\+\_\+\+B\+CD}}~0x01
+\begin{DoxyCompactList}\small\item\em Count in B\+CD. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_gad2913dcf2f91453317bd035589ac0a7d}{T\+I\+M\+E\+R\+\_\+\+B\+IN}}~0x00
+\begin{DoxyCompactList}\small\item\em Count in binary. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8254_ga6c248216df24b5e9d907d126d80bd195}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+O\+U\+N\+T\+\_\+}}~B\+IT(5)
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga08b4952bb7058684a3f8f66be04dd45e}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+}}~B\+IT(4)
+\item 
+\#define \mbox{\hyperlink{group__i8254_gaf598b17740e07842a0545af512714711}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+EL}}(n)~B\+IT((n) + 1)
+\item 
+\#define \mbox{\hyperlink{group__i8254_gae2332e4f11de1236d2fc0154ed9951c9}{N\+O\+T\+\_\+\+OK}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga0dd0def9d0d1f83eab3aa811bedbc3e4}{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+I\+ME}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gab9d72f5b28591de763472d07f5598bbe}{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+I\+M\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gad8ca0fbb0dff4747b03935a19aa82c25}{I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+R\+EQ}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga3603a3f0758fec64c59a875c815f9cc8}{I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+I\+E\+LD}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga8af3cea4f83bcfe8c0e46afce75b7ce4}{O\+U\+T\+B\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga6f9f26e824ea9ca7fe070e05094256b3}{S\+E\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga0477f0da394da504039da21b4610d6d8}{D\+I\+S\+A\+B\+L\+E\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga4e44c039077afd82e39fbc19b9f7c9af}{R\+M\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga2e3147fb586e4242a302deb4d34432d0}{G\+E\+T\+\_\+\+C\+O\+N\+F\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gab6346466b716eb0af06b90e77ccd5f04}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+F\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_ga7a9969d1de847aef9a04bb7975ef0036}{S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+F\+A\+IL}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8254_gad23eff0553691535ebbe34da8c582b71}{U\+N\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+F\+A\+IL}}~1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants for programming the i8254 Timer. Needs to be completed. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__i8254_ga0477f0da394da504039da21b4610d6d8}\label{group__i8254_ga0477f0da394da504039da21b4610d6d8}} 
+\index{i8254@{i8254}!DISABLE\_FAIL@{DISABLE\_FAIL}}
+\index{DISABLE\_FAIL@{DISABLE\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{DISABLE\_FAIL}{DISABLE\_FAIL}}
+{\footnotesize\ttfamily \#define D\+I\+S\+A\+B\+L\+E\+\_\+\+F\+A\+IL~1}
+
+\mbox{\Hypertarget{group__i8254_gab6346466b716eb0af06b90e77ccd5f04}\label{group__i8254_gab6346466b716eb0af06b90e77ccd5f04}} 
+\index{i8254@{i8254}!DISPLAY\_CONF\_FAIL@{DISPLAY\_CONF\_FAIL}}
+\index{DISPLAY\_CONF\_FAIL@{DISPLAY\_CONF\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{DISPLAY\_CONF\_FAIL}{DISPLAY\_CONF\_FAIL}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+C\+O\+N\+F\+\_\+\+F\+A\+IL~1}
+
+\mbox{\Hypertarget{group__i8254_ga2e3147fb586e4242a302deb4d34432d0}\label{group__i8254_ga2e3147fb586e4242a302deb4d34432d0}} 
+\index{i8254@{i8254}!GET\_CONF\_FAIL@{GET\_CONF\_FAIL}}
+\index{GET\_CONF\_FAIL@{GET\_CONF\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{GET\_CONF\_FAIL}{GET\_CONF\_FAIL}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+C\+O\+N\+F\+\_\+\+F\+A\+IL~1}
+
+\mbox{\Hypertarget{group__i8254_ga3603a3f0758fec64c59a875c815f9cc8}\label{group__i8254_ga3603a3f0758fec64c59a875c815f9cc8}} 
+\index{i8254@{i8254}!INVALID\_FIELD@{INVALID\_FIELD}}
+\index{INVALID\_FIELD@{INVALID\_FIELD}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{INVALID\_FIELD}{INVALID\_FIELD}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+I\+E\+LD~1}
+
+\mbox{\Hypertarget{group__i8254_gad8ca0fbb0dff4747b03935a19aa82c25}\label{group__i8254_gad8ca0fbb0dff4747b03935a19aa82c25}} 
+\index{i8254@{i8254}!INVALID\_FREQ@{INVALID\_FREQ}}
+\index{INVALID\_FREQ@{INVALID\_FREQ}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{INVALID\_FREQ}{INVALID\_FREQ}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+F\+R\+EQ~1}
+
+\mbox{\Hypertarget{group__i8254_ga0dd0def9d0d1f83eab3aa811bedbc3e4}\label{group__i8254_ga0dd0def9d0d1f83eab3aa811bedbc3e4}} 
+\index{i8254@{i8254}!INVALID\_TIME@{INVALID\_TIME}}
+\index{INVALID\_TIME@{INVALID\_TIME}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{INVALID\_TIME}{INVALID\_TIME}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+I\+ME~1}
+
+\mbox{\Hypertarget{group__i8254_gab9d72f5b28591de763472d07f5598bbe}\label{group__i8254_gab9d72f5b28591de763472d07f5598bbe}} 
+\index{i8254@{i8254}!INVALID\_TIMER@{INVALID\_TIMER}}
+\index{INVALID\_TIMER@{INVALID\_TIMER}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{INVALID\_TIMER}{INVALID\_TIMER}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+I\+M\+ER~1}
+
+\mbox{\Hypertarget{group__i8254_gae2332e4f11de1236d2fc0154ed9951c9}\label{group__i8254_gae2332e4f11de1236d2fc0154ed9951c9}} 
+\index{i8254@{i8254}!NOT\_OK@{NOT\_OK}}
+\index{NOT\_OK@{NOT\_OK}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{NOT\_OK}{NOT\_OK}}
+{\footnotesize\ttfamily \#define N\+O\+T\+\_\+\+OK~1}
+
+\mbox{\Hypertarget{group__i8254_ga8af3cea4f83bcfe8c0e46afce75b7ce4}\label{group__i8254_ga8af3cea4f83bcfe8c0e46afce75b7ce4}} 
+\index{i8254@{i8254}!OUTB\_FAIL@{OUTB\_FAIL}}
+\index{OUTB\_FAIL@{OUTB\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{OUTB\_FAIL}{OUTB\_FAIL}}
+{\footnotesize\ttfamily \#define O\+U\+T\+B\+\_\+\+F\+A\+IL~1}
+
+\mbox{\Hypertarget{group__i8254_ga4e44c039077afd82e39fbc19b9f7c9af}\label{group__i8254_ga4e44c039077afd82e39fbc19b9f7c9af}} 
+\index{i8254@{i8254}!RM\_POLICY\_FAIL@{RM\_POLICY\_FAIL}}
+\index{RM\_POLICY\_FAIL@{RM\_POLICY\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{RM\_POLICY\_FAIL}{RM\_POLICY\_FAIL}}
+{\footnotesize\ttfamily \#define R\+M\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+F\+A\+IL~1}
+
+\mbox{\Hypertarget{group__i8254_ga6f9f26e824ea9ca7fe070e05094256b3}\label{group__i8254_ga6f9f26e824ea9ca7fe070e05094256b3}} 
+\index{i8254@{i8254}!SET\_POLICY\_FAIL@{SET\_POLICY\_FAIL}}
+\index{SET\_POLICY\_FAIL@{SET\_POLICY\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{SET\_POLICY\_FAIL}{SET\_POLICY\_FAIL}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+F\+A\+IL~1}
+
+\mbox{\Hypertarget{group__i8254_ga51b3a5e3d4811ca063fe25e35560ab40}\label{group__i8254_ga51b3a5e3d4811ca063fe25e35560ab40}} 
+\index{i8254@{i8254}!SPEAKER\_CTRL@{SPEAKER\_CTRL}}
+\index{SPEAKER\_CTRL@{SPEAKER\_CTRL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{SPEAKER\_CTRL}{SPEAKER\_CTRL}}
+{\footnotesize\ttfamily \#define S\+P\+E\+A\+K\+E\+R\+\_\+\+C\+T\+RL~0x61}
+
+
+
+Register for speaker control ~\newline
+ 
+
+\mbox{\Hypertarget{group__i8254_ga7a9969d1de847aef9a04bb7975ef0036}\label{group__i8254_ga7a9969d1de847aef9a04bb7975ef0036}} 
+\index{i8254@{i8254}!SUBSCRIBE\_FAIL@{SUBSCRIBE\_FAIL}}
+\index{SUBSCRIBE\_FAIL@{SUBSCRIBE\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{SUBSCRIBE\_FAIL}{SUBSCRIBE\_FAIL}}
+{\footnotesize\ttfamily \#define S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+F\+A\+IL~1}
+
+\mbox{\Hypertarget{group__i8254_ga30bf84c312af248cb81bb224e09f9ba8}\label{group__i8254_ga30bf84c312af248cb81bb224e09f9ba8}} 
+\index{i8254@{i8254}!TIMER0\_IRQ@{TIMER0\_IRQ}}
+\index{TIMER0\_IRQ@{TIMER0\_IRQ}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER0\_IRQ}{TIMER0\_IRQ}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R0\+\_\+\+I\+RQ~0}
+
+
+
+Timer 0 I\+RQ line. 
+
+\mbox{\Hypertarget{group__i8254_gacc9ff9df4a9674a1ce9ba08fc4a4679e}\label{group__i8254_gacc9ff9df4a9674a1ce9ba08fc4a4679e}} 
+\index{i8254@{i8254}!TIMER\_0@{TIMER\_0}}
+\index{TIMER\_0@{TIMER\_0}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_0}{TIMER\_0}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+0~0x40}
+
+
+
+Timer 0 count register. 
+
+\mbox{\Hypertarget{group__i8254_gac62c99c2a9289891c1b83052242cca49}\label{group__i8254_gac62c99c2a9289891c1b83052242cca49}} 
+\index{i8254@{i8254}!TIMER\_1@{TIMER\_1}}
+\index{TIMER\_1@{TIMER\_1}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_1}{TIMER\_1}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+1~0x41}
+
+
+
+Timer 1 count register. 
+
+\mbox{\Hypertarget{group__i8254_ga1f34f18ad0ab8cace46b615773b48735}\label{group__i8254_ga1f34f18ad0ab8cace46b615773b48735}} 
+\index{i8254@{i8254}!TIMER\_2@{TIMER\_2}}
+\index{TIMER\_2@{TIMER\_2}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_2}{TIMER\_2}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+2~0x42}
+
+
+
+Timer 2 count register. 
+
+\mbox{\Hypertarget{group__i8254_ga325b992a371d5d981c4eceff42fa5956}\label{group__i8254_ga325b992a371d5d981c4eceff42fa5956}} 
+\index{i8254@{i8254}!TIMER\_BCD@{TIMER\_BCD}}
+\index{TIMER\_BCD@{TIMER\_BCD}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_BCD}{TIMER\_BCD}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+B\+CD~0x01}
+
+
+
+Count in B\+CD. 
+
+\mbox{\Hypertarget{group__i8254_gad2913dcf2f91453317bd035589ac0a7d}\label{group__i8254_gad2913dcf2f91453317bd035589ac0a7d}} 
+\index{i8254@{i8254}!TIMER\_BIN@{TIMER\_BIN}}
+\index{TIMER\_BIN@{TIMER\_BIN}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_BIN}{TIMER\_BIN}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+B\+IN~0x00}
+
+
+
+Count in binary. 
+
+\mbox{\Hypertarget{group__i8254_ga282832448fb0281ef53d243c1cd48491}\label{group__i8254_ga282832448fb0281ef53d243c1cd48491}} 
+\index{i8254@{i8254}!TIMER\_CTRL@{TIMER\_CTRL}}
+\index{TIMER\_CTRL@{TIMER\_CTRL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_CTRL}{TIMER\_CTRL}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+C\+T\+RL~0x43}
+
+
+
+Control register. 
+
+\mbox{\Hypertarget{group__i8254_gacf926951944b6cf370b7229ebd50dd8b}\label{group__i8254_gacf926951944b6cf370b7229ebd50dd8b}} 
+\index{i8254@{i8254}!TIMER\_FREQ@{TIMER\_FREQ}}
+\index{TIMER\_FREQ@{TIMER\_FREQ}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_FREQ}{TIMER\_FREQ}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+F\+R\+EQ~1193182}
+
+
+
+clock frequency for timer in PC and AT 
+
+\mbox{\Hypertarget{group__i8254_gac18cb814ebd0d67235392c330e0e3504}\label{group__i8254_gac18cb814ebd0d67235392c330e0e3504}} 
+\index{i8254@{i8254}!TIMER\_LSB@{TIMER\_LSB}}
+\index{TIMER\_LSB@{TIMER\_LSB}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_LSB}{TIMER\_LSB}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+L\+SB~B\+IT(4)}
+
+
+
+Initialize Counter L\+SB only. 
+
+\mbox{\Hypertarget{group__i8254_ga8c0f1933323274c765e23837e4fbc8c7}\label{group__i8254_ga8c0f1933323274c765e23837e4fbc8c7}} 
+\index{i8254@{i8254}!TIMER\_LSB\_MSB@{TIMER\_LSB\_MSB}}
+\index{TIMER\_LSB\_MSB@{TIMER\_LSB\_MSB}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_LSB\_MSB}{TIMER\_LSB\_MSB}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+L\+S\+B\+\_\+\+M\+SB~(\mbox{\hyperlink{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{T\+I\+M\+E\+R\+\_\+\+L\+SB}} $\vert$ \mbox{\hyperlink{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{T\+I\+M\+E\+R\+\_\+\+M\+SB}})}
+
+
+
+Initialize L\+SB first and M\+SB afterwards. 
+
+\mbox{\Hypertarget{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}\label{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}} 
+\index{i8254@{i8254}!TIMER\_MSB@{TIMER\_MSB}}
+\index{TIMER\_MSB@{TIMER\_MSB}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_MSB}{TIMER\_MSB}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+M\+SB~B\+IT(5)}
+
+
+
+Initialize Counter M\+SB only. 
+
+\mbox{\Hypertarget{group__i8254_ga5d4449e0fa1cf4a4d107a48a04a1265f}\label{group__i8254_ga5d4449e0fa1cf4a4d107a48a04a1265f}} 
+\index{i8254@{i8254}!TIMER\_RATE\_GEN@{TIMER\_RATE\_GEN}}
+\index{TIMER\_RATE\_GEN@{TIMER\_RATE\_GEN}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_RATE\_GEN}{TIMER\_RATE\_GEN}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+R\+A\+T\+E\+\_\+\+G\+EN~B\+IT(2)}
+
+
+
+Mode 2\+: rate generator. 
+
+\mbox{\Hypertarget{group__i8254_ga4c2eecbfb96744a9c2af71dba75ecb18}\label{group__i8254_ga4c2eecbfb96744a9c2af71dba75ecb18}} 
+\index{i8254@{i8254}!TIMER\_RB\_CMD@{TIMER\_RB\_CMD}}
+\index{TIMER\_RB\_CMD@{TIMER\_RB\_CMD}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_RB\_CMD}{TIMER\_RB\_CMD}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+MD~(B\+IT(7) $\vert$ B\+IT(6))}
+
+
+
+Read Back Command. 
+
+\mbox{\Hypertarget{group__i8254_ga6c248216df24b5e9d907d126d80bd195}\label{group__i8254_ga6c248216df24b5e9d907d126d80bd195}} 
+\index{i8254@{i8254}!TIMER\_RB\_COUNT\_@{TIMER\_RB\_COUNT\_}}
+\index{TIMER\_RB\_COUNT\_@{TIMER\_RB\_COUNT\_}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_RB\_COUNT\_}{TIMER\_RB\_COUNT\_}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+O\+U\+N\+T\+\_\+~B\+IT(5)}
+
+\mbox{\Hypertarget{group__i8254_gaf598b17740e07842a0545af512714711}\label{group__i8254_gaf598b17740e07842a0545af512714711}} 
+\index{i8254@{i8254}!TIMER\_RB\_SEL@{TIMER\_RB\_SEL}}
+\index{TIMER\_RB\_SEL@{TIMER\_RB\_SEL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_RB\_SEL}{TIMER\_RB\_SEL}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+EL(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~B\+IT((n) + 1)}
+
+\mbox{\Hypertarget{group__i8254_ga08b4952bb7058684a3f8f66be04dd45e}\label{group__i8254_ga08b4952bb7058684a3f8f66be04dd45e}} 
+\index{i8254@{i8254}!TIMER\_RB\_STATUS\_@{TIMER\_RB\_STATUS\_}}
+\index{TIMER\_RB\_STATUS\_@{TIMER\_RB\_STATUS\_}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_RB\_STATUS\_}{TIMER\_RB\_STATUS\_}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+~B\+IT(4)}
+
+\mbox{\Hypertarget{group__i8254_ga6a4822642d40c248435692324a818010}\label{group__i8254_ga6a4822642d40c248435692324a818010}} 
+\index{i8254@{i8254}!TIMER\_SEL0@{TIMER\_SEL0}}
+\index{TIMER\_SEL0@{TIMER\_SEL0}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_SEL0}{TIMER\_SEL0}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+S\+E\+L0~0x00}
+
+
+
+Control Word for Timer 0. 
+
+\mbox{\Hypertarget{group__i8254_ga8349623fd8d99f9cc5d8ae29d78594fc}\label{group__i8254_ga8349623fd8d99f9cc5d8ae29d78594fc}} 
+\index{i8254@{i8254}!TIMER\_SEL1@{TIMER\_SEL1}}
+\index{TIMER\_SEL1@{TIMER\_SEL1}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_SEL1}{TIMER\_SEL1}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+S\+E\+L1~B\+IT(6)}
+
+
+
+Control Word for Timer 1. 
+
+\mbox{\Hypertarget{group__i8254_ga142a255de0dbc48aeabd45fc10c33672}\label{group__i8254_ga142a255de0dbc48aeabd45fc10c33672}} 
+\index{i8254@{i8254}!TIMER\_SEL2@{TIMER\_SEL2}}
+\index{TIMER\_SEL2@{TIMER\_SEL2}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_SEL2}{TIMER\_SEL2}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+S\+E\+L2~B\+IT(7)}
+
+
+
+Control Word for Timer 2. 
+
+\mbox{\Hypertarget{group__i8254_ga4745cbf21da3d3fea5dbb080b2b73bac}\label{group__i8254_ga4745cbf21da3d3fea5dbb080b2b73bac}} 
+\index{i8254@{i8254}!TIMER\_SQR\_WAVE@{TIMER\_SQR\_WAVE}}
+\index{TIMER\_SQR\_WAVE@{TIMER\_SQR\_WAVE}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{TIMER\_SQR\_WAVE}{TIMER\_SQR\_WAVE}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+S\+Q\+R\+\_\+\+W\+A\+VE~(B\+IT(2) $\vert$ B\+IT(1))}
+
+
+
+Mode 3\+: square wave generator. 
+
+\mbox{\Hypertarget{group__i8254_gad23eff0553691535ebbe34da8c582b71}\label{group__i8254_gad23eff0553691535ebbe34da8c582b71}} 
+\index{i8254@{i8254}!UNSUBSCRIBE\_FAIL@{UNSUBSCRIBE\_FAIL}}
+\index{UNSUBSCRIBE\_FAIL@{UNSUBSCRIBE\_FAIL}!i8254@{i8254}}
+\doxysubsubsection{\texorpdfstring{UNSUBSCRIBE\_FAIL}{UNSUBSCRIBE\_FAIL}}
+{\footnotesize\ttfamily \#define U\+N\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+F\+A\+IL~1}
+

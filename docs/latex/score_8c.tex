@@ -1,0 +1,79 @@
+\hypertarget{score_8c}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/score.c File Reference}
+\label{score_8c}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/score.c@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/score.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}main\+\_\+menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}single\+\_\+player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}score.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for score.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{score_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___score_gaa0dce4fd0ae30476d730edcfee2a0f03}{read\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Read Scores from File. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_gae103b6fea2d41881b821fff74047d2ac}{update\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Update Scores from Current \mbox{\hyperlink{struct_score}{Score}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___score_gad74615239c109d8b38a5d2de9fe67450}{write\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Write Scores to File. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___main___menu_ga8015124af1c35b13fec728f2a6aca19d}{st\+S\+C\+O\+R\+ES}} ()
+\item 
+void \mbox{\hyperlink{group___score_gaecd8345054ba976570503e96d8df6d86}{Score\+Mouse\+Event\+Handler}} (struct packet p)
+\begin{DoxyCompactList}\small\item\em Event Handler for Mouse on \mbox{\hyperlink{struct_score}{Score}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_gaf1e69867eb080a9d87ae6921cc35f4ed}{Score\+Kbd\+Event\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Event Handler for Keyboard on \mbox{\hyperlink{struct_score}{Score}} State. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_gacae0d016c0dedb2b243adfca34e3e888}{draw\+Digits}} (int value, int h, int v, int n)
+\begin{DoxyCompactList}\small\item\em Draw Digits on Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_ga855be5f6660985625b8e81c8779601df}{Scores\+Draw\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Scores Graphic \mbox{\hyperlink{struct_interface}{Interface}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{score_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}{scancodes}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{struct_score}{Score}} \mbox{\hyperlink{score_8c_a94014506ee2a0c05dcb878c5f6a1ce0f}{score}}
+\item 
+\mbox{\hyperlink{struct_main_menu_st_m}{Main\+Menu\+StM}} \mbox{\hyperlink{score_8c_abb33be10c6040033dbb3f530e827ecc6}{stm}}
+\item 
+\mbox{\hyperlink{struct_interface}{Interface}} \mbox{\hyperlink{score_8c_a29e5ddc97c8f8fd1d22cea106fcd54ff}{background}}
+\item 
+static \mbox{\hyperlink{struct_hi_scores}{Hi\+Scores}} \mbox{\hyperlink{score_8c_a225d102b5910701747d3b5ccbf0c67e4}{hiscores}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{score_8c_a29e5ddc97c8f8fd1d22cea106fcd54ff}\label{score_8c_a29e5ddc97c8f8fd1d22cea106fcd54ff}} 
+\index{score.c@{score.c}!background@{background}}
+\index{background@{background}!score.c@{score.c}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_interface}{Interface}} background}
+
+\mbox{\Hypertarget{score_8c_a225d102b5910701747d3b5ccbf0c67e4}\label{score_8c_a225d102b5910701747d3b5ccbf0c67e4}} 
+\index{score.c@{score.c}!hiscores@{hiscores}}
+\index{hiscores@{hiscores}!score.c@{score.c}}
+\doxysubsubsection{\texorpdfstring{hiscores}{hiscores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hi_scores}{Hi\+Scores}} hiscores\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{score_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}\label{score_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}} 
+\index{score.c@{score.c}!scancodes@{scancodes}}
+\index{scancodes@{scancodes}!score.c@{score.c}}
+\doxysubsubsection{\texorpdfstring{scancodes}{scancodes}}
+{\footnotesize\ttfamily uint8\+\_\+t scancodes\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{score_8c_a94014506ee2a0c05dcb878c5f6a1ce0f}\label{score_8c_a94014506ee2a0c05dcb878c5f6a1ce0f}} 
+\index{score.c@{score.c}!score@{score}}
+\index{score@{score}!score.c@{score.c}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_score}{Score}} score}
+
+\mbox{\Hypertarget{score_8c_abb33be10c6040033dbb3f530e827ecc6}\label{score_8c_abb33be10c6040033dbb3f530e827ecc6}} 
+\index{score.c@{score.c}!stm@{stm}}
+\index{stm@{stm}!score.c@{score.c}}
+\doxysubsubsection{\texorpdfstring{stm}{stm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_main_menu_st_m}{Main\+Menu\+StM}} stm}
+
