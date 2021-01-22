@@ -1,0 +1,1 @@
+cd src && make depend && make && lcom_run proj 117
