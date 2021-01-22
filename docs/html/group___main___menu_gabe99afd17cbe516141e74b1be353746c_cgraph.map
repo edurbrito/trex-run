@@ -1,0 +1,9 @@
+<map id="LoadBitmaps" name="LoadBitmaps">
+<area shape="rect" id="node1" title="Loads all the necessary images and initial data." alt="" coords="5,81,104,108"/>
+<area shape="rect" id="node2" href="$group___main___menu.html#ga0f17d97fd65719851e31f7427cd366b4" title="getHres Shortener" alt="" coords="177,5,215,32"/>
+<area shape="rect" id="node4" href="$group___bitmap.html#ga3506880ffd407c36eb8aaddd2c1606d2" title="Loads a bmp image." alt="" coords="153,56,239,83"/>
+<area shape="rect" id="node5" href="$group___score.html#gaa0dce4fd0ae30476d730edcfee2a0f03" title="Read Scores from File." alt="" coords="152,107,240,133"/>
+<area shape="rect" id="node6" href="$group___main___menu.html#ga8ccfb3b47fdee7d5755c504153677562" title="getVres Shortener" alt="" coords="177,157,215,184"/>
+<area shape="rect" id="node3" href="$group___vdh.html#ga9e1e245889a96a471a23b0e79ddb2333" title=" " alt="" coords="288,5,355,32"/>
+<area shape="rect" id="node7" href="$group___vdh.html#gabf1983214d2197b9e42c20430f12de0a" title=" " alt="" coords="288,157,355,184"/>
+</map>

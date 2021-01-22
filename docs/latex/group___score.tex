@@ -1,0 +1,195 @@
+\hypertarget{group___score}{}\doxysection{Score}
+\label{group___score}\index{Score@{Score}}
+
+
+Functions from the Scores Module.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___score_gaa0dce4fd0ae30476d730edcfee2a0f03}{read\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Read Scores from File. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_gae103b6fea2d41881b821fff74047d2ac}{update\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Update Scores from Current \mbox{\hyperlink{struct_score}{Score}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___score_gad74615239c109d8b38a5d2de9fe67450}{write\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Write Scores to File. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_gaecd8345054ba976570503e96d8df6d86}{Score\+Mouse\+Event\+Handler}} (struct packet p)
+\begin{DoxyCompactList}\small\item\em Event Handler for Mouse on \mbox{\hyperlink{struct_score}{Score}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_gaf1e69867eb080a9d87ae6921cc35f4ed}{Score\+Kbd\+Event\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Event Handler for Keyboard on \mbox{\hyperlink{struct_score}{Score}} State. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_gacae0d016c0dedb2b243adfca34e3e888}{draw\+Digits}} (int value, int h, int v, int n)
+\begin{DoxyCompactList}\small\item\em Draw Digits on Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___score_ga855be5f6660985625b8e81c8779601df}{Scores\+Draw\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Scores Graphic \mbox{\hyperlink{struct_interface}{Interface}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions from the Scores Module. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___score_gacae0d016c0dedb2b243adfca34e3e888}\label{group___score_gacae0d016c0dedb2b243adfca34e3e888}} 
+\index{Score@{Score}!drawDigits@{drawDigits}}
+\index{drawDigits@{drawDigits}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{drawDigits()}{drawDigits()}}
+{\footnotesize\ttfamily void draw\+Digits (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{int}]{h,  }\item[{int}]{v,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Draw Digits on Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & to be parsed and drawn on screen \\
+\hline
+{\em h} & X position for the first digit \\
+\hline
+{\em v} & Y position for the first digit \\
+\hline
+{\em n} & number of digits \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_gacae0d016c0dedb2b243adfca34e3e888_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_gacae0d016c0dedb2b243adfca34e3e888_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___score_gaa0dce4fd0ae30476d730edcfee2a0f03}\label{group___score_gaa0dce4fd0ae30476d730edcfee2a0f03}} 
+\index{Score@{Score}!readScores@{readScores}}
+\index{readScores@{readScores}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{readScores()}{readScores()}}
+{\footnotesize\ttfamily int read\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read Scores from File. 
+
+\begin{DoxyReturn}{Returns}
+Return OK upon success and N\+O\+T\+\_\+\+OK otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_gaa0dce4fd0ae30476d730edcfee2a0f03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___score_gaf1e69867eb080a9d87ae6921cc35f4ed}\label{group___score_gaf1e69867eb080a9d87ae6921cc35f4ed}} 
+\index{Score@{Score}!ScoreKbdEventHandler@{ScoreKbdEventHandler}}
+\index{ScoreKbdEventHandler@{ScoreKbdEventHandler}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{ScoreKbdEventHandler()}{ScoreKbdEventHandler()}}
+{\footnotesize\ttfamily void Score\+Kbd\+Event\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Event Handler for Keyboard on \mbox{\hyperlink{struct_score}{Score}} State. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_gaf1e69867eb080a9d87ae6921cc35f4ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___score_gaecd8345054ba976570503e96d8df6d86}\label{group___score_gaecd8345054ba976570503e96d8df6d86}} 
+\index{Score@{Score}!ScoreMouseEventHandler@{ScoreMouseEventHandler}}
+\index{ScoreMouseEventHandler@{ScoreMouseEventHandler}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{ScoreMouseEventHandler()}{ScoreMouseEventHandler()}}
+{\footnotesize\ttfamily void Score\+Mouse\+Event\+Handler (\begin{DoxyParamCaption}\item[{struct packet}]{p }\end{DoxyParamCaption})}
+
+
+
+Event Handler for Mouse on \mbox{\hyperlink{struct_score}{Score}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Mouse packet to be parsed \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_gaecd8345054ba976570503e96d8df6d86_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_gaecd8345054ba976570503e96d8df6d86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___score_ga855be5f6660985625b8e81c8779601df}\label{group___score_ga855be5f6660985625b8e81c8779601df}} 
+\index{Score@{Score}!ScoresDrawInterface@{ScoresDrawInterface}}
+\index{ScoresDrawInterface@{ScoresDrawInterface}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{ScoresDrawInterface()}{ScoresDrawInterface()}}
+{\footnotesize\ttfamily void Scores\+Draw\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scores Graphic \mbox{\hyperlink{struct_interface}{Interface}}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_ga855be5f6660985625b8e81c8779601df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_ga855be5f6660985625b8e81c8779601df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___score_gae103b6fea2d41881b821fff74047d2ac}\label{group___score_gae103b6fea2d41881b821fff74047d2ac}} 
+\index{Score@{Score}!updateScores@{updateScores}}
+\index{updateScores@{updateScores}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{updateScores()}{updateScores()}}
+{\footnotesize\ttfamily void update\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update Scores from Current \mbox{\hyperlink{struct_score}{Score}}. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___score_gae103b6fea2d41881b821fff74047d2ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___score_gad74615239c109d8b38a5d2de9fe67450}\label{group___score_gad74615239c109d8b38a5d2de9fe67450}} 
+\index{Score@{Score}!writeScores@{writeScores}}
+\index{writeScores@{writeScores}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{writeScores()}{writeScores()}}
+{\footnotesize\ttfamily int write\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Write Scores to File. 
+
+\begin{DoxyReturn}{Returns}
+Return OK upon success and N\+O\+T\+\_\+\+OK otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{group___score_gad74615239c109d8b38a5d2de9fe67450_icgraph}
+\end{center}
+\end{figure}

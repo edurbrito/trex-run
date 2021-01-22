@@ -1,0 +1,7 @@
+<map id="drawDigits" name="drawDigits">
+<area shape="rect" id="node1" title="Draw Digits on Screen." alt="" coords="479,31,561,57"/>
+<area shape="rect" id="node2" href="$group___single___player.html#ga80e749a9e8f2c366a3ab4fbc7117e4f2" title="Play State Graphic Interface." alt="" coords="297,5,423,32"/>
+<area shape="rect" id="node5" href="$group___score.html#ga855be5f6660985625b8e81c8779601df" title="Scores Graphic Interface." alt="" coords="289,56,431,83"/>
+<area shape="rect" id="node3" href="$group___main___menu.html#ga56a4c88966159c3f2eedead5470a0edf" title="Game Main Loop." alt="" coords="163,31,241,57"/>
+<area shape="rect" id="node4" href="$group___proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the final project." alt="" coords="5,31,115,57"/>
+</map>

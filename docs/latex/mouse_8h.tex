@@ -1,0 +1,59 @@
+\hypertarget{mouse_8h}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/mouse.h File Reference}
+\label{mouse_8h}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/mouse.h@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/mouse.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga85964cb90343bb1a029b1d1b4229f910}{M\+O\+U\+S\+E\+\_\+\+I\+RQ}}~12
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga5ca1baba7129f2acebcc07cbbbde8736}{W\+R\+I\+T\+E\+\_\+\+M\+O\+U\+SE}}~0x\+D4
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga28a9ae663327fef796d92e108bbd5fc2}{D\+I\+S\+A\+B\+L\+E\+\_\+\+R\+EP}}~0x\+F5
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga7caa7490bb3c39a846b8823bbe6d1d42}{E\+N\+A\+B\+L\+E\+\_\+\+R\+EP}}~0x\+F4
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga19a57d9d2eafd32ee130c0f526906719}{S\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+O\+DE}}~0x\+F0
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga8d406d5aff787991429e62cfd9bac721}{R\+E\+A\+D\+\_\+\+D\+A\+TA}}~0x\+EB
+\item 
+\#define \mbox{\hyperlink{group__mouse_gaabf49b4a4d8ad72d202c8a7197058e35}{S\+E\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE}}~0x\+EA
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga6f6489887e08bff4887d0bc5dcf214d8}{A\+CK}}~0x\+FA
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga958518a45b12053ae33606ee7cb68a55}{N\+A\+CK}}~0x\+FE
+\item 
+\#define \mbox{\hyperlink{group__mouse_ga8fe83ac76edc595f6b98cd4a4127aed5}{E\+R\+R\+OR}}~0x\+FC
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Mouse interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_gac7aa3e494e115ca0a8b43d096448426c}{mouse\+\_\+data\+\_\+reporting}} (bool en)
+\begin{DoxyCompactList}\small\item\em Enable or Disable Data Reporting. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__mouse_ga804f3ad295d12a6ded4e93b117b8dfb3}{rev2comp}} (uint8\+\_\+t num, struct packet $\ast$p, uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Revert num from 2comp to no sign representation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mouse_gad10ae4a81a7c67a6ab257aa4b445f583}{packet\+\_\+assemble}} (struct packet $\ast$\mbox{\hyperlink{mouse_8c_a8157bf781a46354f771dbe645e53ec1f}{pack}})
+\begin{DoxyCompactList}\small\item\em Assembles the packet according to the struct. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Mouse interrupt handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_ga8c054e7d95d71c3fc2a26b9df115918a}{mouse\+\_\+write\+\_\+commands}} (uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Write commands to Mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}

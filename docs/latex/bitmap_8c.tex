@@ -1,0 +1,25 @@
+\hypertarget{bitmap_8c}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/bitmap.c File Reference}
+\label{bitmap_8c}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/bitmap.c@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/bitmap.c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vdh.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\newline
+Include dependency graph for bitmap.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitmap_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga83b894655c230a75c2131959768b554f}{draw\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} alignment, \mbox{\hyperlink{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}{Buffer}} buffer)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___bitmap_ga52585436362e08751c81132c68eed21e}{draw\+Bitmap\+\_\+collision}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, \mbox{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} alignment)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a collision in each pixel in the 3rd buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap and frees the allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}

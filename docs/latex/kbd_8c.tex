@@ -1,0 +1,60 @@
+\hypertarget{kbd_8c}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/kbd.c File Reference}
+\label{kbd_8c}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/kbd.c@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/kbd.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}kbd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+Include dependency graph for kbd.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{kbd_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__keyboard_ga4ac9231a99a664d6a9f0b69767e0d707}{kbd\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables K\+BD interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_gaee0a7b54ee426fade9c780418d110fe0}{kbd\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes K\+BD interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga5f078e557e15c1f8568516a0e51d7873}{kbd\+\_\+reading\+\_\+status}} (uint8\+\_\+t status, uint8\+\_\+t bit\+\_\+check)
+\begin{DoxyCompactList}\small\item\em verifies status by the second param \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__keyboard_gaea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em K\+BD interrupt handler. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__keyboard_gaabc97cf45c53e0ed7a0cfd9b1d8b5ce2}{kbd\+\_\+make\+\_\+code}} (uint8\+\_\+t scancode)
+\begin{DoxyCompactList}\small\item\em tests if input is makecode or breakcode \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga8052bb17ab1bf69c4cba30502df43889}{kbd\+\_\+write\+\_\+commands}} (int reg, uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em write commands to K\+BD registers \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_gacdb241e492b63b394c4b960aca920051}{kbd\+\_\+reenable}} ()
+\begin{DoxyCompactList}\small\item\em reenables K\+BD interrupts \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{kbd_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id}} = \mbox{\hyperlink{group__keyboard_ga5c1072213ce8d8cd43628c4319ae0391}{K\+B\+D\+\_\+\+I\+RQ}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{kbd_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}{scancodes}} \mbox{[}2\mbox{]}
+\item 
+bool \mbox{\hyperlink{kbd_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}{two\+\_\+byte\+\_\+code}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{kbd_8c_a96f78a87d064e47d627d222f67a8d012}\label{kbd_8c_a96f78a87d064e47d627d222f67a8d012}} 
+\index{kbd.c@{kbd.c}!hook\_id@{hook\_id}}
+\index{hook\_id@{hook\_id}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id}{hook\_id}}
+{\footnotesize\ttfamily int hook\+\_\+id = \mbox{\hyperlink{group__keyboard_ga5c1072213ce8d8cd43628c4319ae0391}{K\+B\+D\+\_\+\+I\+RQ}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{kbd_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}\label{kbd_8c_a4cbc2430b3efdd26ec74f5d43d4fd9a3}} 
+\index{kbd.c@{kbd.c}!scancodes@{scancodes}}
+\index{scancodes@{scancodes}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{scancodes}{scancodes}}
+{\footnotesize\ttfamily uint8\+\_\+t scancodes\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{kbd_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}\label{kbd_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}} 
+\index{kbd.c@{kbd.c}!two\_byte\_code@{two\_byte\_code}}
+\index{two\_byte\_code@{two\_byte\_code}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{two\_byte\_code}{two\_byte\_code}}
+{\footnotesize\ttfamily bool two\+\_\+byte\+\_\+code = false}
+

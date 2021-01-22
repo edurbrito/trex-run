@@ -1,0 +1,7 @@
+<map id="mouse_data_reporting" name="mouse_data_reporting">
+<area shape="rect" id="node1" title="Enable or Disable Data Reporting." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$group__mouse.html#ga8c054e7d95d71c3fc2a26b9df115918a" title="Write commands to Mouse." alt="" coords="204,31,371,57"/>
+<area shape="rect" id="node3" href="$group__keyboard.html#ga8052bb17ab1bf69c4cba30502df43889" title="write commands to KBD registers" alt="" coords="419,5,567,32"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="637,56,727,83"/>
+<area shape="rect" id="node4" href="$group__keyboard.html#ga5f078e557e15c1f8568516a0e51d7873" title="verifies status by the second param" alt="" coords="615,5,749,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="drawBitmap" name="drawBitmap">
+<area shape="rect" id="node1" title="Draws a bitmap at the given position x,y." alt="" coords="5,107,96,133"/>
+<area shape="rect" id="node2" href="$group___vdh.html#ga55c5883685bf347fccf094f10aa399e8" title="Returns double buffer." alt="" coords="144,5,267,32"/>
+<area shape="rect" id="node3" href="$group___vdh.html#gac72f9cdd3785847a4ac65e7752c3e894" title="Returns a third buffer that is used to detect collisions." alt="" coords="157,56,253,83"/>
+<area shape="rect" id="node4" href="$group___vdh.html#ga0c08a2af1d6d4064003add793f30b74a" title="Returns video memory." alt="" coords="156,107,255,133"/>
+<area shape="rect" id="node5" href="$group___vdh.html#ga9e1e245889a96a471a23b0e79ddb2333" title=" " alt="" coords="172,157,239,184"/>
+<area shape="rect" id="node6" href="$group___vdh.html#gabf1983214d2197b9e42c20430f12de0a" title=" " alt="" coords="172,208,239,235"/>
+</map>

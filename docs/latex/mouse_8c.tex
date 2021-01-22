@@ -1,0 +1,70 @@
+\hypertarget{mouse_8c}{}\doxysection{C\+:/\+Users/edurb/\+Desktop/\+F\+E\+U\+P/2\+\_\+\+Ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/source/mouse.c File Reference}
+\label{mouse_8c}\index{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/mouse.c@{C:/Users/edurb/Desktop/FEUP/2\_Ano/LCOM/MINIX-\/LCOM/shared/proj/source/mouse.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbd.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Mouse interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_gac7aa3e494e115ca0a8b43d096448426c}{mouse\+\_\+data\+\_\+reporting}} (bool en)
+\begin{DoxyCompactList}\small\item\em Enable or Disable Data Reporting. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__mouse_ga804f3ad295d12a6ded4e93b117b8dfb3}{rev2comp}} (uint8\+\_\+t num, struct packet $\ast$p, uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Revert num from 2comp to no sign representation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mouse_gad10ae4a81a7c67a6ab257aa4b445f583}{packet\+\_\+assemble}} (struct packet $\ast$p)
+\begin{DoxyCompactList}\small\item\em Assembles the packet according to the struct. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Mouse interrupt handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_ga8c054e7d95d71c3fc2a26b9df115918a}{mouse\+\_\+write\+\_\+commands}} (uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Write commands to Mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{mouse_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id}} = \mbox{\hyperlink{group__mouse_ga85964cb90343bb1a029b1d1b4229f910}{M\+O\+U\+S\+E\+\_\+\+I\+RQ}}
+\item 
+static uint8\+\_\+t \mbox{\hyperlink{mouse_8c_a8157bf781a46354f771dbe645e53ec1f}{pack}} \mbox{[}3\mbox{]}
+\item 
+unsigned int \mbox{\hyperlink{mouse_8c_a86b164ae169c5d33284ffa3936c04220}{byte\+Counter}} = 0
+\item 
+bool \mbox{\hyperlink{mouse_8c_a7f72a9b66c356a828a77d43465a77c1f}{insync}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mouse_8c_a86b164ae169c5d33284ffa3936c04220}\label{mouse_8c_a86b164ae169c5d33284ffa3936c04220}} 
+\index{mouse.c@{mouse.c}!byteCounter@{byteCounter}}
+\index{byteCounter@{byteCounter}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{byteCounter}{byteCounter}}
+{\footnotesize\ttfamily unsigned int byte\+Counter = 0}
+
+\mbox{\Hypertarget{mouse_8c_a96f78a87d064e47d627d222f67a8d012}\label{mouse_8c_a96f78a87d064e47d627d222f67a8d012}} 
+\index{mouse.c@{mouse.c}!hook\_id@{hook\_id}}
+\index{hook\_id@{hook\_id}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id}{hook\_id}}
+{\footnotesize\ttfamily int hook\+\_\+id = \mbox{\hyperlink{group__mouse_ga85964cb90343bb1a029b1d1b4229f910}{M\+O\+U\+S\+E\+\_\+\+I\+RQ}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{mouse_8c_a7f72a9b66c356a828a77d43465a77c1f}\label{mouse_8c_a7f72a9b66c356a828a77d43465a77c1f}} 
+\index{mouse.c@{mouse.c}!insync@{insync}}
+\index{insync@{insync}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{insync}{insync}}
+{\footnotesize\ttfamily bool insync = false}
+
+\mbox{\Hypertarget{mouse_8c_a8157bf781a46354f771dbe645e53ec1f}\label{mouse_8c_a8157bf781a46354f771dbe645e53ec1f}} 
+\index{mouse.c@{mouse.c}!pack@{pack}}
+\index{pack@{pack}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{pack}{pack}}
+{\footnotesize\ttfamily uint8\+\_\+t pack\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+

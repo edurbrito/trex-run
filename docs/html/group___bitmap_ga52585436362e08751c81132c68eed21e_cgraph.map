@@ -1,0 +1,6 @@
+<map id="drawBitmap_collision" name="drawBitmap_collision">
+<area shape="rect" id="node1" title="Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a c..." alt="" coords="5,56,149,83"/>
+<area shape="rect" id="node2" href="$group___vdh.html#gac72f9cdd3785847a4ac65e7752c3e894" title="Returns a third buffer that is used to detect collisions." alt="" coords="197,5,293,32"/>
+<area shape="rect" id="node3" href="$group___vdh.html#ga9e1e245889a96a471a23b0e79ddb2333" title=" " alt="" coords="212,56,279,83"/>
+<area shape="rect" id="node4" href="$group___vdh.html#gabf1983214d2197b9e42c20430f12de0a" title=" " alt="" coords="212,107,279,133"/>
+</map>

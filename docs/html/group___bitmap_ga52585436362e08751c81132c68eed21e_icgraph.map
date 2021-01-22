@@ -1,0 +1,6 @@
+<map id="drawBitmap_collision" name="drawBitmap_collision">
+<area shape="rect" id="node1" title="Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a c..." alt="" coords="464,5,608,32"/>
+<area shape="rect" id="node2" href="$group___single___player.html#ga80e749a9e8f2c366a3ab4fbc7117e4f2" title="Play State Graphic Interface." alt="" coords="289,5,416,32"/>
+<area shape="rect" id="node3" href="$group___main___menu.html#ga56a4c88966159c3f2eedead5470a0edf" title="Game Main Loop." alt="" coords="163,5,241,32"/>
+<area shape="rect" id="node4" href="$group___proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the final project." alt="" coords="5,5,115,32"/>
+</map>

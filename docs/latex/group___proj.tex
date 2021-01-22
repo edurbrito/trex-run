@@ -1,0 +1,81 @@
+\hypertarget{group___proj}{}\doxysection{Proj}
+\label{group___proj}\index{Proj@{Proj}}
+
+
+Project Main Functions.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group___proj_ga2a16f651eccbd248e1ad3b3b924b143b}{proj\+\_\+main\+\_\+loop}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main loop of the final project. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___proj_ga9cee9f922bc6e75b615876937903031f}{proj\+\_\+demo}} (uint16\+\_\+t mode, bool minix3, bool grayscale, uint8\+\_\+t delay)
+\begin{DoxyCompactList}\small\item\em Demo for printing the logo of Minix 3 in a black and white background. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Project Main Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___proj_ga9cee9f922bc6e75b615876937903031f}\label{group___proj_ga9cee9f922bc6e75b615876937903031f}} 
+\index{Proj@{Proj}!proj\_demo@{proj\_demo}}
+\index{proj\_demo@{proj\_demo}!Proj@{Proj}}
+\doxysubsubsection{\texorpdfstring{proj\_demo()}{proj\_demo()}}
+{\footnotesize\ttfamily int() proj\+\_\+demo (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode,  }\item[{bool}]{minix3,  }\item[{bool}]{grayscale,  }\item[{uint8\+\_\+t}]{delay }\end{DoxyParamCaption})}
+
+
+
+Demo for printing the logo of Minix 3 in a black and white background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The video mode that should be used (must be a direct color one) @þaram minix3 A boolean selecting either Minix 3 (true) or Ubuntu (false) logo \\
+\hline
+{\em grayscale} & Sets whether the image should be grayscale or not (X\+P\+M\+\_\+\+G\+R\+A\+Y\+\_\+$\ast$ type) \\
+\hline
+{\em delay} & The number of seconds the logo should be presented \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{group___proj_ga9cee9f922bc6e75b615876937903031f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___proj_ga2a16f651eccbd248e1ad3b3b924b143b}\label{group___proj_ga2a16f651eccbd248e1ad3b3b924b143b}} 
+\index{Proj@{Proj}!proj\_main\_loop@{proj\_main\_loop}}
+\index{proj\_main\_loop@{proj\_main\_loop}!Proj@{Proj}}
+\doxysubsubsection{\texorpdfstring{proj\_main\_loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main loop of the final project. 
+
+This function receives the command line arguments as provided, except program name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command line arguments \\
+\hline
+{\em argv} & Array of \char`\"{}\+C-\/strings\char`\"{} representing each argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___proj_ga2a16f651eccbd248e1ad3b3b924b143b_cgraph}
+\end{center}
+\end{figure}

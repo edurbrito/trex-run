@@ -1,0 +1,4 @@
+<map id="read_date" name="read_date">
+<area shape="rect" id="node1" title="Reads date from the RTC if it&#39;s not updating." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node2" href="$group___r_t_c.html#ga2612ab4da31e866317aedbbc8cdadbc4" title="Checks if RTC is updating." alt="" coords="132,5,215,32"/>
+</map>

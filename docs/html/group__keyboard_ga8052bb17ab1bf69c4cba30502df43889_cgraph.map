@@ -1,0 +1,5 @@
+<map id="kbd_write_commands" name="kbd_write_commands">
+<area shape="rect" id="node1" title="write commands to KBD registers" alt="" coords="5,31,153,57"/>
+<area shape="rect" id="node2" href="$group__keyboard.html#ga5f078e557e15c1f8568516a0e51d7873" title="verifies status by the second param" alt="" coords="201,5,336,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="223,56,314,83"/>
+</map>

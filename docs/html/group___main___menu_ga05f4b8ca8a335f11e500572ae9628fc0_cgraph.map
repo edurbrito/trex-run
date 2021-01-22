@@ -1,0 +1,23 @@
+<map id="MenuDrawInterface" name="MenuDrawInterface">
+<area shape="rect" id="node1" title="Main Menu Graphic Interface." alt="" coords="5,185,137,211"/>
+<area shape="rect" id="node2" href="$group___vdh.html#ga497f4cb2694b612f486ec901dcdb8431" title="Copies memory from double buffer to video_mem." alt="" coords="335,235,445,262"/>
+<area shape="rect" id="node3" href="$group___bitmap.html#ga83b894655c230a75c2131959768b554f" title="Draws a bitmap at the given position x,y." alt="" coords="345,83,435,110"/>
+<area shape="rect" id="node4" href="$group___vdh.html#ga55c5883685bf347fccf094f10aa399e8" title="Returns double buffer." alt="" coords="505,247,628,274"/>
+<area shape="rect" id="node9" href="$group___main___menu.html#ga0f17d97fd65719851e31f7427cd366b4" title="getHres Shortener" alt="" coords="371,33,409,59"/>
+<area shape="rect" id="node10" href="$group___main___menu.html#gaffec8ed06e17190243fee0c522811de7" title=" " alt="" coords="191,33,269,59"/>
+<area shape="rect" id="node11" href="$group___main___menu.html#ga8ccfb3b47fdee7d5755c504153677562" title="getVres Shortener" alt="" coords="371,134,409,161"/>
+<area shape="rect" id="node12" href="$group___main___menu.html#ga8015124af1c35b13fec728f2a6aca19d" title=" " alt="" coords="186,185,274,211"/>
+<area shape="rect" id="node13" href="$group___vdh.html#gadfeb1e403e26a57c2e1dc3452f8bc8ba" title=" " alt="" coords="323,337,457,363"/>
+<area shape="rect" id="node16" href="$group___main___menu.html#ga97a08bed732e9bfb11e47b342b4aecea" title=" " alt="" coords="185,286,275,313"/>
+<area shape="rect" id="node5" href="$group___vdh.html#gac72f9cdd3785847a4ac65e7752c3e894" title="Returns a third buffer that is used to detect collisions." alt="" coords="519,58,615,85"/>
+<area shape="rect" id="node6" href="$group___vdh.html#ga0c08a2af1d6d4064003add793f30b74a" title="Returns video memory." alt="" coords="517,109,616,135"/>
+<area shape="rect" id="node7" href="$group___vdh.html#ga9e1e245889a96a471a23b0e79ddb2333" title=" " alt="" coords="533,7,600,34"/>
+<area shape="rect" id="node8" href="$group___vdh.html#gabf1983214d2197b9e42c20430f12de0a" title=" " alt="" coords="533,159,600,186"/>
+<area shape="rect" id="node14" href="$group___vdh.html#gaaad6f9e5e5c976c41adacd068b4eb6ba" title=" " alt="" coords="512,337,621,363"/>
+<area shape="rect" id="node15" href="$group___vdh.html#ga31d38fd65e779ced838c1fd2a215667d" title=" " alt="" coords="676,337,807,363"/>
+<area shape="rect" id="node17" href="$group___r_t_c.html#ga14af1c4c1b299edb657641a0daa2eef8" title="Reads time from the RTC if it&#39;s not updating." alt="" coords="354,438,426,465"/>
+<area shape="rect" id="node18" href="$group___r_t_c.html#ga119d7b2d19f5a9db3515b99e215ec5a3" title="Converts num to binary if it&#39;s in bcd." alt="" coords="524,438,609,465"/>
+<area shape="rect" id="node19" href="$group___r_t_c.html#gaae354aef8519b62ea1234752dde7db5d" title="Checks if data is in bcd." alt="" coords="524,489,609,515"/>
+<area shape="rect" id="node20" href="$group___r_t_c.html#ga2612ab4da31e866317aedbbc8cdadbc4" title="Checks if RTC is updating." alt="" coords="525,539,608,566"/>
+<area shape="rect" id="node21" href="$group___r_t_c.html#ga2f48be74e6a2fbcbf5d0331841099d1e" title="Reads the content in the specified port." alt="" coords="532,387,601,414"/>
+</map>

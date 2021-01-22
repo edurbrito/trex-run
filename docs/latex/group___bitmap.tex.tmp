@@ -1,0 +1,194 @@
+\hypertarget{group___bitmap}{}\doxysection{bitmap}
+\label{group___bitmap}\index{bitmap@{bitmap}}
+
+
+Functions for using the bitmap assets.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_bitmap_file_header}{Bitmap\+File\+Header}}
+\item 
+struct \mbox{\hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}}
+\item 
+struct \mbox{\hyperlink{struct_bitmap}{Bitmap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga9148c18156d7120a3cea5be0d59810d0}\label{group___bitmap_ga9148c18156d7120a3cea5be0d59810d0}} 
+\#define {\bfseries pink\+\_\+first\+\_\+byte}~0x1f
+\item 
+\mbox{\Hypertarget{group___bitmap_ga603eb7046abe2e43a7ac3c19be9553f1}\label{group___bitmap_ga603eb7046abe2e43a7ac3c19be9553f1}} 
+\#define {\bfseries pink\+\_\+second\+\_\+byte}~0xf8
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}\label{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}} 
+enum {\bfseries Alignment} \{ {\bfseries A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}, 
+{\bfseries A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}, 
+{\bfseries A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}
+ \}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}\label{group___bitmap_ga92830fcb909115d88f2dfeb3972d6211}} 
+enum {\bfseries Buffer} \{ {\bfseries R\+E\+A\+L\+\_\+\+B\+U\+F\+F\+ER}, 
+{\bfseries S\+E\+C\+O\+N\+D\+\_\+\+B\+U\+F\+F\+ER}, 
+{\bfseries T\+H\+I\+R\+D\+\_\+\+B\+U\+F\+F\+ER}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga83b894655c230a75c2131959768b554f}{draw\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, Alignment alignment, Buffer buffer)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___bitmap_ga52585436362e08751c81132c68eed21e}{draw\+Bitmap\+\_\+collision}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, Alignment alignment)
+\begin{DoxyCompactList}\small\item\em Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a collision in each pixel in the 3rd buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap and frees the allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63}\label{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63}} 
+unsigned short {\bfseries type}
+\item 
+\mbox{\Hypertarget{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}\label{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}} 
+unsigned int {\bfseries size}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced}\label{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced}} 
+unsigned int {\bfseries reserved}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c}\label{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c}} 
+unsigned int {\bfseries offset}
+\item 
+\mbox{\Hypertarget{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}\label{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}} 
+unsigned int {\bfseries size}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4}\label{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4}} 
+int {\bfseries width}
+\item 
+\mbox{\Hypertarget{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534}\label{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534}} 
+int {\bfseries height}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga8c89d091e05544a82dc2398eed99634f}\label{group___bitmap_ga8c89d091e05544a82dc2398eed99634f}} 
+unsigned short {\bfseries planes}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534}\label{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534}} 
+unsigned short {\bfseries bits}
+\item 
+\mbox{\Hypertarget{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3}\label{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3}} 
+unsigned int {\bfseries compression}
+\item 
+\mbox{\Hypertarget{group___bitmap_gadcd57a0168319e747bc8099218d3822c}\label{group___bitmap_gadcd57a0168319e747bc8099218d3822c}} 
+unsigned int {\bfseries image\+Size}
+\item 
+\mbox{\Hypertarget{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5}\label{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5}} 
+int {\bfseries x\+Resolution}
+\item 
+\mbox{\Hypertarget{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3}\label{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3}} 
+int {\bfseries y\+Resolution}
+\item 
+\mbox{\Hypertarget{group___bitmap_gaed4506bad904845183194f199f1bdb98}\label{group___bitmap_gaed4506bad904845183194f199f1bdb98}} 
+unsigned int {\bfseries n\+Colors}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0}\label{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0}} 
+unsigned int {\bfseries important\+Colors}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313}\label{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313}} 
+\mbox{\hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}} {\bfseries bitmap\+Info\+Header}
+\item 
+\mbox{\Hypertarget{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0}\label{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0}} 
+unsigned char $\ast$ {\bfseries bitmap\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the bitmap assets. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}\label{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}} 
+\index{bitmap@{bitmap}!deleteBitmap@{deleteBitmap}}
+\index{deleteBitmap@{deleteBitmap}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{deleteBitmap()}{deleteBitmap()}}
+{\footnotesize\ttfamily void delete\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$}]{bmp }\end{DoxyParamCaption})}
+
+
+
+Destroys the given bitmap and frees the allocated memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bmp} & bitmap to be freed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___bitmap_ga83b894655c230a75c2131959768b554f}\label{group___bitmap_ga83b894655c230a75c2131959768b554f}} 
+\index{bitmap@{bitmap}!drawBitmap@{drawBitmap}}
+\index{drawBitmap@{drawBitmap}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{drawBitmap()}{drawBitmap()}}
+{\footnotesize\ttfamily void draw\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$}]{bmp,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{Alignment}]{alignment,  }\item[{Buffer}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Draws a bitmap at the given position x,y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & bitmap to be drawn \\
+\hline
+{\em x} & x-\/axis coordenate \\
+\hline
+{\em y} & y-\/axis coordenate \\
+\hline
+{\em alignment} & image alignment \\
+\hline
+{\em buffer} & select Buffer to draw \mbox{\hyperlink{struct_bitmap}{Bitmap}} \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group___bitmap_ga52585436362e08751c81132c68eed21e}\label{group___bitmap_ga52585436362e08751c81132c68eed21e}} 
+\index{bitmap@{bitmap}!drawBitmap\_collision@{drawBitmap\_collision}}
+\index{drawBitmap\_collision@{drawBitmap\_collision}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{drawBitmap\_collision()}{drawBitmap\_collision()}}
+{\footnotesize\ttfamily int draw\+Bitmap\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$}]{bmp,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{Alignment}]{alignment }\end{DoxyParamCaption})}
+
+
+
+Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a collision in each pixel in the 3rd buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & bitmap to be drawn \\
+\hline
+{\em x} & x-\/axis coordenate \\
+\hline
+{\em y} & y-\/axis coordenate \\
+\hline
+{\em alignment} & image alignment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}\label{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}} 
+\index{bitmap@{bitmap}!loadBitmap@{loadBitmap}}
+\index{loadBitmap@{loadBitmap}!bitmap@{bitmap}}
+\doxysubsubsection{\texorpdfstring{loadBitmap()}{loadBitmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ load\+Bitmap (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads a bmp image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path of the image to be loaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the image buffer 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
