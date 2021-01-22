@@ -1,0 +1,7 @@
+<map id="get_date" name="get_date">
+<area shape="rect" id="node1" title="Reads date from the RTC if it&#39;s not updating." alt="" coords="5,81,77,108"/>
+<area shape="rect" id="node2" href="$group___r_t_c.html#ga119d7b2d19f5a9db3515b99e215ec5a3" title="Converts num to binary if it&#39;s in bcd." alt="" coords="125,5,211,32"/>
+<area shape="rect" id="node3" href="$group___r_t_c.html#gaae354aef8519b62ea1234752dde7db5d" title="Checks if data is in bcd." alt="" coords="125,56,211,83"/>
+<area shape="rect" id="node4" href="$group___r_t_c.html#ga2612ab4da31e866317aedbbc8cdadbc4" title="Checks if RTC is updating." alt="" coords="127,107,209,133"/>
+<area shape="rect" id="node5" href="$group___r_t_c.html#ga2f48be74e6a2fbcbf5d0331841099d1e" title="Reads the content in the specified port." alt="" coords="133,157,203,184"/>
+</map>

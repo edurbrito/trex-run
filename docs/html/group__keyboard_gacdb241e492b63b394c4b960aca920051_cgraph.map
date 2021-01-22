@@ -1,0 +1,6 @@
+<map id="kbd_reenable" name="kbd_reenable">
+<area shape="rect" id="node1" title="reenables KBD interrupts" alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$group__keyboard.html#ga8052bb17ab1bf69c4cba30502df43889" title="write commands to KBD registers" alt="" coords="152,5,300,32"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="370,56,461,83"/>
+<area shape="rect" id="node3" href="$group__keyboard.html#ga5f078e557e15c1f8568516a0e51d7873" title="verifies status by the second param" alt="" coords="348,5,483,32"/>
+</map>

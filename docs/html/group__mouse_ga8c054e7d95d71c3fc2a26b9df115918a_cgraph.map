@@ -1,0 +1,6 @@
+<map id="mouse_write_commands" name="mouse_write_commands">
+<area shape="rect" id="node1" title="Write commands to Mouse." alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$group__keyboard.html#ga8052bb17ab1bf69c4cba30502df43889" title="write commands to KBD registers" alt="" coords="220,5,368,32"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="438,56,529,83"/>
+<area shape="rect" id="node3" href="$group__keyboard.html#ga5f078e557e15c1f8568516a0e51d7873" title="verifies status by the second param" alt="" coords="416,5,551,32"/>
+</map>

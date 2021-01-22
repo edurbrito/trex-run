@@ -1,0 +1,11 @@
+<map id="stMULTIP" name="stMULTIP">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,84,184"/>
+<area shape="rect" id="node2" href="$group___bitmap.html#ga83b894655c230a75c2131959768b554f" title="Draws a bitmap at the given position x,y." alt="" coords="132,107,223,133"/>
+<area shape="rect" id="node8" href="$group___main___menu.html#ga0f17d97fd65719851e31f7427cd366b4" title="getHres Shortener" alt="" coords="158,157,197,184"/>
+<area shape="rect" id="node9" href="$group___main___menu.html#ga8ccfb3b47fdee7d5755c504153677562" title="getVres Shortener" alt="" coords="158,208,197,235"/>
+<area shape="rect" id="node3" href="$group___vdh.html#ga55c5883685bf347fccf094f10aa399e8" title="Returns double buffer." alt="" coords="271,5,393,32"/>
+<area shape="rect" id="node4" href="$group___vdh.html#gac72f9cdd3785847a4ac65e7752c3e894" title="Returns a third buffer that is used to detect collisions." alt="" coords="284,56,380,83"/>
+<area shape="rect" id="node5" href="$group___vdh.html#ga0c08a2af1d6d4064003add793f30b74a" title="Returns video memory." alt="" coords="283,107,381,133"/>
+<area shape="rect" id="node6" href="$group___vdh.html#ga9e1e245889a96a471a23b0e79ddb2333" title=" " alt="" coords="299,157,365,184"/>
+<area shape="rect" id="node7" href="$group___vdh.html#gabf1983214d2197b9e42c20430f12de0a" title=" " alt="" coords="299,208,365,235"/>
+</map>

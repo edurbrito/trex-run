@@ -1,0 +1,6 @@
+<map id="readScores" name="readScores">
+<area shape="rect" id="node1" title="Read Scores from File." alt="" coords="436,5,524,32"/>
+<area shape="rect" id="node2" href="$group___main___menu.html#gabe99afd17cbe516141e74b1be353746c" title="Loads all the necessary images and initial data." alt="" coords="289,5,388,32"/>
+<area shape="rect" id="node3" href="$group___main___menu.html#ga56a4c88966159c3f2eedead5470a0edf" title="Game Main Loop." alt="" coords="163,5,241,32"/>
+<area shape="rect" id="node4" href="$group___proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the final project." alt="" coords="5,5,115,32"/>
+</map>

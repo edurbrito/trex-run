@@ -1,0 +1,10 @@
+<map id="bcd_to_bin" name="bcd_to_bin">
+<area shape="rect" id="node1" title="Converts num to binary if it&#39;s in bcd." alt="" coords="764,31,849,57"/>
+<area shape="rect" id="node2" href="$group___r_t_c.html#gafeffa208f3d89fab9e401c534ef0a272" title="Reads date from the RTC if it&#39;s not updating." alt="" coords="644,5,716,32"/>
+<area shape="rect" id="node6" href="$group___r_t_c.html#ga14af1c4c1b299edb657641a0daa2eef8" title="Reads time from the RTC if it&#39;s not updating." alt="" coords="644,56,716,83"/>
+<area shape="rect" id="node3" href="$group___single___player.html#ga80e749a9e8f2c366a3ab4fbc7117e4f2" title="Play State Graphic Interface." alt="" coords="469,5,596,32"/>
+<area shape="rect" id="node4" href="$group___main___menu.html#ga56a4c88966159c3f2eedead5470a0edf" title="Game Main Loop." alt="" coords="163,31,241,57"/>
+<area shape="rect" id="node5" href="$group___proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the final project." alt="" coords="5,31,115,57"/>
+<area shape="rect" id="node7" href="$group___main___menu.html#ga97a08bed732e9bfb11e47b342b4aecea" title=" " alt="" coords="488,56,577,83"/>
+<area shape="rect" id="node8" href="$group___main___menu.html#ga05f4b8ca8a335f11e500572ae9628fc0" title="Main Menu Graphic Interface." alt="" coords="289,56,421,83"/>
+</map>

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['rd_5fbuf_211',['rd_buf',['../vdh_8c.html#ac6c92641b1af8449038ce59ef304d9c2',1,'vdh.c']]],
+  ['read_5fcmd_212',['READ_CMD',['../group__keyboard.html#ga21623e2a5501c821da54dd76ffc1d077',1,'kbd.h']]],
+  ['read_5fdata_213',['READ_DATA',['../group__mouse.html#ga8d406d5aff787991429e62cfd9bac721',1,'mouse.h']]],
+  ['readscores_214',['readScores',['../group___score.html#gaa0dce4fd0ae30476d730edcfee2a0f03',1,'readScores():&#160;score.c'],['../group___score.html#gaa0dce4fd0ae30476d730edcfee2a0f03',1,'readScores():&#160;score.c']]],
+  ['real_5fbuffer_215',['REAL_BUFFER',['../group___bitmap.html#gga92830fcb909115d88f2dfeb3972d6211a3f6dbfa8692817b3d10fc878d459a14f',1,'bitmap.h']]],
+  ['reg_5fa_216',['REG_A',['../group___r_t_c.html#gaa0e40d1cb9fea79e800aa79b8ca291f7',1,'rtc.h']]],
+  ['reg_5fb_217',['REG_B',['../group___r_t_c.html#ga28ed75c6727784e56c2bb8d828c876c9',1,'rtc.h']]],
+  ['reg_5fc_218',['REG_C',['../group___r_t_c.html#ga088e580de0961d5f30eb3366f97b324c',1,'rtc.h']]],
+  ['reg_5fd_219',['REG_D',['../group___r_t_c.html#ga8f2a2da8b96e20112d3f225636392424',1,'rtc.h']]],
+  ['regap_220',['REGAP',['../group___r_t_c.html#ga3e169c0bddfe65e8e57ee08307b36a66',1,'rtc.h']]],
+  ['regbm_221',['REGBM',['../group___r_t_c.html#gafb6b9e3cf488830420a6d266aa995d60',1,'rtc.h']]],
+  ['reserved_222',['reserved',['../group___bitmap.html#ga05d5cbcb44f437341bd9fa37d589aced',1,'BitmapFileHeader']]],
+  ['reset_5fsys_223',['RESET_SYS',['../group__keyboard.html#gaae204b42b96e521e0da02cdf2c63f710',1,'kbd.h']]],
+  ['rev2comp_224',['rev2comp',['../group__mouse.html#ga804f3ad295d12a6ded4e93b117b8dfb3',1,'rev2comp(uint8_t num, struct packet *p, uint8_t bit):&#160;mouse.c'],['../group__mouse.html#ga804f3ad295d12a6ded4e93b117b8dfb3',1,'rev2comp(uint8_t num, struct packet *p, uint8_t bit):&#160;mouse.c']]],
+  ['rm_5fpolicy_5ffail_225',['RM_POLICY_FAIL',['../group__i8254.html#ga4e44c039077afd82e39fbc19b9f7c9af',1,'i8254.h']]],
+  ['rtc_226',['rtc',['../group___r_t_c.html',1,'']]],
+  ['rtc_2ec_227',['rtc.c',['../rtc_8c.html',1,'']]],
+  ['rtc_2eh_228',['rtc.h',['../rtc_8h.html',1,'']]],
+  ['rtc_5faddr_5freg_229',['RTC_ADDR_REG',['../group___r_t_c.html#ga710b98232df2c563009e6f8a6cd18220',1,'rtc.h']]],
+  ['rtc_5fdata_230',['rtc_data',['../group___r_t_c.html#ga2f48be74e6a2fbcbf5d0331841099d1e',1,'rtc_data(uint8_t port):&#160;rtc.c'],['../group___r_t_c.html#ga2f48be74e6a2fbcbf5d0331841099d1e',1,'rtc_data(uint8_t port):&#160;rtc.c']]],
+  ['rtc_5fdata_5freg_231',['RTC_DATA_REG',['../group___r_t_c.html#ga2f258a00c59c3f347c8d2d4a75471ce0',1,'rtc.h']]],
+  ['rtc_5firq_232',['RTC_IRQ',['../group___r_t_c.html#ga4e22feb6ffbc1cda32fadff5c740dc51',1,'rtc.h']]],
+  ['rtc_5fsubscribe_5fint_233',['rtc_subscribe_int',['../group___r_t_c.html#ga5171a9c0f54940fe60f7500896afcc86',1,'rtc_subscribe_int(uint8_t *bit_no):&#160;rtc.c'],['../group___r_t_c.html#ga5171a9c0f54940fe60f7500896afcc86',1,'rtc_subscribe_int(uint8_t *bit_no):&#160;rtc.c']]],
+  ['rtc_5funsubscribe_5fint_234',['rtc_unsubscribe_int',['../group___r_t_c.html#gab8f17bf5280c908c8b199a90fefcc758',1,'rtc_unsubscribe_int():&#160;rtc.c'],['../group___r_t_c.html#gab8f17bf5280c908c8b199a90fefcc758',1,'rtc_unsubscribe_int():&#160;rtc.c']]]
+];

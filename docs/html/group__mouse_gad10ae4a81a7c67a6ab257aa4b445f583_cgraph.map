@@ -1,0 +1,4 @@
+<map id="packet_assemble" name="packet_assemble">
+<area shape="rect" id="node1" title="Assembles the packet according to the struct." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node2" href="$group__mouse.html#ga804f3ad295d12a6ded4e93b117b8dfb3" title="Revert num from 2comp to no sign representation." alt="" coords="177,5,255,32"/>
+</map>

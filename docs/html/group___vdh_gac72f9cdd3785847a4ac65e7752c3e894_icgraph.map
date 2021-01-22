@@ -1,0 +1,16 @@
+<map id="get_rd_buffer" name="get_rd_buffer">
+<area shape="rect" id="node1" title="Returns a third buffer that is used to detect collisions." alt="" coords="808,25,904,52"/>
+<area shape="rect" id="node2" href="$group___bitmap.html#ga83b894655c230a75c2131959768b554f" title="Draws a bitmap at the given position x,y." alt="" coords="643,253,733,280"/>
+<area shape="rect" id="node4" href="$group___single___player.html#ga80e749a9e8f2c366a3ab4fbc7117e4f2" title="Play State Graphic Interface." alt="" coords="297,76,423,102"/>
+<area shape="rect" id="node14" href="$group___bitmap.html#ga52585436362e08751c81132c68eed21e" title="Draws a bitmap at the given position x,y to a 3rd buffer (for collisions purposes) and checks for a c..." alt="" coords="616,25,760,52"/>
+<area shape="rect" id="node3" href="$group___score.html#gacae0d016c0dedb2b243adfca34e3e888" title="Draw Digits on Screen." alt="" coords="482,126,565,153"/>
+<area shape="rect" id="node7" href="$group___score.html#ga855be5f6660985625b8e81c8779601df" title="Scores Graphic Interface." alt="" coords="289,177,431,204"/>
+<area shape="rect" id="node8" href="$group___main___menu.html#ga05f4b8ca8a335f11e500572ae9628fc0" title="Main Menu Graphic Interface." alt="" coords="294,278,426,305"/>
+<area shape="rect" id="node9" href="$group___main___menu.html#ga4f13814c0a58711cbac3670a2b3a6364" title=" " alt="" coords="494,481,553,508"/>
+<area shape="rect" id="node10" href="$group___main___menu.html#ga1908c209edf5e521f31aa6981d2ad897" title=" " alt="" coords="325,380,395,406"/>
+<area shape="rect" id="node11" href="$group___main___menu.html#gaffec8ed06e17190243fee0c522811de7" title=" " alt="" coords="484,278,563,305"/>
+<area shape="rect" id="node12" href="$group___main___menu.html#ga8015124af1c35b13fec728f2a6aca19d" title=" " alt="" coords="479,329,567,356"/>
+<area shape="rect" id="node13" href="$group___main___menu.html#ga97a08bed732e9bfb11e47b342b4aecea" title=" " alt="" coords="479,380,568,406"/>
+<area shape="rect" id="node5" href="$group___main___menu.html#ga56a4c88966159c3f2eedead5470a0edf" title="Game Main Loop." alt="" coords="163,228,241,254"/>
+<area shape="rect" id="node6" href="$group___proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the final project." alt="" coords="5,228,115,254"/>
+</map>

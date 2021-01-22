@@ -1,0 +1,9 @@
+<map id="drawDigits" name="drawDigits">
+<area shape="rect" id="node1" title="Draw Digits on Screen." alt="" coords="5,107,88,133"/>
+<area shape="rect" id="node2" href="$group___bitmap.html#ga83b894655c230a75c2131959768b554f" title="Draws a bitmap at the given position x,y." alt="" coords="136,107,227,133"/>
+<area shape="rect" id="node3" href="$group___vdh.html#ga55c5883685bf347fccf094f10aa399e8" title="Returns double buffer." alt="" coords="275,5,397,32"/>
+<area shape="rect" id="node4" href="$group___vdh.html#gac72f9cdd3785847a4ac65e7752c3e894" title="Returns a third buffer that is used to detect collisions." alt="" coords="288,56,384,83"/>
+<area shape="rect" id="node5" href="$group___vdh.html#ga0c08a2af1d6d4064003add793f30b74a" title="Returns video memory." alt="" coords="287,107,385,133"/>
+<area shape="rect" id="node6" href="$group___vdh.html#ga9e1e245889a96a471a23b0e79ddb2333" title=" " alt="" coords="303,157,369,184"/>
+<area shape="rect" id="node7" href="$group___vdh.html#gabf1983214d2197b9e42c20430f12de0a" title=" " alt="" coords="303,208,369,235"/>
+</map>

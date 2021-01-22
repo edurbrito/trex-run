@@ -1,0 +1,5 @@
+<map id="mouse_write_commands" name="mouse_write_commands">
+<area shape="rect" id="node1" title="Write commands to Mouse." alt="" coords="361,5,528,32"/>
+<area shape="rect" id="node2" href="$group__mouse.html#gac7aa3e494e115ca0a8b43d096448426c" title="Enable or Disable Data Reporting." alt="" coords="163,5,313,32"/>
+<area shape="rect" id="node3" href="$group___proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the final project." alt="" coords="5,5,115,32"/>
+</map>

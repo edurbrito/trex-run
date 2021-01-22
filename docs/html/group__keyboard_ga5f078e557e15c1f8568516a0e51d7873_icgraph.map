@@ -1,0 +1,12 @@
+<map id="kbd_reading_status" name="kbd_reading_status">
+<area shape="rect" id="node1" title="verifies status by the second param" alt="" coords="780,107,915,133"/>
+<area shape="rect" id="node2" href="$group__keyboard.html#gaea970a154161a35f6894898a092ed70a" title="KBD interrupt handler." alt="" coords="628,5,688,32"/>
+<area shape="rect" id="node5" href="$group__keyboard.html#ga8052bb17ab1bf69c4cba30502df43889" title="write commands to KBD registers" alt="" coords="584,81,732,108"/>
+<area shape="rect" id="node9" href="$group__mouse.html#ga20285aed4b3ef45812cd967532dd09db" title="Subscribes and enables Mouse interrupts." alt="" coords="380,132,525,159"/>
+<area shape="rect" id="node10" href="$group__mouse.html#ga3ecf823d80520009ae5e0d76ae40a3c3" title="Unsubscribes Mouse interrupts." alt="" coords="163,183,321,209"/>
+<area shape="rect" id="node3" href="$group___main___menu.html#ga56a4c88966159c3f2eedead5470a0edf" title="Game Main Loop." alt="" coords="203,5,281,32"/>
+<area shape="rect" id="node4" href="$group___proj.html#ga2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the final project." alt="" coords="5,107,115,133"/>
+<area shape="rect" id="node6" href="$group__keyboard.html#gacdb241e492b63b394c4b960aca920051" title="reenables KBD interrupts" alt="" coords="403,31,502,57"/>
+<area shape="rect" id="node7" href="$group__mouse.html#ga8c054e7d95d71c3fc2a26b9df115918a" title="Write commands to Mouse." alt="" coords="369,81,536,108"/>
+<area shape="rect" id="node8" href="$group__mouse.html#gac7aa3e494e115ca0a8b43d096448426c" title="Enable or Disable Data Reporting." alt="" coords="167,81,317,108"/>
+</map>
